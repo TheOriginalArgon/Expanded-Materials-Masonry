@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Expanded Materials - Masonry</name>
+    <author>Argón</author>
+    <packageId>Argon.ExpandedMaterials.Masonry</packageId>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <description>A mod that adds brick making and various mortar materials.</description>
+    <modVersion IgnoreIfNoMatchingField="True">1.0.0</modVersion>
+    <modIconPath IgnoreIfNoMatchingField="True">UI/EM_Logo</modIconPath>
+    <!-- <modDependencies>
+        <li>
+            <packageId>Argon.CoreLib</packageId>
+            <displayName>Argonic Core</displayName>
+            <downloadUrl>https://github.com/TheOriginalArgon/ArgonicCore</downloadUrl>
+        </li>
+        <li>
+            <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+            <displayName>Vanilla Expanded Framework</displayName>
+            <downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>rebuild.cotr.doorsandcorners</li>
+        <li>vanillaexpanded.vfearchitect</li>
+    </loadAfter> -->
+</ModMetaData>
