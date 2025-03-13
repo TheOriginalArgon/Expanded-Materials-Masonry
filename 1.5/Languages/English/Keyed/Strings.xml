@@ -1,0 +1,13 @@
+<LanguageData>
+
+    <EM_DiggingZoneIsPolluted>Digging zone is polluted (Will yield ash)</EM_DiggingZoneIsPolluted>
+    <EM_DiggingZoneTooSmall>Digging zone is too small</EM_DiggingZoneTooSmall>
+    <EM_CommandAllowDigging>Allow digging</EM_CommandAllowDigging>
+    <EM_CommandAllowDiggingDesc>Enables or disables digging in this zone</EM_CommandAllowDiggingDesc>
+    <EM_DiggingZone>Digging zone</EM_DiggingZone>
+    <EM_DiggingZoneDesc>A zone designated for digging materials from the ground.</EM_DiggingZoneDesc>
+    <EM_ChooseMaterialToDig>Dig for {0}.</EM_ChooseMaterialToDig>
+    <EM_ChooseResource>Choose resource</EM_ChooseResource>
+    <EM_ChooseResourceDesc>Choose a material to dig for.</EM_ChooseResourceDesc>
+
+</LanguageData>

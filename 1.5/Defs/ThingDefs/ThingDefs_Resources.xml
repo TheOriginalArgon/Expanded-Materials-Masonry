@@ -1,0 +1,70 @@
+<Defs>
+
+<!-- PLACEHOLDERS: COPIED FROM STEEL -->
+<ThingDef ParentName="ResourceBase">
+    <defName>EM_Soil</defName>
+    <label>soil</label>
+    <description>A mixture of organic matters that compose the ground.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_Soil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.3</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Clay</defName>
+    <label>clay</label>
+    <description>Soil that contains rich amounts of clay minerals. Clay quickly gains plasticity when wet, but hardens when fired. Mankind utilized clay widely throughout history to make things like pottery, art or bricks.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_Clay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.4</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Sand</defName>
+    <label>sand</label>
+    <description>A granular material composed of finely divided mineral particles.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_Sand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.4</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>

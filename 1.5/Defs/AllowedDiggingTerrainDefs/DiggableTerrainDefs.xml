@@ -1,0 +1,92 @@
+<Defs>
+
+   <ExpandedMaterialsMasonry.AllowedDiggingTerrainDef>
+      <defName>EM_VanillaDiggableTerrains</defName>
+      <allowedTerrains>
+         <li>Soil</li>
+         <li>SoilRich</li>
+         <li>Gravel</li>
+         <li>Sand</li>
+         <li>SoftSand</li>
+      </allowedTerrains>
+   </ExpandedMaterialsMasonry.AllowedDiggingTerrainDef>
+
+   <!-- Resources -->
+   <ExpandedMaterialsMasonry.DiggableTerrainDef>
+      <defName>EM_DiggableSoil</defName>
+      <terrain>Soil</terrain>
+      <surfaceLayerYields>
+         <EM_Soil>12</EM_Soil>
+      </surfaceLayerYields>
+      <midLayerYields>
+         <EM_Soil>1</EM_Soil> <!-- PLACEHOLDER -->
+         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+      </midLayerYields>
+      <deepLayerYields>
+         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+      </deepLayerYields>
+   </ExpandedMaterialsMasonry.DiggableTerrainDef>
+
+   <ExpandedMaterialsMasonry.DiggableTerrainDef>
+      <defName>EM_DiggableRichSoil</defName>
+      <terrain>SoilRich</terrain>
+      <surfaceLayerYields>
+         <EM_Soil>16</EM_Soil>
+      </surfaceLayerYields>
+      <midLayerYields>
+         <EM_Soil>1</EM_Soil> <!-- PLACEHOLDER -->
+      </midLayerYields>
+      <deepLayerYields>
+         <EM_Clay>1</EM_Clay> <!-- PLACEHOLDER -->
+         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+      </deepLayerYields>
+   </ExpandedMaterialsMasonry.DiggableTerrainDef>
+
+   <ExpandedMaterialsMasonry.DiggableTerrainDef>
+      <defName>EM_DiggableSand</defName>
+      <terrain>Sand</terrain>
+      <surfaceLayerYields>
+         <EM_Sand>16</EM_Sand>
+      </surfaceLayerYields>
+      <midLayerYields>
+         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+      </midLayerYields>
+      <deepLayerYields>
+         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+         <EM_Soil>1</EM_Soil> <!-- PLACEHOLDER -->
+      </deepLayerYields>
+   </ExpandedMaterialsMasonry.DiggableTerrainDef>
+
+   <ExpandedMaterialsMasonry.DiggableTerrainDef>
+      <defName>EM_DiggableSoftSand</defName>
+      <terrain>SoftSand</terrain>
+      <surfaceLayerYields>
+         <EM_Sand>22</EM_Sand>
+      </surfaceLayerYields>
+      <midLayerYields>
+         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+         <EM_Soil>1</EM_Soil> <!-- PLACEHOLDER -->
+      </midLayerYields>
+      <deepLayerYields>
+         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+         <EM_Clay>1</EM_Clay> <!-- PLACEHOLDER -->
+      </deepLayerYields>
+   </ExpandedMaterialsMasonry.DiggableTerrainDef>
+
+   <ExpandedMaterialsMasonry.DiggableTerrainDef>
+      <defName>EM_DiggableGravel</defName>
+      <terrain>Gravel</terrain>
+      <surfaceLayerYields>
+         <EM_Sand>11</EM_Sand>
+         <EM_Soil>11</EM_Soil>
+      </surfaceLayerYields>
+      <midLayerYields>
+         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+      </midLayerYields>
+      <deepLayerYields>
+         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+         <EM_Soil>1</EM_Soil> <!-- PLACEHOLDER -->
+      </deepLayerYields>
+   </ExpandedMaterialsMasonry.DiggableTerrainDef>
+
+</Defs>
