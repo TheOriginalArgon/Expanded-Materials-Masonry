@@ -1,0 +1,163 @@
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>EM_DryingSpot</defName>
+        <label>brick drying spot</label>
+        <description>A spot designated to leave adobe bricks to dry. The bricks will ruin quickly if exposed to rain.</description>
+        <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Building/EM_DryingSpot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <rotatable>false</rotatable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <!-- <uiIconScale>0.8</uiIconScale> -->
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>False</useHitPoints>
+        <statBases>
+            <WorkToBuild>0</WorkToBuild>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <size>(1,1)</size>
+        <designationCategory>Production</designationCategory>
+        <passability>Standable</passability>
+        <pathCost>0</pathCost>
+        <!-- <hasInteractionCell>False</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset> -->
+        <surfaceType>Item</surfaceType>
+        <building>
+            <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+        </building>
+
+        <!-- TODO: Research -->
+
+        <!-- <researchPrerequisites>
+            <li>VBE_LiquorBrewing</li>
+        </researchPrerequisites> -->
+        <comps>
+
+            <li Class="ItemProcessor.CompProperties_ItemProcessor">
+                <buildingOnGraphic>Building/EM_DryingSpot_Full</buildingOnGraphic>
+                <buildingFinishedGraphic>Building/EM_DryingSpot_Full</buildingFinishedGraphic>
+                <numberOfInputs>1</numberOfInputs>
+                <acceptsNoneAsInput>false</acceptsNoneAsInput>
+                <InsertFirstItemDesc>EM_InsertDirtDesc</InsertFirstItemDesc>
+                <ignoresIngredientLists>true</ignoresIngredientLists>
+                <showProgressBar>false</showProgressBar>
+                <isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+                <!-- <resetSemiautomaticIcon>UI/VBE_ResetMustOrWhiskey</resetSemiautomaticIcon> -->
+
+                <!-- <chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon> -->
+
+                <bringIngredientsText>EM_StartInsertionDirt</bringIngredientsText>
+                <bringIngredientsDesc>EM_StartInsertionDirtDesc</bringIngredientsDesc>
+                <!-- <bringIngredientsIcon>UI/VBE_InsertMustOrWhiskey</bringIngredientsIcon> -->
+
+                <cancelIngredientsText>EM_CancelBringingSoil</cancelIngredientsText>
+                <cancelIngredientsDesc>EM_CancelBringingSoilDesc</cancelIngredientsDesc>
+                <!-- <cancelIngredientsIcon>UI/VBE_CancelMustOrWhiskey</cancelIngredientsIcon> -->
+                <isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+                <isRainDependingMachine>true</isRainDependingMachine>
+                <rareTicksToDestroyDueToRain>10</rareTicksToDestroyDueToRain>
+                <minTemp>2</minTemp>
+                <maxTemp>50</maxTemp>
+
+                <destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+
+            </li>
+
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>EM_FiringSpot</defName>
+        <label>brick firing spot</label>
+        <description>A spot designated to pile up clay bricks and fire them. The bricks will ruin if exposed to rain.</description>
+        <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Building/EM_FiringSpot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <rotatable>false</rotatable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <!-- <uiIconScale>0.8</uiIconScale> -->
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>False</useHitPoints>
+        <statBases>
+            <WorkToBuild>0</WorkToBuild>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <size>(2,2)</size>
+        <designationCategory>Production</designationCategory>
+        <passability>Standable</passability>
+        <pathCost>0</pathCost>
+        <!-- <hasInteractionCell>False</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset> -->
+        <surfaceType>Item</surfaceType>
+        <building>
+            <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+        </building>
+
+        <!-- TODO: Research -->
+
+        <!-- <researchPrerequisites>
+            <li>VBE_LiquorBrewing</li>
+        </researchPrerequisites> -->
+        <comps>
+
+            <li Class="ItemProcessor.CompProperties_ItemProcessor">
+                <buildingOnGraphic>Building/EM_FiringSpot_Full</buildingOnGraphic>
+                <buildingFinishedGraphic>Building/EM_FiringSpot_Full</buildingFinishedGraphic>
+                <numberOfInputs>1</numberOfInputs>
+                <acceptsNoneAsInput>false</acceptsNoneAsInput>
+                <InsertFirstItemDesc>EM_InsertClayDesc</InsertFirstItemDesc>
+                <ignoresIngredientLists>true</ignoresIngredientLists>
+                <showProgressBar>false</showProgressBar>
+                <isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+                <!-- <resetSemiautomaticIcon>UI/VBE_ResetMustOrWhiskey</resetSemiautomaticIcon> -->
+
+                <!-- <chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon> -->
+
+                <bringIngredientsText>EM_StartInsertionClay</bringIngredientsText>
+                <bringIngredientsDesc>EM_StartInsertionClayDesc</bringIngredientsDesc>
+                <!-- <bringIngredientsIcon>UI/VBE_InsertMustOrWhiskey</bringIngredientsIcon> -->
+
+                <cancelIngredientsText>EM_CancelBringingClay</cancelIngredientsText>
+                <cancelIngredientsDesc>EM_CancelBringingClayDesc</cancelIngredientsDesc>
+                <!-- <cancelIngredientsIcon>UI/VBE_CancelMustOrWhiskey</cancelIngredientsIcon> -->
+                <isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+                <isRainDependingMachine>true</isRainDependingMachine>
+                <rareTicksToDestroyDueToRain>25</rareTicksToDestroyDueToRain>
+                <minTemp>2</minTemp>
+                <maxTemp>50</maxTemp>
+
+                <destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+
+            </li>
+
+        </comps>
+    </ThingDef>
+
+</Defs>

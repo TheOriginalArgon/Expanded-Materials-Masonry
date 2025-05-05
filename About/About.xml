@@ -9,19 +9,19 @@
     <description>A mod that adds brick making and various mortar materials.</description>
     <modVersion IgnoreIfNoMatchingField="True">1.0.0</modVersion>
     <modIconPath IgnoreIfNoMatchingField="True">UI/EM_Logo</modIconPath>
-    <!-- <modDependencies>
-        <li>
+    <modDependencies>
+        <!-- <li>
             <packageId>Argon.CoreLib</packageId>
             <displayName>Argonic Core</displayName>
             <downloadUrl>https://github.com/TheOriginalArgon/ArgonicCore</downloadUrl>
-        </li>
+        </li> -->
         <li>
             <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
             <displayName>Vanilla Expanded Framework</displayName>
             <downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
         </li>
     </modDependencies>
-    <loadAfter>
+    <!-- <loadAfter>
         <li>rebuild.cotr.doorsandcorners</li>
         <li>vanillaexpanded.vfearchitect</li>
     </loadAfter> -->

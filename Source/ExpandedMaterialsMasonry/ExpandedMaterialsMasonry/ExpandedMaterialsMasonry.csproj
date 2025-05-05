@@ -41,17 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Command_SetDiggingResource.cs" />
-    <Compile Include="Designator_ZoneAdd_Digging.cs" />
-    <Compile Include="Designator_ZoneAdd_Digging_Expand.cs" />
-    <Compile Include="AllowedDiggingTerrainDef.cs" />
+    <Compile Include="Command_SelectDiggingResource.cs" />
+    <Compile Include="CompProperties_DiggingSpot.cs" />
     <Compile Include="DiggableTerrainDef.cs" />
-    <Compile Include="DiggingMapComponent.cs" />
-    <Compile Include="DiggingSettingUtility.cs" />
+    <Compile Include="DiggingSpotUtility.cs" />
     <Compile Include="JobDriver_Dig.cs" />
+    <Compile Include="PlaceWorker_DiggingSpot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WorkGiver_Dig.cs" />
-    <Compile Include="Zone_Digging.cs" />
+    <Compile Include="TerrainDefExtension_Diggable.cs" />
+    <Compile Include="WorkGiver_DiggingSpot.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">

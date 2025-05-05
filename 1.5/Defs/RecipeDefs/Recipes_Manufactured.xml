@@ -1,0 +1,46 @@
+<Defs>
+
+    <RecipeDef>
+        <defName>EM_Make_CementBricks</defName>
+        <label>make cement bricks</label>
+        <description>Make cement bricks.</description>
+        <jobString>Making cement bricks.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking> <!-- Might need to change? -->
+        <workAmount>1600</workAmount>
+        <recipeUsers>
+            <li>TableStonecutter</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Sand</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_CementMix</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Sand</li>
+                <li>EM_CementMix</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CementBricks>20</EM_CementBricks>
+        </products>
+        <!-- <workSkill>Crafting</workSkill> --> <!-- I don't know if this is needed specifically -->
+        <!-- <displayPriority>0</displayPriority> -->
+    </RecipeDef>
+
+</Defs>

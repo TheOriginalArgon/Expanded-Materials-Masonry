@@ -9,9 +9,13 @@ namespace ExpandedMaterialsMasonry
 {
     public class DiggableTerrainDef : Def
     {
+<<<<<<< Updated upstream
         public TerrainDef terrain;
         public List<ThingDefCountClass> surfaceLayerYields;
         public List<ThingDefCountClass> midLayerYields;
         public List<ThingDefCountClass> deepLayerYields;
+=======
+        public List<string> terrains;
+>>>>>>> Stashed changes
     }
 }

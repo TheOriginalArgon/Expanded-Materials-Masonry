@@ -1,7 +1,7 @@
 <Defs>
 
-<!-- PLACEHOLDERS: COPIED FROM STEEL -->
-<ThingDef ParentName="ResourceBase">
+  <!-- Ground Resources -->
+  <ThingDef ParentName="ResourceBase">
     <defName>EM_Soil</defName>
     <label>soil</label>
     <description>A mixture of organic matters that compose the ground.</description>
@@ -9,10 +9,28 @@
       <texPath>Things/Item/Resource/EM_Soil</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
-    <soundDrop>Metal_Drop</soundDrop>
     <statBases>
       <MarketValue>0.3</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Ash</defName>
+    <label>ash</label>
+    <description>Remains of burnt organic matter. Barely usable for anything.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_Ash</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.1</MarketValue>
       <Mass>0.3</Mass>
     </statBases>
     <useHitPoints>false</useHitPoints>
@@ -31,8 +49,6 @@
       <texPath>Things/Item/Resource/EM_Clay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
-    <soundDrop>Metal_Drop</soundDrop>
     <statBases>
       <MarketValue>0.4</MarketValue>
       <Mass>0.3</Mass>
@@ -53,8 +69,6 @@
       <texPath>Things/Item/Resource/EM_Sand</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
-    <soundDrop>Metal_Drop</soundDrop>
     <statBases>
       <MarketValue>0.4</MarketValue>
       <Mass>0.4</Mass>
@@ -63,6 +77,97 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
       <li>ResourcesRaw</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <!-- Manufactured -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_CementMix</defName>
+    <label>cement mix</label>
+    <description>A compound mixture of sand and cement powder obtained from cooking rocks at high temperatures.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_CementMix</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.5</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <!-- Bricks -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_AdobeBricks</defName>
+    <label>adobe bricks</label>
+    <description>Rough, irregular bricks made of dried mud and ocassionally, pieces of dried vegetal fiber for added strength.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_AdobeBricks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.2</MarketValue>
+      <Mass>0.5</Mass>
+      <Beauty>-12</Beauty>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>EM_Bricks</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_ClayBricks</defName>
+    <label>clay bricks</label>
+    <description>Hard, more elaborate bricks made of fired clay. They are more aesthetically nice than rough adobe bricks and more resistant.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_ClayBricks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.4</MarketValue>
+      <Mass>0.5</Mass>
+      <Beauty>-12</Beauty>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>EM_Bricks</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_CementBricks</defName>
+    <label>cement bricks</label>
+    <description>Large bricks made of cement. Their shape and size make building walls with them extremely fast compared to other materials. However, cement bricks are weak if not coated, and quite ugly too.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_CementBricks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.4</MarketValue>
+      <Mass>0.5</Mass>
+      <Beauty>-12</Beauty>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>EM_Bricks</li>
     </thingCategories>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>

@@ -11,6 +11,7 @@ namespace ExpandedMaterialsMasonry
 {
     internal class JobDriver_Dig : JobDriver
     {
+<<<<<<< Updated upstream
         public float pawnMiningSkill = 10f;
         public ThingDef digThing = null;
         public int digAmount = 1;
@@ -41,10 +42,16 @@ namespace ExpandedMaterialsMasonry
                 return p.Reserve(targetA, job, 1, -1, null, errorOnFailed);
             }
             return false;
+=======
+        public override bool TryMakePreToilReservations(bool errorOnFailed)
+        {
+            return pawn.Reserve(job.targetA, job, 1, -1, null, errorOnFailed);
+>>>>>>> Stashed changes
         }
 
         protected override IEnumerable<Toil> MakeNewToils()
         {
+<<<<<<< Updated upstream
             if (digThing == null)
             {
                 EndJobWith(JobCondition.Incompletable);
@@ -71,10 +78,29 @@ namespace ExpandedMaterialsMasonry
             digToil.defaultDuration = duration; // TODO: Formula based on skill. (Same as above)
             digToil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
             yield return digToil.WithProgressBarToilDelay(TargetIndex.A, false);
+=======
+            this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
+            this.FailOnBurningImmobile(TargetIndex.A);
+            this.FailOnThingHavingDesignation(TargetIndex.A, DesignationDefOf.Uninstall);
+            yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
+            Toil work = ToilMaker.MakeToil("MakeNewToils");
+            work.tickAction = delegate
+            {
+                pawn?.skills?.Learn(SkillDefOf.Mining, 0.015f);
+            };
+            work.defaultCompleteMode = ToilCompleteMode.Delay;
+            // <-- HERE GOES POSSIBLE EFFECT.
+            work.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
+            work.FailOnDespawnedNullOrForbidden(TargetIndex.A);
+            work.activeSkill = () => SkillDefOf.Mining;
+            work.defaultDuration = (int)(2200 - (45 * pawn?.skills?.GetSkill(SkillDefOf.Mining).Level));
+            yield return work.WithProgressBarToilDelay(TargetIndex.A, true);
+>>>>>>> Stashed changes
             yield return new Toil
             {
                 initAction = delegate
                 {
+<<<<<<< Updated upstream
                     Thing thing = ThingMaker.MakeThing(digThing);
                     thing.stackCount = 7; // Here is where I should calculate based on the custom Defs.
                     GenSpawn.Spawn(thing, pawn.Position + pawnRotation.Opposite.FacingCell, Map);
@@ -95,6 +121,11 @@ namespace ExpandedMaterialsMasonry
                 defaultCompleteMode = ToilCompleteMode.Instant
             };
             // Here come settings to toggle on/off dropping.
+=======
+                    ((Building)pawn?.CurJob?.targetA.Thing).GetComp<CompDiggingSpot>().YieldResource(pawn);
+                }
+            };
+>>>>>>> Stashed changes
         }
     }
 }

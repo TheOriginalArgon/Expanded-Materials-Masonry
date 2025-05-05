@@ -1,0 +1,18 @@
+<Defs>
+
+    <WorkGiverDef>
+        <defName>EM_Dig</defName>
+        <label>dig at digging spot</label>
+        <giverClass>ExpandedMaterialsMasonry.WorkGiver_DiggingSpot</giverClass>
+        <workType>Mining</workType>
+        <priorityInType>40</priorityInType>
+        <verb>dig</verb>
+        <gerund>digging</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+        <canBeDoneByMutants>false</canBeDoneByMutants>
+    </WorkGiverDef>
+
+</Defs>

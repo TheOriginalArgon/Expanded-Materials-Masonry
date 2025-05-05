@@ -1,0 +1,63 @@
+<Patch>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/TerrainDef[defName="Soil"]</xpath>
+        <value>
+            <li Class="ExpandedMaterialsMasonry.TerrainDefExtension_Diggable">
+                <resources>
+                    <EM_Soil>16</EM_Soil>
+                    <EM_Sand>8</EM_Sand>
+                </resources>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/TerrainDef[defName="SoilRich"]</xpath>
+        <value>
+            <li Class="ExpandedMaterialsMasonry.TerrainDefExtension_Diggable">
+                <resources>
+                    <EM_Soil>22</EM_Soil>
+                    <EM_Sand>4</EM_Sand>
+                </resources>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/TerrainDef[defName="Sand"]</xpath>
+        <value>
+            <li Class="ExpandedMaterialsMasonry.TerrainDefExtension_Diggable">
+                <resources>
+                    <EM_Sand>18</EM_Sand>
+                    <EM_Soil>8</EM_Soil>
+                </resources>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/TerrainDef[defName="SoftSand"]</xpath>
+        <value>
+            <li Class="ExpandedMaterialsMasonry.TerrainDefExtension_Diggable">
+                <resources>
+                    <EM_Sand>22</EM_Sand>
+                    <EM_Soil>8</EM_Soil>
+                </resources>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/TerrainDef[defName="Gravel"]</xpath>
+        <value>
+            <li Class="ExpandedMaterialsMasonry.TerrainDefExtension_Diggable">
+                <resources>
+                    <EM_Soil>10</EM_Soil>
+                    <EM_Sand>10</EM_Sand>
+                </resources>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

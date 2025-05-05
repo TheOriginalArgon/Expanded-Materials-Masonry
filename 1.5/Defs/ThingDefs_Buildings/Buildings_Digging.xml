@@ -1,0 +1,42 @@
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>EM_DiggingSpot</defName>
+        <label>digging spot</label>
+        <description>A place for digging the ground and extracting resources.</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Building/EM_DiggingSpot_a</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.5, 1.5)</drawSize>
+        </graphicData>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <statBases>
+            <WorkToBuild>0</WorkToBuild>
+        </statBases>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <useHitPoints>false</useHitPoints>
+        <rotatable>false</rotatable>
+        <size>(1,1)</size>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2000</uiOrder>
+        <passability>PassThroughOnly</passability>
+        <surfaceType>Item</surfaceType>
+        <tickerType>Rare</tickerType>
+        <building>
+            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+            <ai_chillDestination>false</ai_chillDestination>
+            <buildingTags>
+                <li>Production</li>
+            </buildingTags>
+        </building>
+        <comps>
+            <li Class="ExpandedMaterialsMasonry.CompProperties_DiggingSpot"/>
+        </comps>
+        <placeWorkers>
+            <li>ExpandedMaterialsMasonry.PlaceWorker_DiggingSpot</li>
+        </placeWorkers>
+    </ThingDef>
+
+</Defs>

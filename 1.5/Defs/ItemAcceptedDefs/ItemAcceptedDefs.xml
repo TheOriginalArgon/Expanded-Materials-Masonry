@@ -1,0 +1,12 @@
+<Defs>
+
+    <ItemProcessor.ItemAcceptedDef>
+        <defName>EM_DryingSpotFirstItem</defName>
+        <building>EM_DryingSpot</building>
+        <slot>1</slot>
+        <items>
+            <li>EM_Soil</li>
+        </items>
+    </ItemProcessor.ItemAcceptedDef>
+
+</Defs>

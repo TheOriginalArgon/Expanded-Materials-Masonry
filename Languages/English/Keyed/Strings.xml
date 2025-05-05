@@ -1,0 +1,15 @@
+<LanguageData>
+
+    <EM_InsertDirtDesc>Insert soil</EM_InsertDirtDesc>
+    <EM_StartInsertionDirt>Insert soil</EM_StartInsertionDirt>
+    <EM_StartInsertionDirtDesc>Insert soil to make adobe bricks.</EM_StartInsertionDirtDesc>
+    <EM_CancelBringingSoil>Cancel bringing soil</EM_CancelBringingSoil>
+    <EM_CancelBringingSoilDesc>Cancels bringing soil to make adobe bricks</EM_CancelBringingSoilDesc>
+
+    <EM_InsertClayDesc>Insert clay</EM_InsertClayDesc>
+    <EM_StartInsertionClay>Insert clay</EM_StartInsertionClay>
+    <EM_StartInsertionClayDesc>Insert clay to make bricks.</EM_StartInsertionClayDesc>
+    <EM_CancelBringingClay>Cancel bringing clay</EM_CancelBringingClay>
+    <EM_CancelBringingClayDesc>Cancels bringing clay to make bricks</EM_CancelBringingClayDesc>
+
+</LanguageData>

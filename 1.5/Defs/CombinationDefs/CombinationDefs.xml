@@ -1,0 +1,18 @@
+<Defs>
+
+    <ItemProcessor.CombinationDef>
+        <defName>EM_SoilToAdobeBricks</defName>
+        <building>EM_DryingSpot</building>
+        <items>
+            <li>EM_Soil</li>
+        </items>
+        <amount>
+            <li>20</li>
+        </amount>
+        <result>EM_AdobeBricks</result>
+        <yield>10</yield>
+        <useQualityIncreasing>false</useQualityIncreasing>
+        <singleTimeIfNotQualityIncreasing>1</singleTimeIfNotQualityIncreasing>
+    </ItemProcessor.CombinationDef>
+
+</Defs>
