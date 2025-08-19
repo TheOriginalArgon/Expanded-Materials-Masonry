@@ -4,7 +4,9 @@
         <defName>EM_DryingSpot</defName>
         <label>brick drying spot</label>
         <description>A spot designated to leave adobe bricks to dry. The bricks will ruin quickly if exposed to rain.</description>
-        <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+        <inspectorTabs>
+            <li>PipeSystem.ITab_Processor</li>
+        </inspectorTabs>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
             <texPath>Building/EM_DryingSpot</texPath>
@@ -32,8 +34,6 @@
         <designationCategory>Production</designationCategory>
         <passability>Standable</passability>
         <pathCost>0</pathCost>
-        <!-- <hasInteractionCell>False</hasInteractionCell>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset> -->
         <surfaceType>Item</surfaceType>
         <building>
             <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
@@ -46,37 +46,14 @@
             <li>VBE_LiquorBrewing</li>
         </researchPrerequisites> -->
         <comps>
-
-            <li Class="ItemProcessor.CompProperties_ItemProcessor">
-                <buildingOnGraphic>Building/EM_DryingSpot_Full</buildingOnGraphic>
-                <buildingFinishedGraphic>Building/EM_DryingSpot_Full</buildingFinishedGraphic>
-                <numberOfInputs>1</numberOfInputs>
-                <acceptsNoneAsInput>false</acceptsNoneAsInput>
-                <InsertFirstItemDesc>EM_InsertDirtDesc</InsertFirstItemDesc>
-                <ignoresIngredientLists>true</ignoresIngredientLists>
-                <showProgressBar>false</showProgressBar>
-                <isSemiAutomaticMachine>true</isSemiAutomaticMachine>
-                <!-- <resetSemiautomaticIcon>UI/VBE_ResetMustOrWhiskey</resetSemiautomaticIcon> -->
-
-                <!-- <chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon> -->
-
-                <bringIngredientsText>EM_StartInsertionDirt</bringIngredientsText>
-                <bringIngredientsDesc>EM_StartInsertionDirtDesc</bringIngredientsDesc>
-                <!-- <bringIngredientsIcon>UI/VBE_InsertMustOrWhiskey</bringIngredientsIcon> -->
-
-                <cancelIngredientsText>EM_CancelBringingSoil</cancelIngredientsText>
-                <cancelIngredientsDesc>EM_CancelBringingSoilDesc</cancelIngredientsDesc>
-                <!-- <cancelIngredientsIcon>UI/VBE_CancelMustOrWhiskey</cancelIngredientsIcon> -->
-                <isTemperatureDependingMachine>true</isTemperatureDependingMachine>
-                <isRainDependingMachine>true</isRainDependingMachine>
-                <rareTicksToDestroyDueToRain>10</rareTicksToDestroyDueToRain>
-                <minTemp>2</minTemp>
-                <maxTemp>50</maxTemp>
-
-                <destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
-
+            <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+                <inProgressTexture>Building/EM_DryingSpot_Full</inProgressTexture>
+                <notWorkingKey>EM_DryingSpotNotWorking</notWorkingKey>
+                <processes>
+                    <li>EM_SoilToAdobeBricks</li>
+                </processes>
+                <progressBarOffset>(0,0,-0.5)</progressBarOffset>
             </li>
-
         </comps>
     </ThingDef>
 
@@ -84,7 +61,9 @@
         <defName>EM_FiringSpot</defName>
         <label>brick firing spot</label>
         <description>A spot designated to pile up clay bricks and fire them. The bricks will ruin if exposed to rain.</description>
-        <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+        <inspectorTabs>
+            <li>PipeSystem.ITab_Processor</li>
+        </inspectorTabs>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
             <texPath>Building/EM_FiringSpot</texPath>
@@ -112,8 +91,6 @@
         <designationCategory>Production</designationCategory>
         <passability>Standable</passability>
         <pathCost>0</pathCost>
-        <!-- <hasInteractionCell>False</hasInteractionCell>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset> -->
         <surfaceType>Item</surfaceType>
         <building>
             <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
@@ -126,37 +103,14 @@
             <li>VBE_LiquorBrewing</li>
         </researchPrerequisites> -->
         <comps>
-
-            <li Class="ItemProcessor.CompProperties_ItemProcessor">
-                <buildingOnGraphic>Building/EM_FiringSpot_Full</buildingOnGraphic>
-                <buildingFinishedGraphic>Building/EM_FiringSpot_Full</buildingFinishedGraphic>
-                <numberOfInputs>1</numberOfInputs>
-                <acceptsNoneAsInput>false</acceptsNoneAsInput>
-                <InsertFirstItemDesc>EM_InsertClayDesc</InsertFirstItemDesc>
-                <ignoresIngredientLists>true</ignoresIngredientLists>
-                <showProgressBar>false</showProgressBar>
-                <isSemiAutomaticMachine>true</isSemiAutomaticMachine>
-                <!-- <resetSemiautomaticIcon>UI/VBE_ResetMustOrWhiskey</resetSemiautomaticIcon> -->
-
-                <!-- <chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon> -->
-
-                <bringIngredientsText>EM_StartInsertionClay</bringIngredientsText>
-                <bringIngredientsDesc>EM_StartInsertionClayDesc</bringIngredientsDesc>
-                <!-- <bringIngredientsIcon>UI/VBE_InsertMustOrWhiskey</bringIngredientsIcon> -->
-
-                <cancelIngredientsText>EM_CancelBringingClay</cancelIngredientsText>
-                <cancelIngredientsDesc>EM_CancelBringingClayDesc</cancelIngredientsDesc>
-                <!-- <cancelIngredientsIcon>UI/VBE_CancelMustOrWhiskey</cancelIngredientsIcon> -->
-                <isTemperatureDependingMachine>true</isTemperatureDependingMachine>
-                <isRainDependingMachine>true</isRainDependingMachine>
-                <rareTicksToDestroyDueToRain>25</rareTicksToDestroyDueToRain>
-                <minTemp>2</minTemp>
-                <maxTemp>50</maxTemp>
-
-                <destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
-
+            <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+                <inProgressTexture>Building/EM_FiringSpot_Full</inProgressTexture>
+                <notWorkingKey>EM_FiringSpotNotWorking</notWorkingKey>
+                <processes>
+                    <li>EM_ClayToBricks</li>
+                </processes>
+                <progressBarOffset>(0,0,-0.5)</progressBarOffset>
             </li>
-
         </comps>
     </ThingDef>
 

@@ -26,11 +26,15 @@ namespace ExpandedMaterialsMasonry
 
     public class CompDiggingSpot : ThingComp
     {
-        public ThingDef selectedResource;
-        public List<ThingDefCountClass> resources;
+        public static readonly Material DiggingSpot_Top = MaterialPool.MatFrom("Building/EM_DiggingSpot_a");
+        public static readonly Material DiggingSpot_Mid = MaterialPool.MatFrom("Building/EM_DiggingSpot_b");
+        public static readonly Material DiggingSpot_Deep = MaterialPool.MatFrom("Building/EM_DiggingSpot_c");
 
-        private TerrainDefExtension_Diggable extension;
-        private float totalResourcePct = 0;
+        public List<ThingDefCountClass> resourcesSurface;
+        public List<ThingDefCountClass> resourcesMid;
+        public List<ThingDefCountClass> resourcesDeep;
+        public List<ThingDef> pollutedResources;
+
         private int progress;
         private bool exhausted = false;
         private DiggingSpotState State
@@ -43,26 +47,22 @@ namespace ExpandedMaterialsMasonry
             }
         }
 
+        private bool IsPolluted => parent.Map.pollutionGrid.IsPolluted(parent.Position);
+
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-            extension = parent.Map.terrainGrid.TerrainAt(parent.Position).GetModExtension<TerrainDefExtension_Diggable>();
-            if (extension != null)
+            TerrainDef terrain = parent.Map.terrainGrid.TerrainAt(parent.Position);
+            DiggableTerrainDef diggableTerrainDef = DiggableTerrainDef.GetForTerrain(terrain);
+            if (diggableTerrainDef != null)
             {
-                resources = extension.resources;
+                resourcesSurface = diggableTerrainDef.surfaceLayerYields;
+                resourcesMid = diggableTerrainDef.midLayerYields;
+                resourcesDeep = diggableTerrainDef.deepLayerYields;
+                pollutedResources = diggableTerrainDef.pollutedYields;
             }
             else
             {
-                Log.Error("CompDiggingSpot tried to fetch terrain resources from a terrain without the proper DefExtension");
-            }
-
-            for (int i = 0; i < resources.Count; i++)
-            {
-                ThingDefCountClass resource = resources[i];
-                totalResourcePct += resource.count;
-            }
-            if (!respawningAfterLoad)
-            {
-                selectedResource = resources[0].thingDef;
+                Log.Error("No DiggableTerrainDef found for terrain: " + terrain.defName);
             }
         }
 
@@ -70,26 +70,20 @@ namespace ExpandedMaterialsMasonry
         {
             if (parent.Spawned)
             {
-                string s = "Resources:\n";
-                for (int i = 0; i < resources.Count; i++)
+                var sb = new StringBuilder();
+                sb.Append("Progress: ").Append(progress).AppendLine()
+                  .Append("Layer: ").Append(State.ToString());
+                if (IsPolluted)
                 {
-                    ThingDefCountClass countClass = resources[i];
-                    s += countClass.thingDef.label + ": " + (countClass.count / totalResourcePct).ToStringPercent("F0");
-                    if (i < resources.Count - 1)
-                    {
-                        s += "\n";
-                    }
+                    sb.Append("Terrain is polluted.");
                 }
-                s+= "Progress: " + progress + "\n";
-                s+= "State: " + State.ToString();
-                return s;
+                return sb.ToString();
             }
             return null;
         }
 
         public override void PostExposeData()
         {
-            Scribe_Defs.Look(ref selectedResource, "selectedResource");
             Scribe_Values.Look(ref progress, "progress", 0, true);
         }
 
@@ -102,11 +96,11 @@ namespace ExpandedMaterialsMasonry
             return true;
         }
 
-        public override IEnumerable<Gizmo> CompGetGizmosExtra()
-        {
-            foreach (Gizmo item in base.CompGetGizmosExtra()) { yield return item; }
-            yield return DiggingSpotUtility.SetDiggingResource(this, parent.Map);
-        }
+        //public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        //{
+        //    foreach (Gizmo item in base.CompGetGizmosExtra()) { yield return item; }
+        //    yield return DiggingSpotUtility.SetDiggingResource(this, parent.Map);
+        //}
 
         public override void CompTickRare()
         {
@@ -127,39 +121,93 @@ namespace ExpandedMaterialsMasonry
                     exhausted = true;
                 }
             }
+
+            parent.DirtyMapMesh(parent.MapHeld);
         }
 
-        public override void PostDraw()
+        //public override void PostDraw()
+        //{
+        //    //base.PostDraw();
+        //    Material mat = parent.Graphic.MatSingle;
+        //    Texture2D tex = null;
+        //    switch (State)
+        //    {
+        //        case DiggingSpotState.Deep:
+        //            tex = ContentFinder<Texture2D>.Get("Building/EM_DiggingSpot_c");
+        //            break;
+        //        case DiggingSpotState.Mid:
+        //            tex = ContentFinder<Texture2D>.Get("Building/EM_DiggingSpot_b");
+        //            break;
+        //        case DiggingSpotState.Top:
+        //            tex = ContentFinder<Texture2D>.Get("Building/EM_DiggingSpot_a");
+        //            break;
+        //    }
+
+        //    mat.SetTexture("_MainTex", tex);
+        //}
+
+        public override void PostPrintOnto(SectionLayer layer)
         {
-            //base.PostDraw();
-            Material mat = parent.Graphic.MatSingle;
-            Texture2D tex = null;
+            if (parent.def.drawerType != DrawerType.RealtimeOnly)
+            {
+                Vector3 baseDrawPos = parent.DrawPos;
+                baseDrawPos.y = AltitudeLayer.BuildingOnTop.AltitudeFor();
+
+                switch (State)
+                {
+                    case DiggingSpotState.Deep:
+                        Printer_Plane.PrintPlane(layer, baseDrawPos, new Vector2(1.5f, 1.5f), DiggingSpot_Deep);
+                        break;
+                    case DiggingSpotState.Mid:
+                        Printer_Plane.PrintPlane(layer, baseDrawPos, new Vector2(1.5f, 1.5f), DiggingSpot_Mid);
+                        break;
+                    case DiggingSpotState.Top:
+                        Printer_Plane.PrintPlane(layer, baseDrawPos, new Vector2(1.5f, 1.5f), DiggingSpot_Top);
+                        break;
+                }
+            }
+        }
+
+        private List<ThingDefCountClass> GetCurrentLayerYields()
+        {
             switch (State)
             {
                 case DiggingSpotState.Deep:
-                    tex = ContentFinder<Texture2D>.Get("Building/EM_DiggingSpot_c");
-                    break;
+                    return resourcesDeep;
                 case DiggingSpotState.Mid:
-                    tex = ContentFinder<Texture2D>.Get("Building/EM_DiggingSpot_b");
-                    break;
+                    return resourcesMid;
                 case DiggingSpotState.Top:
-                    tex = ContentFinder<Texture2D>.Get("Building/EM_DiggingSpot_a");
-                    break;
+                default:
+                    return resourcesSurface;
             }
+        }
 
-            mat.SetTexture("_MainTex", tex);
+        private Thing ProcessYield(ThingDef resource)
+        {
+            if (IsPolluted)
+            {
+                if (Rand.Chance(0.5f))
+                {
+                    return ThingMaker.MakeThing(pollutedResources.RandomElement());
+                }
+            }
+            return ThingMaker.MakeThing(resource);
         }
 
         public void YieldResource(Pawn digger)
         {
             // Produce the resource.
-            int baseAmount = resources.Where(x => x.thingDef == selectedResource).FirstOrDefault().count;
-            int extraDrop = (int)((2 + digger.skills.GetSkill(SkillDefOf.Mining).Level) * (digger.GetStatValue(StatDefOf.MiningYield) / 10000f));
-            int stackCount = baseAmount + extraDrop;
-            Thing res = ThingMaker.MakeThing(selectedResource);
-            res.stackCount = stackCount;
-            GenPlace.TryPlaceThing(res, parent.InteractionCell, parent.Map, ThingPlaceMode.Near, null, (IntVec3 p) => p != parent.Position && p != parent.InteractionCell);
-            progress += baseAmount + (extraDrop / 2);
+            List<ThingDefCountClass> currentYields = GetCurrentLayerYields();
+            foreach (ThingDefCountClass t in currentYields)
+            {
+                int baseAmount = t.count;
+                int extraDrop = (int)((2 + digger.skills.GetSkill(SkillDefOf.Mining).Level) * (digger.GetStatValue(StatDefOf.MiningYield) / 10000f));
+                int stackCount = baseAmount + extraDrop;
+                Thing res = ProcessYield(t.thingDef);
+                res.stackCount = stackCount;
+                GenPlace.TryPlaceThing(res, parent.InteractionCell, parent.Map, ThingPlaceMode.Near, null, (IntVec3 p) => p != parent.Position && p != parent.InteractionCell);
+                progress += baseAmount + (extraDrop / 2);
+            }
         }
     }
 }

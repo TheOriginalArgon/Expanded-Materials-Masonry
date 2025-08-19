@@ -14,7 +14,7 @@
         <statBases>
             <WorkToBuild>0</WorkToBuild>
         </statBases>
-        <drawerType>MapMeshAndRealTime</drawerType>
+        <drawerType>MapMeshOnly</drawerType>
         <scatterableOnMapGen>false</scatterableOnMapGen>
         <useHitPoints>false</useHitPoints>
         <rotatable>false</rotatable>

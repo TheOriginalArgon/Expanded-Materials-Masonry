@@ -1,16 +1,5 @@
 <Defs>
 
-   <ExpandedMaterialsMasonry.AllowedDiggingTerrainDef>
-      <defName>EM_VanillaDiggableTerrains</defName>
-      <allowedTerrains>
-         <li>Soil</li>
-         <li>SoilRich</li>
-         <li>Gravel</li>
-         <li>Sand</li>
-         <li>SoftSand</li>
-      </allowedTerrains>
-   </ExpandedMaterialsMasonry.AllowedDiggingTerrainDef>
-
    <!-- Resources -->
    <ExpandedMaterialsMasonry.DiggableTerrainDef>
       <defName>EM_DiggableSoil</defName>
@@ -19,12 +8,15 @@
          <EM_Soil>12</EM_Soil>
       </surfaceLayerYields>
       <midLayerYields>
-         <EM_Soil>1</EM_Soil> <!-- PLACEHOLDER -->
-         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+         <EM_Soil>6</EM_Soil>
+         <EM_Sand>6</EM_Sand>
       </midLayerYields>
       <deepLayerYields>
-         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+         <EM_Sand>8</EM_Sand>
       </deepLayerYields>
+      <pollutedYields>
+         <li>EM_Ash</li>
+      </pollutedYields>
    </ExpandedMaterialsMasonry.DiggableTerrainDef>
 
    <ExpandedMaterialsMasonry.DiggableTerrainDef>
@@ -34,12 +26,15 @@
          <EM_Soil>16</EM_Soil>
       </surfaceLayerYields>
       <midLayerYields>
-         <EM_Soil>1</EM_Soil> <!-- PLACEHOLDER -->
+         <EM_Soil>18</EM_Soil>
       </midLayerYields>
       <deepLayerYields>
-         <EM_Clay>1</EM_Clay> <!-- PLACEHOLDER -->
-         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+         <EM_Clay>8</EM_Clay>
+         <EM_Sand>4</EM_Sand>
       </deepLayerYields>
+      <pollutedYields>
+         <li>EM_Ash</li>
+      </pollutedYields>
    </ExpandedMaterialsMasonry.DiggableTerrainDef>
 
    <ExpandedMaterialsMasonry.DiggableTerrainDef>
@@ -49,12 +44,15 @@
          <EM_Sand>16</EM_Sand>
       </surfaceLayerYields>
       <midLayerYields>
-         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+         <EM_Sand>18</EM_Sand>
       </midLayerYields>
       <deepLayerYields>
-         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
-         <EM_Soil>1</EM_Soil> <!-- PLACEHOLDER -->
+         <EM_Sand>12</EM_Sand>
+         <EM_Soil>6</EM_Soil>
       </deepLayerYields>
+      <pollutedYields>
+         <li>EM_Ash</li>
+      </pollutedYields>
    </ExpandedMaterialsMasonry.DiggableTerrainDef>
 
    <ExpandedMaterialsMasonry.DiggableTerrainDef>
@@ -64,13 +62,16 @@
          <EM_Sand>22</EM_Sand>
       </surfaceLayerYields>
       <midLayerYields>
-         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
-         <EM_Soil>1</EM_Soil> <!-- PLACEHOLDER -->
+         <EM_Sand>12</EM_Sand>
+         <EM_Soil>10</EM_Soil>
       </midLayerYields>
       <deepLayerYields>
-         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
-         <EM_Clay>1</EM_Clay> <!-- PLACEHOLDER -->
+         <EM_Sand>12</EM_Sand>
+         <EM_Clay>6</EM_Clay>
       </deepLayerYields>
+      <pollutedYields>
+         <li>EM_Ash</li>
+      </pollutedYields>
    </ExpandedMaterialsMasonry.DiggableTerrainDef>
 
    <ExpandedMaterialsMasonry.DiggableTerrainDef>
@@ -81,12 +82,15 @@
          <EM_Soil>11</EM_Soil>
       </surfaceLayerYields>
       <midLayerYields>
-         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
+         <EM_Sand>18</EM_Sand>
       </midLayerYields>
       <deepLayerYields>
-         <EM_Sand>1</EM_Sand> <!-- PLACEHOLDER -->
-         <EM_Soil>1</EM_Soil> <!-- PLACEHOLDER -->
+         <EM_Sand>12</EM_Sand>
+         <EM_Soil>6</EM_Soil>
       </deepLayerYields>
+      <pollutedYields>
+         <li>EM_Ash</li>
+      </pollutedYields>
    </ExpandedMaterialsMasonry.DiggableTerrainDef>
 
 </Defs>

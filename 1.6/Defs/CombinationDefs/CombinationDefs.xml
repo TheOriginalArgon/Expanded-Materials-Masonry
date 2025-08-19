@@ -1,18 +1,53 @@
 <Defs>
 
-    <ItemProcessor.CombinationDef>
+    <PipeSystem.ProcessDef>
         <defName>EM_SoilToAdobeBricks</defName>
-        <building>EM_DryingSpot</building>
-        <items>
-            <li>EM_Soil</li>
-        </items>
-        <amount>
-            <li>20</li>
-        </amount>
-        <result>EM_AdobeBricks</result>
-        <yield>10</yield>
-        <useQualityIncreasing>false</useQualityIncreasing>
-        <singleTimeIfNotQualityIncreasing>1</singleTimeIfNotQualityIncreasing>
-    </ItemProcessor.CombinationDef>
+        <label>Make adobe bricks</label>
+        <description>Turns 20 soil into 10 adobe bricks.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 10 adobe bricks from 20 soil</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>EM_Soil</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_AdobeBricks</thing>
+                <count>10</count>
+            </li>
+        </results>
+        <isRainDependingProcess>true</isRainDependingProcess>
+        <messageIfRainingWarning>EM_RainIsRuiningBricks</messageIfRainingWarning>
+        <messageIfRaining>EM_RainRuinedBricks</messageIfRaining>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_ClayToBricks</defName>
+        <label>Make clay bricks</label>
+        <description>Turns 100 clay into 50 clay bricks.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 50 clay bricks from 100 clay</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>EM_Clay</thing>
+                <countNeeded>100</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>300000</ticks>
+        <results>
+            <li>
+                <thing>EM_ClayBricks</thing>
+                <count>50</count>
+            </li>
+        </results>
+        <isRainDependingProcess>true</isRainDependingProcess>
+        <messageIfRainingWarning>EM_RainIsRuiningBricks</messageIfRainingWarning>
+        <messageIfRaining>EM_RainRuinedBricks</messageIfRaining>
+    </PipeSystem.ProcessDef>
 
 </Defs>

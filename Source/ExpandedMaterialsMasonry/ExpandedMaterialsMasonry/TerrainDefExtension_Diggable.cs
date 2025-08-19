@@ -7,9 +7,9 @@ using Verse;
 
 namespace ExpandedMaterialsMasonry
 {
-    public class TerrainDefExtension_Diggable : DefModExtension
-    {
-        public List<ThingDefCountClass> resources;
-        public ThingDef pollutedResource;
-    }
+    //public class TerrainDefExtension_Diggable : DefModExtension
+    //{
+    //    public List<ThingDefCountClass> resources;
+    //    public ThingDef pollutedResource;
+    //}
 }

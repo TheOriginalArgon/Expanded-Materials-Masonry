@@ -12,7 +12,6 @@
             <li>Manipulation</li>
         </requiredCapacities>
         <canBeDoneByMechs>true</canBeDoneByMechs>
-        <canBeDoneByMutants>false</canBeDoneByMutants>
     </WorkGiverDef>
 
 </Defs>

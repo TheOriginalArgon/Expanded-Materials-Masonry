@@ -9,13 +9,15 @@ namespace ExpandedMaterialsMasonry
 {
     public class DiggableTerrainDef : Def
     {
-<<<<<<< Updated upstream
         public TerrainDef terrain;
         public List<ThingDefCountClass> surfaceLayerYields;
         public List<ThingDefCountClass> midLayerYields;
         public List<ThingDefCountClass> deepLayerYields;
-=======
-        public List<string> terrains;
->>>>>>> Stashed changes
+        public List<ThingDef> pollutedYields;
+
+        public static DiggableTerrainDef GetForTerrain(TerrainDef terrain)
+        {
+            return DefDatabase<DiggableTerrainDef>.AllDefs.FirstOrDefault(x => x.terrain == terrain);
+        }
     }
 }
