@@ -114,4 +114,69 @@
         </comps>
     </ThingDef>
 
+    <ThingDef ParentName="BuildingBase">
+        <defName>EM_Kiln</defName>
+        <label>kiln</label>
+        <description>A kiln built from stone bricks. This structure allows the making of cement.</description>
+        <inspectorTabs>
+            <li>PipeSystem.ITab_Processor</li>
+        </inspectorTabs>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Building/EM_Kiln</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <useHitPoints>True</useHitPoints>
+        <rotatable>false</rotatable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <!-- <uiIconScale>0.8</uiIconScale> -->
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>False</useHitPoints>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>120</costStuffCount>
+        <statBases>
+            <WorkToBuild>3500</WorkToBuild>
+            <MaxHitPoints>350</MaxHitPoints>
+            <Cleanliness>-20</Cleanliness>
+            <Beauty>-10</Beauty>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <size>(2,2)</size>
+        <designationCategory>Production</designationCategory>
+        <passability>Standable</passability>
+        <pathCost>0</pathCost>
+        <surfaceType>Item</surfaceType>
+        <building>
+            <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+        </building>
+
+        <!-- TODO: Research -->
+
+        <!-- <researchPrerequisites>
+            <li>VBE_LiquorBrewing</li>
+        </researchPrerequisites> -->
+        <comps>
+            <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+                <inProgressTexture>Building/EM_Kiln_Active</inProgressTexture>
+                <notWorkingKey>EM_FiringSpotNotWorking</notWorkingKey>
+                <processes>
+                    <li>EM_ClayToBricks</li>
+                </processes>
+                <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
 </Defs>
