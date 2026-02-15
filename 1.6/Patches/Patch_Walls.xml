@@ -1,0 +1,20 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName="Wall"]/uiIconPathsStuff</xpath>
+        <value>
+            <li>
+                <appearance>EM_Cobblestone</appearance>
+                <iconPath>Things/Building/Linked/EM_WallCobblestone_MenuIcon</iconPath>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName="Wall"]/stuffCategories</xpath>
+        <value>
+            <li>EM_Cobblestony</li>
+        </value>
+    </Operation>
+
+</Patch>

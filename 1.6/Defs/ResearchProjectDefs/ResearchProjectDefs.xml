@@ -1,0 +1,53 @@
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>EM_BasicMasonry</defName>
+        <label>basic masonry</label>
+        <description>Dig resources from the ground and make basic bricks.</description>
+        <baseCost>250</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>7.00</researchViewX>
+        <researchViewY>2.70</researchViewY>
+        <tags>
+            <li>ClassicStart</li>
+        </tags>
+        <!-- <generalRules>
+            <rulesStrings>
+                <li>subject->adobe bricks</li>
+
+                <li>subject_story->wns into biofuel and restart the engines</li>
+                <li>subject_story->used automated biorefineries to begin the long terraforming process on an iceworld</li>
+                <li>subject_story->started a distillery to make moonshine but, realizing it was undrinkable, sold it as chemfuel instead</li>
+
+                <li>subject_gerund->making bricks</li>
+            </rulesStrings>
+        </generalRules> -->
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>EM_ShaftDigging</defName>
+        <label>shaft digging</label>
+        <description>Dig shafts to access underground resources.</description>
+        <baseCost>700</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>EM_BasicMasonry</li>
+        </prerequisites>
+        <researchViewX>7.00</researchViewX>
+        <researchViewY>2.70</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>EM_Concrete</defName>
+        <label>concrete</label>
+        <description>Cook different types of stones to create concrete, a very useful material for structures and flooring.</description>
+        <baseCost>350</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>Stonecutting</li>
+        </prerequisites>
+        <researchViewX>7.00</researchViewX>
+        <researchViewY>2.70</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

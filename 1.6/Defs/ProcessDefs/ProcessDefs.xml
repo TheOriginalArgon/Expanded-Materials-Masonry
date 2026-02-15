@@ -23,6 +23,11 @@
         <isRainDependingProcess>true</isRainDependingProcess>
         <messageIfRainingWarning>EM_RainIsRuiningBricks</messageIfRainingWarning>
         <messageIfRaining>EM_RainRuinedBricks</messageIfRaining>
+        <minLight>0.4</minLight>
+        <maxLight>1</maxLight>
+        <researchPrerequisites>
+            <li>EM_BasicMasonry</li>
+        </researchPrerequisites>
     </PipeSystem.ProcessDef>
 
     <PipeSystem.ProcessDef>
@@ -38,7 +43,7 @@
                 <countNeeded>100</countNeeded>
             </li>
         </ingredients>
-        <ticks>300000</ticks>
+        <ticks>120000</ticks>
         <results>
             <li>
                 <thing>EM_ClayBricks</thing>
@@ -48,6 +53,9 @@
         <isRainDependingProcess>true</isRainDependingProcess>
         <messageIfRainingWarning>EM_RainIsRuiningBricks</messageIfRainingWarning>
         <messageIfRaining>EM_RainRuinedBricks</messageIfRaining>
+        <researchPrerequisites>
+            <li>EM_BasicMasonry</li>
+        </researchPrerequisites>
     </PipeSystem.ProcessDef>
 
 </Defs>

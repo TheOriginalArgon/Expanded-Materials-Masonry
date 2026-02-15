@@ -6,14 +6,15 @@
         <description>A place for digging the ground and extracting resources.</description>
         <thingClass>Building</thingClass>
         <graphicData>
-            <texPath>Building/EM_DiggingSpot_a</texPath>
+            <texPath>Things/Building/EM_DiggingSpot_a</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(1.5, 1.5)</drawSize>
         </graphicData>
         <altitudeLayer>FloorEmplacement</altitudeLayer>
         <statBases>
-            <WorkToBuild>0</WorkToBuild>
+            <WorkToBuild>600</WorkToBuild>
         </statBases>
+        <constructEffect>ConstructDirt</constructEffect>
         <drawerType>MapMeshOnly</drawerType>
         <scatterableOnMapGen>false</scatterableOnMapGen>
         <useHitPoints>false</useHitPoints>
@@ -22,9 +23,13 @@
         <designationCategory>Production</designationCategory>
         <uiOrder>2000</uiOrder>
         <passability>PassThroughOnly</passability>
+        <pathCost>30</pathCost>
         <surfaceType>Item</surfaceType>
         <tickerType>Rare</tickerType>
         <building>
+            <deconstructible>true</deconstructible>
+            <isTargetable>false</isTargetable>
+            <isInert>true</isInert>
             <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
             <ai_chillDestination>false</ai_chillDestination>
             <buildingTags>
@@ -32,11 +37,223 @@
             </buildingTags>
         </building>
         <comps>
-            <li Class="ExpandedMaterialsMasonry.CompProperties_DiggingSpot"/>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="ExpandedMaterialsMasonry.CompProperties_DiggingSpot" />
         </comps>
+        <researchPrerequisites>
+            <li>EM_BasicMasonry</li>
+        </researchPrerequisites>
         <placeWorkers>
             <li>ExpandedMaterialsMasonry.PlaceWorker_DiggingSpot</li>
         </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>EM_ShaftDiggingRig</defName>
+        <label>shaft digging rig</label>
+        <description>A large digging rig that allows for manually mining resources from deep underground. Takes time to build.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Building/EM_ShaftDiggingRig</texPath>
+            <drawSize>(4,4)</drawSize>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.52, 0.53, 0.09)</volume>
+                <offset>(0,0,-0.43)</offset>
+            </shadowData>
+        </graphicData>
+        <size>(3,3)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.5</fillPercent>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        <designationCategory>Production</designationCategory>
+        <designationHotKey>Misc12</designationHotKey>
+        <rotatable>true</rotatable>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <uiIconOffset>(0, 0.03)</uiIconOffset>
+        <uiIconScale>0.85</uiIconScale>
+        <tickerType>Rare</tickerType>
+        <building>
+            <buildingTags>
+                <li>Production</li>
+            </buildingTags>
+            <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+        </building>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>80</costStuffCount>
+        <costList>
+            <WoodLog>120</WoodLog>
+        </costList>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>PlaceWorker_InvalidOverSubstructure</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>EM_ShaftDigging</li>
+        </researchPrerequisites>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>9000</WorkToBuild>
+            <Flammability>0.5</Flammability>
+            <Beauty>-25</Beauty>
+            <Mass>35</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="ArgonicCore.Comps.CompProperties_ResourceDigger">
+                <isAutomaticDigger>false</isAutomaticDigger>
+                <resourceTags>
+                    <li>Ground</li>
+                    <li>Stone</li>
+                </resourceTags>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>EM_AutomaticDigger</defName>
+        <label>automatic digger</label>
+        <description>An automatic machine that extract ground resources using a deep-penetrating drill. Its size limits the types of resources it can extract.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Building/EM_AutomaticDigger</texPath>
+            <drawSize>(1.5,1.5)</drawSize>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.52, 0.53, 0.09)</volume>
+                <offset>(0,0,-0.43)</offset>
+            </shadowData>
+        </graphicData>
+        <size>(1,1)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Production</designationCategory>
+        <designationHotKey>Misc12</designationHotKey>
+        <rotatable>true</rotatable>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <!-- <uiIconScale>0.85</uiIconScale> -->
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <tickerType>Rare</tickerType>
+        <building>
+            <uninstallWork>1800</uninstallWork>
+            <buildingTags>
+                <li>Production</li>
+            </buildingTags>
+            <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+        </building>
+        <thingCategories>
+            <li>BuildingsProduction</li>
+        </thingCategories>
+        <costList>
+            <Steel>80</Steel>
+            <Silver>35</Silver>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <placeWorkers>
+            <li>PlaceWorker_InvalidOverSubstructure</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>DeepDrilling</li>
+        </researchPrerequisites>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>6000</WorkToBuild>
+            <Flammability>0.5</Flammability>
+            <Beauty>-25</Beauty>
+            <Mass>35</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="ArgonicCore.Comps.CompProperties_ResourceDigger">
+                <isAutomaticDigger>true</isAutomaticDigger>
+                <resourceTags>
+                    <li>Ground</li>
+                </resourceTags>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>120</basePowerConsumption>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>EM_AutomaticDiggerLarge</defName>
+        <label>large automatic digger</label>
+        <description>An automatic machine that extract ground resources using a deep-penetrating drill.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Building/EM_AutomaticDiggerLarge</texPath>
+            <drawSize>(3,3)</drawSize>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.52, 0.53, 0.09)</volume>
+                <offset>(0,0,-0.43)</offset>
+            </shadowData>
+        </graphicData>
+        <size>(2,2)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Production</designationCategory>
+        <designationHotKey>Misc12</designationHotKey>
+        <rotatable>true</rotatable>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <tickerType>Rare</tickerType>
+        <building>
+            <buildingTags>
+                <li>Production</li>
+            </buildingTags>
+            <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+        </building>
+        <costList>
+            <Steel>220</Steel>
+            <Silver>100</Silver>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <placeWorkers>
+            <li>PlaceWorker_InvalidOverSubstructure</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>DeepDrilling</li>
+        </researchPrerequisites>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>8500</WorkToBuild>
+            <Flammability>0.5</Flammability>
+            <Beauty>-25</Beauty>
+            <Mass>35</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="ArgonicCore.Comps.CompProperties_ResourceDigger">
+                <isAutomaticDigger>true</isAutomaticDigger>
+                <resourceTags>
+                    <li>Ground</li>
+                    <li>Stone</li>
+                </resourceTags>
+                <yieldFactor>1.5</yieldFactor>
+                <speedFactor>1.25</speedFactor>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>400</basePowerConsumption>
+            </li>
+        </comps>
     </ThingDef>
 
 </Defs>

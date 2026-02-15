@@ -1,0 +1,48 @@
+<Defs>
+
+    <!-- Stone Bridges -->
+    <TerrainDef ParentName="StoneBridgeBase">
+        <defName>EM_VFEArch_BridgeShale</defName>
+        <label>shale bridge</label>
+        <color>(125,145,165)</color>
+        <uiIconPath>StoneBridge/StoneBridgeSandstone_MenuIcon</uiIconPath>
+        <costList>
+            <EM_BlocksShale>12</EM_BlocksShale>
+        </costList>
+        <bridgePropsPath>StoneBridge/StoneBridgePropsSandstone</bridgePropsPath>
+    </TerrainDef>
+
+    <TerrainDef ParentName="StoneBridgeBase">
+        <defName>EM_VFEArch_BridgeSchist</defName>
+        <label>schist bridge</label>
+        <color>(143,143,137)</color>
+        <uiIconPath>StoneBridge/StoneBridgeSandstone_MenuIcon</uiIconPath>
+        <costList>
+            <EM_BlocksSchist>12</EM_BlocksSchist>
+        </costList>
+        <bridgePropsPath>StoneBridge/StoneBridgePropsSandstone</bridgePropsPath>
+    </TerrainDef>
+
+    <TerrainDef ParentName="StoneBridgeBase">
+        <defName>EM_VFEArch_BridgeSiltstone</defName>
+        <label>siltstone bridge</label>
+        <color>(148,129,112)</color>
+        <uiIconPath>StoneBridge/StoneBridgeSandstone_MenuIcon</uiIconPath>
+        <costList>
+            <EM_BlocksSiltstone>12</EM_BlocksSiltstone>
+        </costList>
+        <bridgePropsPath>StoneBridge/StoneBridgePropsSandstone</bridgePropsPath>
+    </TerrainDef>
+
+    <TerrainDef ParentName="StoneBridgeBase">
+        <defName>EM_VFEArch_BridgeBasalt</defName>
+        <label>basalt bridge</label>
+        <color>(68,63,71)</color>
+        <uiIconPath>StoneBridge/StoneBridgeSandstone_MenuIcon</uiIconPath>
+        <costList>
+            <EM_BlocksBasalt>12</EM_BlocksBasalt>
+        </costList>
+        <bridgePropsPath>StoneBridge/StoneBridgePropsSandstone</bridgePropsPath>
+    </TerrainDef>
+
+</Defs>

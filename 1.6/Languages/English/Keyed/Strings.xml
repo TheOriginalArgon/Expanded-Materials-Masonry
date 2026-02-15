@@ -6,6 +6,7 @@
     <EM_ChooseMaterialToDig>Dig for {0}.</EM_ChooseMaterialToDig>
     <EM_ChooseResource>Choose resource</EM_ChooseResource>
     <EM_ChooseResourceDesc>Choose a material to dig for.</EM_ChooseResourceDesc>
+    <EM_CannotDeconstructDiggingSpot>This needs to be filled before it can be deconstructed.</EM_CannotDeconstructDiggingSpot>
 
     <EM_DryingSpotNotWorking>Drying spot is currently not working.</EM_DryingSpotNotWorking>
     <EM_FiringSpotNotWorking>Firing spot is currently not working.</EM_FiringSpotNotWorking>

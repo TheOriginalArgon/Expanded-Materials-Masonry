@@ -1,0 +1,20 @@
+<loadFolders>
+    <v1.6>
+        <li>/</li>
+        <li>1.6</li>
+        <li IfModActive="Ludeon.Rimworld.Royalty">ModPatches/1.6/Royalty</li>
+        <li IfModActive="Ludeon.Rimworld.Biotech">ModPatches/1.6/Biotech</li>
+        <li IfModActive="Ludeon.Rimworld.Ideology">ModPatches/1.6/Ideology</li>
+        <li IfModActive="vanillaexpanded.vfearchitect">ModPatches/1.6/VFE_Architect</li>
+        <li IfModActive="argon.expandedmaterials.metals">ModPatches/1.6/EM_Metals</li>
+        <li IfModActive="rebuild.cotr.doorsandcorners">ModPatches/1.6/ReBuild_Doors</li>
+        <li IfModActive="oskarpotocki.vfe.classical">ModPatches/1.6/VFE_Classical</li>
+        <!-- <li IfModActive="oskarpotocki.vfe.pirates">ModPatches/1.6/VFE_Pirates</li>
+        <li IfModActive="vanillaexpanded.vfecore">ModPatches/1.6/VFE_Core</li>
+        <li IfModActive="vanillaexpanded.vfepower">ModPatches/1.6/VFE_Power</li>
+        <li IfModActive="oskarpotocki.vfe.deserters">ModPatches/1.6/VFE_Deserters</li>
+        <li IfModActive="vanillaexpanded.vgeneticse">ModPatches/1.6/VE_Genetics</li>
+        <li IfModActive="vanillaexpanded.vchemfuele">ModPatches/1.6/VE_Chemfuel</li>
+        <li IfModActive="vanillaexpanded.helixiengas">ModPatches/1.6/VE_HelixienGas</li> -->
+    </v1.6>
+</loadFolders>

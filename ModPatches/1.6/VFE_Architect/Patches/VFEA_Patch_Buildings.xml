@@ -1,0 +1,22 @@
+<Patch>
+
+    <!-- ================================ CONCRETE PATCHES ================================ -->
+
+    <!-- Replace steel with concrete -->
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>VFE - Architect foundations require cement and less steel:</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef [
+                    defName="VFEArch_ConcreteFoundation"
+                    ]/costList/Steel</xpath>
+                <value>
+                    <Steel>1</Steel>
+                    <EM_CementMix>4</EM_CementMix>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

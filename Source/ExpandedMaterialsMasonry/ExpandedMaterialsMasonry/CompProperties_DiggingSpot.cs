@@ -24,30 +24,33 @@ namespace ExpandedMaterialsMasonry
         }
     }
 
+    [StaticConstructorOnStartup]
     public class CompDiggingSpot : ThingComp
     {
-        public static readonly Material DiggingSpot_Top = MaterialPool.MatFrom("Building/EM_DiggingSpot_a");
-        public static readonly Material DiggingSpot_Mid = MaterialPool.MatFrom("Building/EM_DiggingSpot_b");
-        public static readonly Material DiggingSpot_Deep = MaterialPool.MatFrom("Building/EM_DiggingSpot_c");
+        public static readonly Material DiggingSpot_Top = MaterialPool.MatFrom("Things/Building/EM_DiggingSpot_a");
+        public static readonly Material DiggingSpot_Mid = MaterialPool.MatFrom("Things/Building/EM_DiggingSpot_b");
+        public static readonly Material DiggingSpot_Deep = MaterialPool.MatFrom("Things/Building/EM_DiggingSpot_c");
 
         public List<ThingDefCountClass> resourcesSurface;
         public List<ThingDefCountClass> resourcesMid;
         public List<ThingDefCountClass> resourcesDeep;
         public List<ThingDef> pollutedResources;
 
-        private int progress;
-        private bool exhausted = false;
+        private int portionsLeft = 30;
+        private int progressToRegenPortion;
         private DiggingSpotState State
         {
             get
             {
-                if (progress > 500) { return DiggingSpotState.Deep; }
-                if (progress > 200) { return DiggingSpotState.Mid; }
+                if (portionsLeft <= 6) { return DiggingSpotState.Deep; }
+                if (portionsLeft <= 18) { return DiggingSpotState.Mid; }
                 else { return DiggingSpotState.Top; }
             }
         }
 
         private bool IsPolluted => parent.Map.pollutionGrid.IsPolluted(parent.Position);
+
+        public bool CanBeDeconstructed => portionsLeft == 30;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -71,8 +74,10 @@ namespace ExpandedMaterialsMasonry
             if (parent.Spawned)
             {
                 var sb = new StringBuilder();
-                sb.Append("Progress: ").Append(progress).AppendLine()
-                  .Append("Layer: ").Append(State.ToString());
+                sb.Append("Portions left: ").Append(portionsLeft).AppendLine()
+                  .Append("Portion regeneration: ").Append((progressToRegenPortion / 240f).ToStringPercent()).AppendLine()
+                  .Append("Layer: ").Append(State.ToString()).AppendLine()
+                  .Append(InspectStringResources());
                 if (IsPolluted)
                 {
                     sb.Append("Terrain is polluted.");
@@ -82,69 +87,56 @@ namespace ExpandedMaterialsMasonry
             return null;
         }
 
+        private string InspectStringResources()
+        {
+            List<ThingDefCountClass> list = GetCurrentLayerYields();
+            var sb = new StringBuilder();
+            sb.Append("Yields: ");
+            for (int i = 0; i < list.Count; i++)
+            {
+                sb.Append(list[i].thingDef.label.CapitalizeFirst());
+                if (i < list.Count - 1)
+                {
+                    sb.Append(", ");
+                }
+            }
+            return sb.ToString();
+        }
+
         public override void PostExposeData()
         {
-            Scribe_Values.Look(ref progress, "progress", 0, true);
+            Scribe_Values.Look(ref portionsLeft, "portionsLeft", 0, true);
+            Scribe_Values.Look(ref progressToRegenPortion, "progressToRegenPortion", 0, true);
         }
 
         public bool CanDig()
         {
-            if (exhausted)
+            if (portionsLeft <= 0)
             {
                 return false;
             }
             return true;
         }
 
-        //public override IEnumerable<Gizmo> CompGetGizmosExtra()
-        //{
-        //    foreach (Gizmo item in base.CompGetGizmosExtra()) { yield return item; }
-        //    yield return DiggingSpotUtility.SetDiggingResource(this, parent.Map);
-        //}
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            foreach (Gizmo item in base.CompGetGizmosExtra()) { yield return item; }
+        }
 
         public override void CompTickRare()
         {
-            if (exhausted)
-            {
-                int num = 0;
-                if (parent.Map.weatherManager.RainRate > 0) { num = 5; }
-                progress -= 5 + num;
-                if (progress < 200)
-                {
-                    exhausted = false;
-                }
-            }
-            else
-            {
-                if (progress > 600)
-                {
-                    exhausted = true;
-                }
-            }
-
             parent.DirtyMapMesh(parent.MapHeld);
+            if (portionsLeft >= 30)
+            {
+                return;
+            }
+            progressToRegenPortion++;
+            if (progressToRegenPortion >= 240)
+            {
+                progressToRegenPortion = 0;
+                portionsLeft++;
+            }
         }
-
-        //public override void PostDraw()
-        //{
-        //    //base.PostDraw();
-        //    Material mat = parent.Graphic.MatSingle;
-        //    Texture2D tex = null;
-        //    switch (State)
-        //    {
-        //        case DiggingSpotState.Deep:
-        //            tex = ContentFinder<Texture2D>.Get("Building/EM_DiggingSpot_c");
-        //            break;
-        //        case DiggingSpotState.Mid:
-        //            tex = ContentFinder<Texture2D>.Get("Building/EM_DiggingSpot_b");
-        //            break;
-        //        case DiggingSpotState.Top:
-        //            tex = ContentFinder<Texture2D>.Get("Building/EM_DiggingSpot_a");
-        //            break;
-        //    }
-
-        //    mat.SetTexture("_MainTex", tex);
-        //}
 
         public override void PostPrintOnto(SectionLayer layer)
         {
@@ -206,8 +198,8 @@ namespace ExpandedMaterialsMasonry
                 Thing res = ProcessYield(t.thingDef);
                 res.stackCount = stackCount;
                 GenPlace.TryPlaceThing(res, parent.InteractionCell, parent.Map, ThingPlaceMode.Near, null, (IntVec3 p) => p != parent.Position && p != parent.InteractionCell);
-                progress += baseAmount + (extraDrop / 2);
             }
+            portionsLeft--;
         }
     }
 }

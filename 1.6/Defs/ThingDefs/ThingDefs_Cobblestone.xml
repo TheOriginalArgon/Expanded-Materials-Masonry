@@ -1,0 +1,721 @@
+<Defs>
+
+    <ThingDef ParentName="ResourceBase" Name="EM_CobblestoneBase" Abstract="True">
+        <description>Roughly hewn stone. Mostly useful for building long-lasting, simple structures.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/EM_Cobblestone</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Stone_Drop</soundInteract>
+        <soundDrop>Stone_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <tradeability>Buyable</tradeability>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <MarketValue>0.7</MarketValue>
+            <Beauty>-15</Beauty>
+            <ConstructionSpeedFactor>0.6</ConstructionSpeedFactor>
+        </statBases>
+        <thingCategories>
+            <li>EM_Cobblestone</li>
+        </thingCategories>
+        <burnableByRecipe>false</burnableByRecipe>
+        <minRewardCount>10</minRewardCount>
+        <stuffProps>
+            <categories>
+                <li>EM_Cobblestony</li>
+            </categories>
+            <commonality>0.20</commonality> <!-- because there are so many stone types -->
+            <appearance>EM_Cobblestone</appearance>
+            <statOffsets>
+                <WorkToBuild>160</WorkToBuild>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.7</MaxHitPoints>
+                <Flammability>0</Flammability>
+                <WorkToBuild>6.5</WorkToBuild>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <allowedArchonexusCount>100</allowedArchonexusCount>
+    </ThingDef>
+
+    <!-- ================ Sandstone ================ -->
+
+    <ThingDef ParentName="EM_CobblestoneBase">
+        <defName>EM_CobblestoneSandstone</defName>
+        <label>sandstone cobblestone</label>
+        <description>Roughly hewn sandstone. Sandstone is a relatively soft rock and chips easily.</description>
+        <graphicData>
+            <color>(126,104,94)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1</Mass>
+        </statBases>
+        <stuffProps>
+            <color>(126,104,94)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+            <stuffAdjective>sandstone cobblestone</stuffAdjective>
+            <statFactors>
+                <Beauty>1.1</Beauty>
+                <MaxHitPoints>1.4</MaxHitPoints>
+                <WorkToBuild>5.5</WorkToBuild>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneSandstone</defName>
+        <label>make sandstone cobblestone</label>
+        <description>Smashes sandstone chunks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ChunkSandstone</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ChunkSandstone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneSandstone>30</EM_CobblestoneSandstone>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneSandstone_Blocks</defName>
+        <label>make sandstone cobblestone from blocks</label>
+        <description>Smashes sandstone blocks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BlocksSandstone</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BlocksSandstone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneSandstone>30</EM_CobblestoneSandstone>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Granite ================ -->
+
+    <ThingDef ParentName="EM_CobblestoneBase">
+        <defName>EM_CobblestoneGranite</defName>
+        <label>granite cobblestone</label>
+        <description>Roughly hewn granite. Granite is a very hard stone and is difficult to chip.</description>
+        <graphicData>
+            <color>(105,95,97)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1.25</Mass>
+        </statBases>
+        <stuffProps>
+            <color>(105,95,97)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+            <stuffAdjective>granite cobblestone</stuffAdjective>
+            <statFactors>
+                <MaxHitPoints>1.7</MaxHitPoints>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneGranite</defName>
+        <label>make granite cobblestone</label>
+        <description>Smashes granite chunks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ChunkGranite</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ChunkGranite</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneGranite>30</EM_CobblestoneGranite>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneGranite_Blocks</defName>
+        <label>make granite cobblestone from blocks</label>
+        <description>Smashes granite blocks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BlocksGranite</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BlocksGranite</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneGranite>30</EM_CobblestoneGranite>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Limestone ================ -->
+
+    <ThingDef ParentName="EM_CobblestoneBase">
+        <defName>EM_CobblestoneLimestone</defName>
+        <label>limestone cobblestone</label>
+        <description>Roughly hewn limestone. Limestone is a sedimentary rock formed from the remains of ancient seashells.</description>
+        <graphicData>
+            <color>(158,153,135)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1.1</Mass>
+        </statBases>
+        <stuffProps>
+            <color>(158,153,135)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+            <stuffAdjective>limestone cobblestone</stuffAdjective>
+            <statFactors>
+                <MaxHitPoints>1.55</MaxHitPoints>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneLimestone</defName>
+        <label>make limestone cobblestone</label>
+        <description>Cuts limestone chunks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ChunkLimestone</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ChunkLimestone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneLimestone>30</EM_CobblestoneLimestone>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneLimestone_Blocks</defName>
+        <label>make limestone cobblestone from blocks</label>
+        <description>Smashes limestone blocks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BlocksLimestone</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BlocksLimestone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneLimestone>30</EM_CobblestoneLimestone>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Slate ================ -->
+
+    <ThingDef ParentName="EM_CobblestoneBase">
+        <defName>EM_CobblestoneSlate</defName>
+        <label>slate cobblestone</label>
+        <description>Roughly hewn slate. Slate is a fine-grained metamorphic rock that can be split into thin layers.</description>
+        <graphicData>
+            <color>(70,70,70)</color>
+        </graphicData>
+        <statBases>
+            <Mass>0.9</Mass>
+        </statBases>
+        <stuffProps>
+            <color>(70,70,70)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+            <stuffAdjective>slate cobblestone</stuffAdjective>
+            <statFactors>
+                <Beauty>1.1</Beauty>
+                <MaxHitPoints>1.3</MaxHitPoints>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneSlate</defName>
+        <label>make slate cobblestone</label>
+        <description>Cuts slate chunks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ChunkSlate</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ChunkSlate</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneSlate>30</EM_CobblestoneSlate>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneSlate_Blocks</defName>
+        <label>make slate cobblestone from blocks</label>
+        <description>Smashes slate blocks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BlocksSlate</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BlocksSlate</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneSlate>30</EM_CobblestoneSlate>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Marble ================ -->
+
+    <ThingDef ParentName="EM_CobblestoneBase">
+        <defName>EM_CobblestoneMarble</defName>
+        <label>marble cobblestone</label>
+        <description>Roughly hewn marble. Marble is a metamorphic rock that is highly valued for its beauty and is often used in sculpture and architecture.</description>
+        <graphicData>
+            <color>(132,135,132)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1.25</Mass>
+        </statBases>
+        <stuffProps>
+            <color>(132,135,132)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+            <stuffAdjective>marble cobblestone</stuffAdjective>
+            <statFactors>
+                <Beauty>1.35</Beauty>
+                <MaxHitPoints>1.2</MaxHitPoints>
+                <WorkToBuild>6.0</WorkToBuild>
+            </statFactors>
+            <statOffsets>
+                <Beauty>1</Beauty>
+            </statOffsets>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneMarble</defName>
+        <label>make marble cobblestone</label>
+        <description>Cuts marble chunks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ChunkMarble</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ChunkMarble</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneMarble>30</EM_CobblestoneMarble>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneMarble_Blocks</defName>
+        <label>make marble cobblestone from blocks</label>
+        <description>Smashes marble blocks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BlocksMarble</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BlocksMarble</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneMarble>30</EM_CobblestoneMarble>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Shale ================ -->
+
+    <ThingDef ParentName="EM_CobblestoneBase">
+        <defName>EM_CobblestoneShale</defName>
+        <label>shale cobblestone</label>
+        <description>Roughly hewn shale. Shale is a fine-grained sedimentary rock with a distinct blue hue.</description>
+        <graphicData>
+            <color>(125,145,165)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1.1</Mass>
+        </statBases>
+        <stuffProps>
+            <color>(125,145,165)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+            <stuffAdjective>shale cobblestone</stuffAdjective>
+            <statFactors>
+                <Beauty>1.15</Beauty>
+                <MaxHitPoints>1.45</MaxHitPoints>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneShale</defName>
+        <label>make shale cobblestone</label>
+        <description>Cuts shale chunks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_ChunkShale</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_ChunkShale</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneShale>30</EM_CobblestoneShale>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneShale_Blocks</defName>
+        <label>make shale cobblestone from blocks</label>
+        <description>Smashes shale blocks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_BlocksShale</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_BlocksShale</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneShale>30</EM_CobblestoneShale>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Siltstone ================ -->
+
+    <ThingDef ParentName="EM_CobblestoneBase">
+        <defName>EM_CobblestoneSiltstone</defName>
+        <label>siltstone cobblestone</label>
+        <description>Roughly hewn siltstone. Siltstone is a clay-colored, grainy sedimentary rock.</description>
+        <graphicData>
+            <color>(148,129,112)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1</Mass>
+        </statBases>
+        <stuffProps>
+            <color>(148,129,112)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+            <stuffAdjective>siltstone cobblestone</stuffAdjective>
+            <statFactors>
+                <MaxHitPoints>1.3</MaxHitPoints>
+                <WorkToBuild>5.5</WorkToBuild>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneSiltstone</defName>
+        <label>make siltstone cobblestone</label>
+        <description>Cuts siltstone chunks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_ChunkSiltstone</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_ChunkSiltstone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneSiltstone>30</EM_CobblestoneSiltstone>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneSiltstone_Blocks</defName>
+        <label>make siltstone cobblestone from blocks</label>
+        <description>Smashes siltstone blocks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_BlocksSiltstone</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_BlocksSiltstone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneSiltstone>30</EM_CobblestoneSiltstone>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Schist ================ -->
+
+    <ThingDef ParentName="EM_CobblestoneBase">
+        <defName>EM_CobblestoneSchist</defName>
+        <label>schist cobblestone</label>
+        <description>Roughly hewn schist. Schist is a medium-grade metamorphic rock.</description>
+        <graphicData>
+            <color>(194,207,202)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1.25</Mass>
+        </statBases>
+        <stuffProps>
+            <color>(194,207,202)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+            <stuffAdjective>schist cobblestone</stuffAdjective>
+            <statFactors>
+                <MaxHitPoints>1.3</MaxHitPoints>
+                <WorkToBuild>6</WorkToBuild>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneSchist</defName>
+        <label>make schist cobblestone</label>
+        <description>Cuts schist chunks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_ChunkSchist</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_ChunkSchist</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneSchist>30</EM_CobblestoneSchist>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneSchist_Blocks</defName>
+        <label>make schist cobblestone from blocks</label>
+        <description>Smashes schist blocks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_BlocksSchist</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_BlocksSchist</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneSchist>30</EM_CobblestoneSchist>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Basalt ================ -->
+
+    <ThingDef ParentName="EM_CobblestoneBase">
+        <defName>EM_CobblestoneBasalt</defName>
+        <label>basalt cobblestone</label>
+        <description>Roughly hewn basalt. Basalt is a dark, hardigneous rock.</description>
+        <graphicData>
+            <color>(68,63,71)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1.25</Mass>
+        </statBases>
+        <stuffProps>
+            <color>(68,63,71)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+            <stuffAdjective>basalt cobblestone</stuffAdjective>
+            <statFactors>
+                <MaxHitPoints>1.6</MaxHitPoints>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneBasalt</defName>
+        <label>make basalt cobblestone</label>
+        <description>Cuts basalt chunks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_ChunkBasalt</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_ChunkBasalt</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneBasalt>30</EM_CobblestoneBasalt>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneBasalt_Blocks</defName>
+        <label>make basalt cobblestone from blocks</label>
+        <description>Smashes basalt blocks into usable cobblestone.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_BlocksBasalt</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_BlocksBasalt</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_CobblestoneBasalt>30</EM_CobblestoneBasalt>
+        </products>
+    </RecipeDef>
+
+</Defs>

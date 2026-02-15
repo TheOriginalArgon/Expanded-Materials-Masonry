@@ -1,0 +1,11 @@
+<Defs>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_ConcreteWithVEConcrete</defName>
+        <materialToReplace>EM_CementMix</materialToReplace>
+        <replaceWith>VFEC_BlocksConcrete</replaceWith>
+        <maxTechLevel>Industrial</maxTechLevel>
+        <costModifier>1.75</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+</Defs>

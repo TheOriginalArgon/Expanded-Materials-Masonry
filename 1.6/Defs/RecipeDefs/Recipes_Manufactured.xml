@@ -16,14 +16,6 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>EM_Sand</li>
-                    </thingDefs>
-                </filter>
-                <count>15</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
                         <li>EM_CementMix</li>
                     </thingDefs>
                 </filter>
@@ -41,6 +33,9 @@
         </products>
         <!-- <workSkill>Crafting</workSkill> --> <!-- I don't know if this is needed specifically -->
         <!-- <displayPriority>0</displayPriority> -->
+         <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
     </RecipeDef>
 
 </Defs>

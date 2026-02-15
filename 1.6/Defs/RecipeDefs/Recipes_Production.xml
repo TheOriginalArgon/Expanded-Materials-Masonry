@@ -1,0 +1,49 @@
+<Defs>
+
+    <RecipeDef Name="EM_MakeCobblestoneBase" Abstract="True">
+        <workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+        <jobString>Making cobblestone from chunk.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>CutStone</effectWorking>
+        <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+        <targetCountAdjustment>20</targetCountAdjustment>
+        <workSkill>Crafting</workSkill>
+        <workSkillLearnFactor>0</workSkillLearnFactor>
+        <recipeUsers>
+            <li>TableStonecutter</li>
+            <li>CraftingSpot</li>
+        </recipeUsers>
+        <workAmount>850</workAmount>
+    </RecipeDef>
+
+    <RecipeDef ParentName="EM_MakeCobblestoneBase">
+        <defName>EM_Make_CobblestoneAny</defName>
+        <label>make any cobblestone</label>
+        <description>Smash rock chunks into usable cobblestone.</description>
+        <workAmount>800</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_SpecialProducts">
+                <usesEfficiency>false</usesEfficiency>
+                <specialProductKeys>
+                    <li>EM_SpecialProducts_Cobblestone</li>
+                </specialProductKeys>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+</Defs>

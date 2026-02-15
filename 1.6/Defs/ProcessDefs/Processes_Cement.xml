@@ -1,0 +1,293 @@
+<Defs>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_CementRecipe_Limestone</defName>
+        <label>Make cement (limestone)</label>
+        <description>Turns 1 limestone chunk and 20 sand into 30 cement.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 30 cement from 1 limestone chunk and 20 sand</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>ChunkLimestone</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_CementMix</thing>
+                <count>30</count>
+            </li>
+        </results>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_CementRecipe_Marble</defName>
+        <label>Make cement (marble)</label>
+        <description>Turns 1 marble chunk and 20 sand into 30 cement.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 30 cement from 1 marble chunk and 20 sand</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>ChunkMarble</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_CementMix</thing>
+                <count>30</count>
+            </li>
+        </results>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_CementRecipe_Shale</defName>
+        <label>Make cement (shale)</label>
+        <description>Turns 1 shale chunk and 20 sand into 30 cement.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 30 cement from 1 shale chunk and 20 sand</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>EM_ChunkShale</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_CementMix</thing>
+                <count>30</count>
+            </li>
+        </results>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_CementRecipe_Siltstone</defName>
+        <label>Make cement (siltstone)</label>
+        <description>Turns 1 siltstone chunk and 20 sand into 20 cement.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 20 cement from 1 siltstone chunk and 20 sand</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>EM_ChunkSiltstone</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_CementMix</thing>
+                <count>20</count>
+            </li>
+        </results>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_CementRecipe_Slate</defName>
+        <label>Make cement (slate)</label>
+        <description>Turns 1 slate chunk and 20 sand into 20 cement.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 20 cement from 1 slate chunk and 20 sand</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>ChunkSlate</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_CementMix</thing>
+                <count>20</count>
+            </li>
+        </results>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_CementRecipe_Sandstone</defName>
+        <label>Make cement (sandstone)</label>
+        <description>Turns 1 sandstone chunk and 20 sand into 20 cement.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 20 cement from 1 sandstone chunk and 20 sand</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>ChunkSandstone</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_CementMix</thing>
+                <count>20</count>
+            </li>
+        </results>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_CementRecipe_Basalt</defName>
+        <label>Make cement (basalt)</label>
+        <description>Turns 1 basalt chunk and 20 sand into 10 cement.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 10 cement from 1 basalt chunk and 20 sand</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>EM_ChunkBasalt</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_CementMix</thing>
+                <count>10</count>
+            </li>
+        </results>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_CementRecipe_Schist</defName>
+        <label>Make cement (schist)</label>
+        <description>Turns 1 schist chunk and 20 sand into 10 cement.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 10 cement from 1 schist chunk and 20 sand</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>EM_ChunkSchist</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_CementMix</thing>
+                <count>10</count>
+            </li>
+        </results>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_CementRecipe_Granite</defName>
+        <label>Make cement (granite)</label>
+        <description>Turns 1 granite chunk and 20 sand into 10 cement.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 10 cement from 1 granite chunk and 20 sand</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>ChunkGranite</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_CementMix</thing>
+                <count>10</count>
+            </li>
+        </results>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_CementRecipe_Ash</defName>
+        <label>Make cement (ash)</label>
+        <description>Turns 50 ash and 20 sand into 10 cement.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <labelOverride>Make 10 cement from 50 ash and 20 sand</labelOverride>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>EM_Ash</thing>
+                <countNeeded>50</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>45000</ticks>
+        <results>
+            <li>
+                <thing>EM_CementMix</thing>
+                <count>10</count>
+            </li>
+        </results>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+</Defs>

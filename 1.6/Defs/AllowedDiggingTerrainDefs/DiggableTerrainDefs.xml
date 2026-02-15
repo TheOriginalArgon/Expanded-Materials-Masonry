@@ -8,11 +8,11 @@
          <EM_Soil>12</EM_Soil>
       </surfaceLayerYields>
       <midLayerYields>
-         <EM_Soil>6</EM_Soil>
-         <EM_Sand>6</EM_Sand>
+         <EM_Soil>3</EM_Soil>
+         <EM_Sand>3</EM_Sand>
       </midLayerYields>
       <deepLayerYields>
-         <EM_Sand>8</EM_Sand>
+         <EM_Sand>4</EM_Sand>
       </deepLayerYields>
       <pollutedYields>
          <li>EM_Ash</li>
@@ -23,13 +23,13 @@
       <defName>EM_DiggableRichSoil</defName>
       <terrain>SoilRich</terrain>
       <surfaceLayerYields>
-         <EM_Soil>16</EM_Soil>
+         <EM_Soil>4</EM_Soil>
       </surfaceLayerYields>
       <midLayerYields>
-         <EM_Soil>18</EM_Soil>
+         <EM_Soil>6</EM_Soil>
       </midLayerYields>
       <deepLayerYields>
-         <EM_Clay>8</EM_Clay>
+         <EM_Clay>4</EM_Clay>
          <EM_Sand>4</EM_Sand>
       </deepLayerYields>
       <pollutedYields>
@@ -41,14 +41,14 @@
       <defName>EM_DiggableSand</defName>
       <terrain>Sand</terrain>
       <surfaceLayerYields>
-         <EM_Sand>16</EM_Sand>
+         <EM_Sand>4</EM_Sand>
       </surfaceLayerYields>
       <midLayerYields>
-         <EM_Sand>18</EM_Sand>
+         <EM_Sand>6</EM_Sand>
       </midLayerYields>
       <deepLayerYields>
-         <EM_Sand>12</EM_Sand>
-         <EM_Soil>6</EM_Soil>
+         <EM_Sand>5</EM_Sand>
+         <EM_Soil>2</EM_Soil>
       </deepLayerYields>
       <pollutedYields>
          <li>EM_Ash</li>
@@ -59,15 +59,15 @@
       <defName>EM_DiggableSoftSand</defName>
       <terrain>SoftSand</terrain>
       <surfaceLayerYields>
-         <EM_Sand>22</EM_Sand>
+         <EM_Sand>6</EM_Sand>
       </surfaceLayerYields>
       <midLayerYields>
-         <EM_Sand>12</EM_Sand>
-         <EM_Soil>10</EM_Soil>
+         <EM_Sand>4</EM_Sand>
+         <EM_Soil>3</EM_Soil>
       </midLayerYields>
       <deepLayerYields>
-         <EM_Sand>12</EM_Sand>
-         <EM_Clay>6</EM_Clay>
+         <EM_Sand>6</EM_Sand>
+         <EM_Clay>3</EM_Clay>
       </deepLayerYields>
       <pollutedYields>
          <li>EM_Ash</li>
@@ -78,15 +78,15 @@
       <defName>EM_DiggableGravel</defName>
       <terrain>Gravel</terrain>
       <surfaceLayerYields>
-         <EM_Sand>11</EM_Sand>
-         <EM_Soil>11</EM_Soil>
+         <EM_Sand>4</EM_Sand>
+         <EM_Soil>4</EM_Soil>
       </surfaceLayerYields>
       <midLayerYields>
-         <EM_Sand>18</EM_Sand>
+         <EM_Sand>4</EM_Sand>
       </midLayerYields>
       <deepLayerYields>
-         <EM_Sand>12</EM_Sand>
-         <EM_Soil>6</EM_Soil>
+         <EM_Sand>4</EM_Sand>
+         <EM_Soil>4</EM_Soil>
       </deepLayerYields>
       <pollutedYields>
          <li>EM_Ash</li>

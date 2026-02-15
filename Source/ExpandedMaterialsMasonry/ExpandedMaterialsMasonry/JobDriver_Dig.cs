@@ -21,6 +21,7 @@ namespace ExpandedMaterialsMasonry
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
             this.FailOnBurningImmobile(TargetIndex.A);
             this.FailOnThingHavingDesignation(TargetIndex.A, DesignationDefOf.Uninstall);
+            this.FailOn(() => !job.targetA.Thing.TryGetComp<CompDiggingSpot>().CanDig());
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
             Toil work = ToilMaker.MakeToil("MakeNewToils");
             work.tickAction = delegate
@@ -28,7 +29,7 @@ namespace ExpandedMaterialsMasonry
                 pawn?.skills?.Learn(SkillDefOf.Mining, 0.015f);
             };
             work.defaultCompleteMode = ToilCompleteMode.Delay;
-            // <-- HERE GOES POSSIBLE EFFECT.
+            work.WithEffect(EffecterDefOf.ConstructDirt, TargetIndex.A);
             work.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
             work.FailOnDespawnedNullOrForbidden(TargetIndex.A);
             work.activeSkill = () => SkillDefOf.Mining;

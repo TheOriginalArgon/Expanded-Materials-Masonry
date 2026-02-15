@@ -1,0 +1,74 @@
+<Patch>
+
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>VFE - Classical concrete recipe rework:</label>
+        <operations>
+
+            <!-- Rework Recipe -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEC_PressConcrete"]/ingredients</xpath>
+                <value>
+                    <ingredients>
+                        <li>
+                            <thing>EM_Sand</thing>
+                            <countNeeded>40</countNeeded>
+                        </li>
+                        <li>
+                            <thingCategory>EM_Cobblestone</thingCategory>
+                            <countNeeded>20</countNeeded>
+                        </li>
+                    </ingredients>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEC_PressConcrete"]/ticks</xpath>
+                <value>
+                    <ticks>160000</ticks>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEC_PressConcrete"]/results/li/count</xpath>
+                <value>
+                    <count>50</count>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEC_PressConcrete"]/label</xpath>
+                <value>
+                    <label>Press sand and cobblestone into concrete</label>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEC_PressConcrete"]/labelOverride</xpath>
+                <value>
+                    <labelOverride>Press 40 sand and 20 cobblestone into 50 concrete</labelOverride>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEC_PressConcrete"]/description</xpath>
+                <value>
+                    <description>Turns 40 sand and 20 cobblestone into 50 concrete.</description>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+
+    <!-- Rework Cement -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VFEC_BlocksConcrete"]/label</xpath>
+        <value>
+            <label>ancient cement blocks</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VFEC_BlocksConcrete"]/description</xpath>
+        <value>
+            <description>Sturdy, utilitarian concrete blocks for crafting any sort of infrastructure. While the recipe is ancient and the final product is not as durable and versatile as its modern counterpart, it is a clear improvement over weaker materials such as slate or sandstone.</description>
+        </value>
+    </Operation>
+
+
+</Patch>

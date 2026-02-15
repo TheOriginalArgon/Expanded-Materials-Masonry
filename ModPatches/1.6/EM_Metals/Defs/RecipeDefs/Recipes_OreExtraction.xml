@@ -1,0 +1,38 @@
+<Defs>
+
+    <RecipeDef>
+        <defName>EM_ExtractSiliconFromSand</defName>
+        <label>extract silicon from sand</label>
+        <description>Smelt large amounts of sand to extract small traces of silicon.</description>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <jobString>Smelting ore from rocks.</jobString>
+        <workAmount>7000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workSkill>Crafting</workSkill>
+        <workSkillLearnFactor>0</workSkillLearnFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Sand</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <products>
+            <EM_Silicon>1</EM_Silicon>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Sand</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>EM_OreExtraction</researchPrerequisite>
+    </RecipeDef>
+
+</Defs>

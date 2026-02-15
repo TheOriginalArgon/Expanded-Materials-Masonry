@@ -46,6 +46,7 @@
     <Compile Include="CompProperties_DiggingSpot.cs" />
     <Compile Include="DiggableTerrainDef.cs" />
     <Compile Include="DiggingSpotUtility.cs" />
+    <Compile Include="HarmonyPatches.cs" />
     <Compile Include="JobDriver_Dig.cs" />
     <Compile Include="PlaceWorker_DiggingSpot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

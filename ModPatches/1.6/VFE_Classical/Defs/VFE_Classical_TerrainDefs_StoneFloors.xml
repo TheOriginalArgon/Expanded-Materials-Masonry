@@ -1,0 +1,39 @@
+<Defs>
+
+    <TerrainDef ParentName="VFEC_MosaicsStoneBase">
+        <defName>EM_VFEC_MosaicsSchist</defName>
+        <label>schist mosaics</label>
+        <color>(194,207,202)</color>
+        <costList>
+            <EM_BlocksSchist>10</EM_BlocksSchist>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="VFEC_MosaicsStoneBase">
+        <defName>EM_VFEC_MosaicsBasalt</defName>
+        <label>basalt mosaics</label>
+        <color>(68,63,71)</color>
+        <costList>
+            <EM_BlocksBasalt>10</EM_BlocksBasalt>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="VFEC_MosaicsStoneBase">
+        <defName>EM_VFEC_MosaicsSiltstone</defName>
+        <label>siltstone mosaics</label>
+        <color>(148,129,112)</color>
+        <costList>
+            <EM_BlocksSiltstone>10</EM_BlocksSiltstone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="VFEC_MosaicsStoneBase">
+        <defName>EM_VFEC_MosaicsShale</defName>
+        <label>shale mosaics</label>
+        <color>(125,145,165)</color>
+        <costList>
+            <EM_BlocksShale>10</EM_BlocksShale>
+        </costList>
+    </TerrainDef>
+
+</Defs>

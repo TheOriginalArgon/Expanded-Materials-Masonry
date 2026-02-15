@@ -19,6 +19,15 @@
       <li>ResourcesRaw</li>
     </thingCategories>
     <allowedArchonexusCount>80</allowedArchonexusCount>
+    <modExtensions>
+      <li Class="ArgonicCore.ModExtensions.ThingDefExtension_DiggableResource">
+        <minimumPortion>20</minimumPortion>
+        <difficultyFactor>0.5</difficultyFactor>
+        <resourceTags>
+          <li>Ground</li>
+        </resourceTags>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
@@ -59,6 +68,15 @@
       <li>ResourcesRaw</li>
     </thingCategories>
     <allowedArchonexusCount>80</allowedArchonexusCount>
+    <modExtensions>
+      <li Class="ArgonicCore.ModExtensions.ThingDefExtension_DiggableResource">
+        <minimumPortion>20</minimumPortion>
+        <difficultyFactor>0.8</difficultyFactor>
+        <resourceTags>
+          <li>Ground</li>
+        </resourceTags>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
@@ -79,12 +97,21 @@
       <li>ResourcesRaw</li>
     </thingCategories>
     <allowedArchonexusCount>80</allowedArchonexusCount>
+    <modExtensions>
+      <li Class="ArgonicCore.ModExtensions.ThingDefExtension_DiggableResource">
+        <minimumPortion>20</minimumPortion>
+        <difficultyFactor>0.7</difficultyFactor>
+        <resourceTags>
+          <li>Ground</li>
+        </resourceTags>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- Manufactured -->
   <ThingDef ParentName="ResourceBase">
     <defName>EM_CementMix</defName>
-    <label>cement mix</label>
+    <label>concrete mix</label>
     <description>A compound mixture of sand and cement powder obtained from cooking rocks at high temperatures.</description>
     <graphicData>
       <texPath>Things/Item/Resource/EM_CementMix</texPath>
@@ -151,8 +178,8 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>EM_CementBricks</defName>
-    <label>cement bricks</label>
-    <description>Large bricks made of cement. Their shape and size make building walls with them extremely fast compared to other materials. However, cement bricks are weak if not coated, and quite ugly too.</description>
+    <label>concrete bricks</label>
+    <description>Large bricks made of concrete. Their shape and size make building walls with them extremely fast compared to other materials. However, concrete bricks are weak if not coated, and quite ugly too.</description>
     <graphicData>
       <texPath>Things/Item/Resource/EM_CementBricks</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

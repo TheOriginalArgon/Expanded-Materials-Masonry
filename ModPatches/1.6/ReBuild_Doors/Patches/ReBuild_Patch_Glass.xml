@@ -1,0 +1,62 @@
+<Patch>
+
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>ReBuild: Doors and Corners glass uses sand instead:</label>
+        <operations>
+
+            <!-- Glass -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef [defName="RB_Make_GlassFromChunks"]/ingredients</xpath>
+                <value>
+                    <ingredients>
+                        <li>
+                            <filter>
+                                <thingDefs>
+                                    <li>EM_Sand</li>
+                                </thingDefs>
+                            </filter>
+                            <count>40</count>
+                        </li>
+                    </ingredients>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef [defName="RB_Make_GlassFromChunks"]/fixedIngredientFilter</xpath>
+                <value>
+                    <fixedIngredientFilter>
+                        <thingDefs>
+                            <li>EM_Sand</li>
+                        </thingDefs>
+                    </fixedIngredientFilter>
+                </value>
+            </li>
+
+            <!-- Ballistic Glass -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef [defName="RB_Make_BallisticGlassFromChunks"]/ingredients/li [filter/categories]</xpath>
+                <value>
+                    <li>
+                        <filter>
+                            <thingDefs>
+                                <li>EM_Sand</li>
+                            </thingDefs>
+                        </filter>
+                        <count>50</count>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef [defName="RB_Make_BallisticGlassFromChunks"]/fixedIngredientFilter/thingDefs</xpath>
+                <value>
+                    <li>EM_Sand</li>
+                </value>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/RecipeDef [defName="RB_Make_BallisticGlassFromChunks"]/fixedIngredientFilter/categories</xpath>
+            </li>
+
+        </operations>
+    </Operation>
+
+</Patch>

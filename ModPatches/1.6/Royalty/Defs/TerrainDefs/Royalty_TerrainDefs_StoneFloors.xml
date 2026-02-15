@@ -1,0 +1,40 @@
+<Defs>
+
+    <!-- Fine Tiles (Royalty) -->
+    <TerrainDef ParentName="FineTileStoneBase">
+        <defName>EM_FineTileShale</defName>
+        <label>fine shale tile</label>
+        <color>(125,145,165)</color>
+        <costList>
+            <EM_BlocksShale>20</EM_BlocksShale>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FineTileStoneBase">
+        <defName>EM_FineTileSchist</defName>
+        <label>fine schist tile</label>
+        <color>(143,143,137)</color>
+        <costList>
+            <EM_BlocksSchist>20</EM_BlocksSchist>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FineTileStoneBase">
+        <defName>EM_FineTileSiltstone</defName>
+        <label>fine siltstone tile</label>
+        <color>(148,129,112)</color>
+        <costList>
+            <EM_BlocksSiltstone>20</EM_BlocksSiltstone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FineTileStoneBase">
+        <defName>EM_FineTileBasalt</defName>
+        <label>fine basalt tile</label>
+        <color>(68,63,71)</color>
+        <costList>
+            <EM_BlocksBasalt>20</EM_BlocksBasalt>
+        </costList>
+    </TerrainDef>
+
+</Defs>

@@ -1,0 +1,263 @@
+<Patch>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef [@ParentName="ChunkRockBase" and not(defName="ChunkVacstone")]</xpath>
+        <value>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_DiggableResource">
+                <minimumPortion>1</minimumPortion>
+                <difficultyFactor>2.3</difficultyFactor>
+                <priorityInList>10</priorityInList>
+                <resourceTags>
+                    <li>Stone</li>
+                </resourceTags>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef [defName="ChunkVacstone"]</xpath>
+            <value>
+                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_DiggableResource">
+                    <minimumPortion>1</minimumPortion>
+                    <difficultyFactor>2.3</difficultyFactor>
+                    <priorityInList>11</priorityInList>
+                    <resourceTags>
+                        <li>SpaceStone</li>
+                    </resourceTags>
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- Stones have cobblestone special products -->
+
+    <!-- SANDSTONE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef [defName="ChunkSandstone" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef [defName="ChunkSandstone" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+            <value>
+                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
+                    <specialProductDictionaryEntries />
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName="ChunkSandstone"]/modExtensions/li [@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts"]/specialProductDictionaryEntries</xpath>
+        <value>
+            <li>
+                <key>EM_SpecialProducts_Cobblestone</key>
+                <products>
+                    <EM_CobblestoneSandstone>25</EM_CobblestoneSandstone>
+                </products>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- LIMESTONE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef [defName="ChunkLimestone" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef [defName="ChunkLimestone" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+            <value>
+                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
+                    <specialProductDictionaryEntries />
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName="ChunkLimestone"]/modExtensions/li [@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts"]/specialProductDictionaryEntries</xpath>
+        <value>
+            <li>
+                <key>EM_SpecialProducts_Cobblestone</key>
+                <products>
+                    <EM_CobblestoneLimestone>25</EM_CobblestoneLimestone>
+                </products>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- GRANITE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef [defName="ChunkGranite" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef [defName="ChunkGranite" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+            <value>
+                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
+                    <specialProductDictionaryEntries />
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName="ChunkGranite"]/modExtensions/li [@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts"]/specialProductDictionaryEntries</xpath>
+        <value>
+            <li>
+                <key>EM_SpecialProducts_Cobblestone</key>
+                <products>
+                    <EM_CobblestoneGranite>25</EM_CobblestoneGranite>
+                </products>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- SLATE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef [defName="ChunkSlate" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef [defName="ChunkSlate" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+            <value>
+                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
+                    <specialProductDictionaryEntries />
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName="ChunkSlate"]/modExtensions/li [@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts"]/specialProductDictionaryEntries</xpath>
+        <value>
+            <li>
+                <key>EM_SpecialProducts_Cobblestone</key>
+                <products>
+                    <EM_CobblestoneSlate>25</EM_CobblestoneSlate>
+                </products>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- MARBLE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef [defName="ChunkMarble" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef [defName="ChunkMarble" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+            <value>
+                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
+                    <specialProductDictionaryEntries />
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName="ChunkMarble"]/modExtensions/li [@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts"]/specialProductDictionaryEntries</xpath>
+        <value>
+            <li>
+                <key>EM_SpecialProducts_Cobblestone</key>
+                <products>
+                    <EM_CobblestoneMarble>25</EM_CobblestoneMarble>
+                </products>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- SHALE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef [defName="EM_ChunkShale" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef [defName="EM_ChunkShale" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+            <value>
+                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
+                    <specialProductDictionaryEntries />
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName="EM_ChunkShale"]/modExtensions/li [@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts"]/specialProductDictionaryEntries</xpath>
+        <value>
+            <li>
+                <key>EM_SpecialProducts_Cobblestone</key>
+                <products>
+                    <EM_CobblestoneShale>25</EM_CobblestoneShale>
+                </products>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- SCHIST -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef [defName="EM_ChunkSchist" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef [defName="EM_ChunkSchist" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+            <value>
+                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
+                    <specialProductDictionaryEntries />
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName="EM_ChunkSchist"]/modExtensions/li [@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts"]/specialProductDictionaryEntries</xpath>
+        <value>
+            <li>
+                <key>EM_SpecialProducts_Cobblestone</key>
+                <products>
+                    <EM_CobblestoneSchist>25</EM_CobblestoneSchist>
+                </products>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- SILTSTONE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef [defName="EM_ChunkSiltstone" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef [defName="EM_ChunkSiltstone" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+            <value>
+                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
+                    <specialProductDictionaryEntries />
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName="EM_ChunkSiltstone"]/modExtensions/li [@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts"]/specialProductDictionaryEntries</xpath>
+        <value>
+            <li>
+                <key>EM_SpecialProducts_Cobblestone</key>
+                <products>
+                    <EM_CobblestoneSiltstone>25</EM_CobblestoneSiltstone>
+                </products>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- BASALT -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef [defName="EM_ChunkBasalt" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef [defName="EM_ChunkBasalt" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
+            <value>
+                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
+                    <specialProductDictionaryEntries />
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef [defName="EM_ChunkBasalt"]/modExtensions/li [@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts"]/specialProductDictionaryEntries</xpath>
+        <value>
+            <li>
+                <key>EM_SpecialProducts_Cobblestone</key>
+                <products>
+                    <EM_CobblestoneBasalt>25</EM_CobblestoneBasalt>
+                </products>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

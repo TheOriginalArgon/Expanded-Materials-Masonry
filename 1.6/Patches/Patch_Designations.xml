@@ -1,0 +1,11 @@
+<Patch>
+
+    <Operation Class="PatchOperationInsert">
+        <xpath>/Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses/li[text()="Designator_SmoothSurface"]</xpath>
+        <order>Append</order>
+        <value>
+            <li>ArgonicCore.Designators.Designator_CoatWalls</li>
+        </value>
+    </Operation>
+
+</Patch>

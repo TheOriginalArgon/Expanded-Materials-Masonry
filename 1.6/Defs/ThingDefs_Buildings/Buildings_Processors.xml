@@ -1,15 +1,13 @@
 <Defs>
 
+    <!-- ADOBE BRICKS -->
+
     <ThingDef ParentName="BuildingBase">
-        <defName>EM_DryingSpot</defName>
-        <label>brick drying spot</label>
-        <description>A spot designated to leave adobe bricks to dry. The bricks will ruin quickly if exposed to rain.</description>
-        <inspectorTabs>
-            <li>PipeSystem.ITab_Processor</li>
-        </inspectorTabs>
-        <drawerType>MapMeshAndRealTime</drawerType>
+        <defName>EM_DryingPile</defName>
+        <label>brick drying pile</label>
+        <description>A pile of adobe bricks laid for drying. Bricks will ruin quickly if exposed to rain.</description>
         <graphicData>
-            <texPath>Building/EM_DryingSpot</texPath>
+            <texPath>Things/Building/EM_AdobeBricksPile</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(1.5,1.5)</drawSize>
             <shaderType>CutoutComplex</shaderType>
@@ -20,53 +18,96 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <altitudeLayer>Building</altitudeLayer>
         <rotatable>false</rotatable>
         <neverMultiSelect>false</neverMultiSelect>
         <!-- <uiIconScale>0.8</uiIconScale> -->
         <fillPercent>0.5</fillPercent>
-        <useHitPoints>False</useHitPoints>
+        <useHitPoints>True</useHitPoints>
         <statBases>
-            <WorkToBuild>0</WorkToBuild>
+            <WorkToBuild>100</WorkToBuild>
         </statBases>
+        <costList>
+            <EM_Soil>25</EM_Soil>
+        </costList>
         <tickerType>Rare</tickerType>
         <size>(1,1)</size>
         <designationCategory>Production</designationCategory>
-        <passability>Standable</passability>
-        <pathCost>0</pathCost>
+        <passability>PassThroughOnly</passability>
+        <pathCost>60</pathCost>
         <surfaceType>Item</surfaceType>
-        <building>
-            <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
-            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-        </building>
-
-        <!-- TODO: Research -->
-
-        <!-- <researchPrerequisites>
-            <li>VBE_LiquorBrewing</li>
-        </researchPrerequisites> -->
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <researchPrerequisites>
+            <li>EM_BasicMasonry</li>
+        </researchPrerequisites>
         <comps>
-            <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
-                <inProgressTexture>Building/EM_DryingSpot_Full</inProgressTexture>
-                <notWorkingKey>EM_DryingSpotNotWorking</notWorkingKey>
-                <processes>
-                    <li>EM_SoilToAdobeBricks</li>
-                </processes>
-                <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+            <li Class="ArgonicCore.Comps.CompProperties_OneTimeProcessor">
+                <daysToProcess>1</daysToProcess>
+                <daysToRuin>0.15</daysToRuin>
+
+                <useTemperature>true</useTemperature>
+                <temperatureRuins>false</temperatureRuins>
+                <minTemperature>2</minTemperature>
+                <maxTemperature>99</maxTemperature>
+
+                <useLight>true</useLight>
+                <lightRuins>false</lightRuins>
+                <minLight>0.3</minLight>
+                <maxLight>1</maxLight>
+
+                <useRainfall>true</useRainfall>
+                <rainRuins>true</rainRuins>
+                <minRainfall>0</minRainfall>
+                <maxRainfall>0.1</maxRainfall>
+
+                <finishedThingDef>EM_DryingPile_Done</finishedThingDef>
             </li>
         </comps>
     </ThingDef>
 
     <ThingDef ParentName="BuildingBase">
-        <defName>EM_FiringSpot</defName>
-        <label>brick firing spot</label>
-        <description>A spot designated to pile up clay bricks and fire them. The bricks will ruin if exposed to rain.</description>
-        <inspectorTabs>
-            <li>PipeSystem.ITab_Processor</li>
-        </inspectorTabs>
+        <defName>EM_DryingPile_Done</defName>
+        <label>brick drying pile</label>
+        <description>A pile of hardened adobe bricks. Can be deconstructed to obtain bricks.</description>
+        <graphicData>
+            <texPath>Things/Building/EM_AdobeBricksPile_dry</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <!-- <uiIconScale>0.8</uiIconScale> -->
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <costList>
+            <EM_AdobeBricks>12</EM_AdobeBricks>
+        </costList>
+        <tickerType>Rare</tickerType>
+        <size>(1,1)</size>
+        <passability>PassThroughOnly</passability>
+        <pathCost>60</pathCost>
+        <surfaceType>Item</surfaceType>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    </ThingDef>
+
+    <!-- CLAY BRICKS -->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>EM_FiringPile</defName>
+        <label>brick firing pile</label>
+        <description>A pile of clay bricks which are fired to harden them. The bricks will ruin if exposed to rain.</description>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
-            <texPath>Building/EM_FiringSpot</texPath>
+            <texPath>Things/Building/EM_FiringPile_lit</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(3,3)</drawSize>
             <shaderType>CutoutComplex</shaderType>
@@ -77,41 +118,108 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <altitudeLayer>Building</altitudeLayer>
         <rotatable>false</rotatable>
         <neverMultiSelect>false</neverMultiSelect>
         <!-- <uiIconScale>0.8</uiIconScale> -->
         <fillPercent>0.5</fillPercent>
-        <useHitPoints>False</useHitPoints>
+        <useHitPoints>True</useHitPoints>
         <statBases>
-            <WorkToBuild>0</WorkToBuild>
+            <WorkToBuild>500</WorkToBuild>
         </statBases>
-        <tickerType>Rare</tickerType>
+        <costList>
+            <EM_Clay>100</EM_Clay>
+        </costList>
+        <tickerType>Normal</tickerType>
         <size>(2,2)</size>
         <designationCategory>Production</designationCategory>
-        <passability>Standable</passability>
-        <pathCost>0</pathCost>
+        <passability>PassThroughOnly</passability>
+        <pathCost>60</pathCost>
         <surfaceType>Item</surfaceType>
-        <building>
-            <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
-            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-        </building>
-
-        <!-- TODO: Research -->
-
-        <!-- <researchPrerequisites>
-            <li>VBE_LiquorBrewing</li>
-        </researchPrerequisites> -->
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <researchPrerequisites>
+            <li>EM_BasicMasonry</li>
+        </researchPrerequisites>
         <comps>
-            <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
-                <inProgressTexture>Building/EM_FiringSpot_Full</inProgressTexture>
-                <notWorkingKey>EM_FiringSpotNotWorking</notWorkingKey>
-                <processes>
-                    <li>EM_ClayToBricks</li>
-                </processes>
-                <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+            <li Class="ArgonicCore.Comps.CompProperties_OneTimeProcessor">
+                <daysToProcess>3</daysToProcess>
+                <daysToRuin>0.25</daysToRuin>
+
+                <useTemperature>true</useTemperature>
+                <temperatureRuins>false</temperatureRuins>
+                <minTemperature>2</minTemperature>
+                <maxTemperature>99</maxTemperature>
+
+                <useLight>true</useLight>
+                <lightRuins>false</lightRuins>
+                <minLight>0.3</minLight>
+                <maxLight>1</maxLight>
+
+                <useRainfall>true</useRainfall>
+                <rainRuins>true</rainRuins>
+                <minRainfall>0</minRainfall>
+                <maxRainfall>0.1</maxRainfall>
+
+                <fuelRuins>true</fuelRuins>
+
+                <finishedThingDef>EM_FiringPile_Done</finishedThingDef>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(217,94,33,0)</glowColor>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>11</heatPerSecond>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>10.0</fuelConsumptionRate>
+                <fuelCapacity>20.0</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </fuelFilter>
+                <initialFuelPercent>1</initialFuelPercent>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <functionsInVacuum>false</functionsInVacuum>
             </li>
         </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>EM_FiringPile_Done</defName>
+        <label>brick firing pile</label>
+        <description>A pile of hardened clay bricks. Can be deconstructed to obtain bricks.</description>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Building/EM_FiringPile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <!-- <uiIconScale>0.8</uiIconScale> -->
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <costList>
+            <EM_ClayBricks>60</EM_ClayBricks>
+        </costList>
+        <tickerType>Rare</tickerType>
+        <size>(2,2)</size>
+        <passability>PassThroughOnly</passability>
+        <pathCost>60</pathCost>
+        <surfaceType>Item</surfaceType>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
     </ThingDef>
 
     <ThingDef ParentName="BuildingBase">
@@ -123,7 +231,7 @@
         </inspectorTabs>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
-            <texPath>Building/EM_Kiln</texPath>
+            <texPath>Things/Building/EM_Kiln</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(3,3)</drawSize>
             <shaderType>CutoutComplex</shaderType>
@@ -154,25 +262,28 @@
         <tickerType>Rare</tickerType>
         <size>(2,2)</size>
         <designationCategory>Production</designationCategory>
-        <passability>Standable</passability>
-        <pathCost>0</pathCost>
+        <passability>PassThroughOnly</passability>
+        <pathCost>60</pathCost>
         <surfaceType>Item</surfaceType>
-        <building>
-            <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
-            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-        </building>
-
-        <!-- TODO: Research -->
-
-        <!-- <researchPrerequisites>
-            <li>VBE_LiquorBrewing</li>
-        </researchPrerequisites> -->
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
         <comps>
             <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
-                <inProgressTexture>Building/EM_Kiln_Active</inProgressTexture>
+                <inProgressTexture>Things/Building/EM_Kiln_Active</inProgressTexture>
                 <notWorkingKey>EM_FiringSpotNotWorking</notWorkingKey>
                 <processes>
                     <li>EM_ClayToBricks</li>
+                    <li>EM_CementRecipe_Limestone</li>
+                    <li>EM_CementRecipe_Marble</li>
+                    <li>EM_CementRecipe_Shale</li>
+                    <li>EM_CementRecipe_Siltstone</li>
+                    <li>EM_CementRecipe_Slate</li>
+                    <li>EM_CementRecipe_Sandstone</li>
+                    <li>EM_CementRecipe_Basalt</li>
+                    <li>EM_CementRecipe_Schist</li>
+                    <li>EM_CementRecipe_Granite</li>
                 </processes>
                 <progressBarOffset>(0,0,-0.5)</progressBarOffset>
             </li>

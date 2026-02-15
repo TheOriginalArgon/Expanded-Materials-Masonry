@@ -7,4 +7,12 @@
         <!-- <iconPath>UI/Icons/ThingCategories/Bricks</iconPath> -->
     </ThingCategoryDef>
 
+    <ThingCategoryDef>
+        <defName>EM_Cobblestone</defName>
+        <label>cobblestone</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Things/Item/Resource/EM_Cobblestone/EM_Cobblestone_c</iconPath>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
 </Defs>

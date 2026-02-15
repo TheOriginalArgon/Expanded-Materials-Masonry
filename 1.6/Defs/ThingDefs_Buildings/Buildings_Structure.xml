@@ -1,13 +1,13 @@
 <Defs>
 
-    <ThingDef ParentName="BuildingBase">
+    <ThingDef ParentName="BuildingBase" Name="EM_Wall_AdobeBrick_Base">
         <defName>EM_Wall_AdobeBrick</defName>
         <label>adobe brick wall</label>
         <description>A wall made of adobe bricks. Capable of holding up a roof.\n\nThis wall can be coated to increase its resistance.</description>
         <thingClass>Building</thingClass>
         <category>Building</category>
         <graphicData>
-            <texPath>Building/Linked/Grid_1</texPath>
+            <texPath>Things/Building/Linked/EM_WallAdobeBricks</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <linkType>CornerFiller</linkType>
             <linkFlags>
@@ -25,12 +25,13 @@
                 <edgeRight>Damage/Edge</edgeRight>
             </damageData>
         </graphicData>
-        <uiIconPath>Building/Linked/Grid_1</uiIconPath>
+        <uiIconPath>Things/Building/Linked/EM_WallAdobeBricks_MenuIcon</uiIconPath>
         <statBases>
-            <MaxHitPoints>90</MaxHitPoints>
+            <MaxHitPoints>150</MaxHitPoints>
             <WorkToBuild>100</WorkToBuild>
             <Flammability>0.2</Flammability>
             <MeditationFocusStrength>0.1</MeditationFocusStrength>
+            <Beauty>-1</Beauty>
         </statBases>
         <costList>
             <EM_AdobeBricks>5</EM_AdobeBricks>
@@ -55,14 +56,29 @@
         <canOverlapZones>false</canOverlapZones>
         <soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
         <fertility>0</fertility>
+        <researchPrerequisites>
+            <li>EM_BasicMasonry</li>
+        </researchPrerequisites>
         <building>
-            <supportsWallAttachments>true</supportsWallAttachments>
+            <paintable>false</paintable>
             <isInert>true</isInert>
+            <isWall>true</isWall>
             <isPlaceOverableWall>true</isPlaceOverableWall>
             <ai_chillDestination>false</ai_chillDestination>
+            <supportsWallAttachments>true</supportsWallAttachments>
+            <isStuffableAirtight>false</isStuffableAirtight>
             <blueprintGraphicData>
                 <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
+            <relatedBuildCommands>
+                <li>Door</li>
+                <li>Autodoor</li>
+                <li>OrnateDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+                <li>Cooler</li>
+                <li>Vent</li>
+            </relatedBuildCommands>
         </building>
         <comps>
             <li Class="CompProperties_MeditationFocus">
@@ -82,6 +98,398 @@
                 <multiplier>4</multiplier>
             </li>
         </damageMultipliers>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_CoatableWall">
+                <coatingResource>EM_Soil</coatingResource>
+                <coatingAmount>5</coatingAmount>
+                <coatingWork>300</coatingWork>
+                <coatedThingDef>EM_Wall_AdobeBrick_Coated</coatedThingDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_Wall_AdobeBrick_Base">
+        <defName>EM_Wall_AdobeBrick_Coated</defName>
+        <label>adobe brick wall</label>
+        <description>A wall made of adobe bricks. Capable of holding up a roof.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/EM_WallAdobeBricks_Coated</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <color>(130,122,105)</color>
+        </graphicData>
+        <designationCategory />
+        <statBases>
+            <MaxHitPoints>210</MaxHitPoints>
+            <Flammability>0.2</Flammability>
+            <MeditationFocusStrength>0.1</MeditationFocusStrength>
+        </statBases>
+        <!-- <comps>
+            <li Class="ArgonicCore.Comps.CompProperties_BuildCopyOther">
+                <buildCopyDef>EM_Wall_AdobeBrick</buildCopyDef>
+            </li>
+        </comps> -->
+        <building>
+            <paintable>true</paintable>
+            <isInert>true</isInert>
+            <isWall>true</isWall>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+            <ai_chillDestination>false</ai_chillDestination>
+            <supportsWallAttachments>true</supportsWallAttachments>
+            <isStuffableAirtight>false</isStuffableAirtight>
+            <relatedBuildCommands>
+                <li>EM_Wall_AdobeBrick</li>
+                <li>Door</li>
+                <li>Autodoor</li>
+                <li>OrnateDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+                <li>Cooler</li>
+                <li>Vent</li>
+            </relatedBuildCommands>
+        </building>
+        <modExtensions Inherit="false" />
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase" Name="EM_Wall_ClayBrick_Base">
+        <defName>EM_Wall_ClayBrick</defName>
+        <label>brick wall</label>
+        <description>A wall made of clay bricks. Capable of holding up a roof.\n\nThis wall can be coated to increase its resistance.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Linked/EM_WallClayBricks</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/EM_WallClayBricks_MenuIcon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>150</WorkToBuild>
+            <Flammability>0.2</Flammability>
+            <MeditationFocusStrength>0.1</MeditationFocusStrength>
+        </statBases>
+        <costList>
+            <EM_ClayBricks>5</EM_ClayBricks>
+        </costList>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <drawStyleCategory>Walls</drawStyleCategory>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
+        <fertility>0</fertility>
+        <researchPrerequisites>
+            <li>EM_BasicMasonry</li>
+        </researchPrerequisites>
+        <building>
+            <paintable>false</paintable>
+            <isInert>true</isInert>
+            <isWall>true</isWall>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+            <ai_chillDestination>false</ai_chillDestination>
+            <supportsWallAttachments>true</supportsWallAttachments>
+            <isStuffableAirtight>false</isStuffableAirtight>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+            <relatedBuildCommands>
+                <li>Door</li>
+                <li>Autodoor</li>
+                <li>OrnateDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+                <li>Cooler</li>
+                <li>Vent</li>
+            </relatedBuildCommands>
+        </building>
+        <comps>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Minimal</li>
+                </focusTypes>
+            </li>
+        </comps>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>2</multiplier>
+            </li>
+            <li>
+                <damageDef>Thump</damageDef>
+                <multiplier>4</multiplier>
+            </li>
+        </damageMultipliers>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_CoatableWall">
+                <coatingResource>EM_CementMix</coatingResource>
+                <coatingAmount>2</coatingAmount>
+                <coatingWork>420</coatingWork>
+                <coatedThingDef>EM_Wall_ClayBrick_Coated</coatedThingDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_Wall_ClayBrick_Base">
+        <defName>EM_Wall_ClayBrick_Coated</defName>
+        <label>brick wall</label>
+        <description>A wall made of clay bricks. Capable of holding up a roof.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/EM_WallCoated</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <color>(177,183,180)</color>
+        </graphicData>
+        <designationCategory />
+        <statBases>
+            <MaxHitPoints>380</MaxHitPoints>
+            <Flammability>0.2</Flammability>
+            <MeditationFocusStrength>0.1</MeditationFocusStrength>
+            <Beauty>1</Beauty>
+        </statBases>
+        <building>
+            <paintable>true</paintable>
+            <isInert>true</isInert>
+            <isWall>true</isWall>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+            <ai_chillDestination>false</ai_chillDestination>
+            <supportsWallAttachments>true</supportsWallAttachments>
+            <isStuffableAirtight>false</isStuffableAirtight>
+            <relatedBuildCommands>
+                <li>EM_Wall_ClayBrick</li>
+                <li>Door</li>
+                <li>Autodoor</li>
+                <li>OrnateDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+                <li>Cooler</li>
+                <li>Vent</li>
+            </relatedBuildCommands>
+        </building>
+        <modExtensions Inherit="false" />
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase" Name="EM_Wall_CementBrick_Base">
+        <defName>EM_Wall_CementBrick</defName>
+        <label>Concrete brick wall</label>
+        <description>A wall made of cement bricks and metal nerves. Capable of holding up a roof.\n\nConcrete brick walls are weak when uncoated, but once they are, they are much stronger.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Linked/EM_WallConcreteBricks</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/EM_WallConcreteBricks_MenuIcon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>220</MaxHitPoints>
+            <WorkToBuild>100</WorkToBuild>
+            <Flammability>0.2</Flammability>
+            <MeditationFocusStrength>0.1</MeditationFocusStrength>
+            <Beauty>-4</Beauty>
+        </statBases>
+        <costList>
+            <EM_CementBricks>4</EM_CementBricks>
+            <Steel>1</Steel>
+        </costList>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <drawStyleCategory>Walls</drawStyleCategory>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
+        <fertility>0</fertility>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+        <building>
+            <paintable>false</paintable>
+            <isInert>true</isInert>
+            <isWall>true</isWall>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+            <ai_chillDestination>false</ai_chillDestination>
+            <supportsWallAttachments>true</supportsWallAttachments>
+            <isStuffableAirtight>false</isStuffableAirtight>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+            <relatedBuildCommands>
+                <li>Door</li>
+                <li>Autodoor</li>
+                <li>OrnateDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+                <li>Cooler</li>
+                <li>Vent</li>
+            </relatedBuildCommands>
+        </building>
+        <comps>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Minimal</li>
+                </focusTypes>
+            </li>
+        </comps>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>2</multiplier>
+            </li>
+            <li>
+                <damageDef>Thump</damageDef>
+                <multiplier>4</multiplier>
+            </li>
+        </damageMultipliers>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_CoatableWall">
+                <coatingResource>EM_CementMix</coatingResource>
+                <coatingAmount>3</coatingAmount>
+                <coatingWork>420</coatingWork>
+                <coatedThingDef>EM_Wall_CementBrick_Coated</coatedThingDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_Wall_CementBrick_Base">
+        <defName>EM_Wall_CementBrick_Coated</defName>
+        <label>cement brick wall</label>
+        <description>A wall made of cement bricks. Capable of holding up a roof.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/EM_WallCoated</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <color>(177,183,180)</color>
+        </graphicData>
+        <!-- <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps> -->
+        <designationCategory />
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Flammability>0.2</Flammability>
+            <MeditationFocusStrength>0.1</MeditationFocusStrength>
+            <Beauty>1</Beauty>
+        </statBases>
+        <building>
+            <paintable>true</paintable>
+            <isInert>true</isInert>
+            <isWall>true</isWall>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+            <ai_chillDestination>false</ai_chillDestination>
+            <supportsWallAttachments>true</supportsWallAttachments>
+            <isStuffableAirtight>false</isStuffableAirtight>
+            <relatedBuildCommands>
+                <li>EM_Wall_CementBrick</li>
+                <li>Door</li>
+                <li>Autodoor</li>
+                <li>OrnateDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+                <li>Cooler</li>
+                <li>Vent</li>
+            </relatedBuildCommands>
+        </building>
+        <modExtensions Inherit="false" />
     </ThingDef>
 
 </Defs>
