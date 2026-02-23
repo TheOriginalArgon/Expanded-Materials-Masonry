@@ -174,7 +174,7 @@
             <Mass>35</Mass>
         </statBases>
         <comps>
-            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Flickable"/>
             <li Class="ArgonicCore.Comps.CompProperties_ResourceDigger">
                 <isAutomaticDigger>true</isAutomaticDigger>
                 <resourceTags>
@@ -239,7 +239,7 @@
             <Mass>35</Mass>
         </statBases>
         <comps>
-            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Flickable"/>
             <li Class="ArgonicCore.Comps.CompProperties_ResourceDigger">
                 <isAutomaticDigger>true</isAutomaticDigger>
                 <resourceTags>

@@ -7,7 +7,7 @@
         <li>1.6</li>
     </supportedVersions>
     <description>A mod that adds brick making and various mortar materials.</description>
-    <modVersion IgnoreIfNoMatchingField="True">Feb9.2026</modVersion>
+    <modVersion IgnoreIfNoMatchingField="True">Feb9.2026.rev1</modVersion>
     <modIconPath IgnoreIfNoMatchingField="True">UI/EM_Logo</modIconPath>
     <modDependencies>
         <li>

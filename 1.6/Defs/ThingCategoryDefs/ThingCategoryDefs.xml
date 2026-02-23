@@ -4,7 +4,7 @@
         <defName>EM_Bricks</defName>
         <label>bricks</label>
         <parent>ResourcesRaw</parent>
-        <!-- <iconPath>UI/Icons/ThingCategories/Bricks</iconPath> -->
+        <iconPath>Things/Item/Resource/EM_ClayBricks/EM_ClayBricks_c</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
