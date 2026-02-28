@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: adobe bricks -->
+  <EM_AdobeBricks.label>briques d'adobe</EM_AdobeBricks.label>
+  <!-- EN: Rough, irregular bricks made of dried mud and ocassionally, pieces of dried vegetal fiber for added strength. -->
+  <EM_AdobeBricks.description>Briques rugueuses et irrégulières faites de boue séchée et, parfois, de morceaux de fibres végétales séchées pour plus de solidité.</EM_AdobeBricks.description>
+  
+  <!-- EN: ash -->
+  <EM_Ash.label>cendre</EM_Ash.label>
+  <!-- EN: Remains of burnt organic matter. Barely usable for anything. -->
+  <EM_Ash.description>Restes de matière organique brûlée. Presque inutilisable.</EM_Ash.description>
+  
+  <!-- EN: concrete bricks -->
+  <EM_CementBricks.label>briques en béton</EM_CementBricks.label>
+  <!-- EN: Large bricks made of concrete. Their shape and size make building walls with them extremely fast compared to other materials. However, concrete bricks are weak if not coated, and quite ugly too. -->
+  <EM_CementBricks.description>Grandes briques en béton. Leur forme et leur taille permettent de construire des murs très rapidement par rapport à d'autres matériaux. Cependant, les briques en béton sont fragiles si elles ne sont pas recouvertes, et assez laides.</EM_CementBricks.description>
+  
+  <!-- EN: concrete mix -->
+  <EM_CementMix.label>mélange de béton</EM_CementMix.label>
+  <!-- EN: A compound mixture of sand and cement powder obtained from cooking rocks at high temperatures. -->
+  <EM_CementMix.description>Mélange composé de sable et de poudre de ciment obtenu à partir de la cuisson de roches à haute température.</EM_CementMix.description>
+  
+  <!-- EN: clay -->
+  <EM_Clay.label>argile</EM_Clay.label>
+  <!-- EN: Soil that contains rich amounts of clay minerals. Clay quickly gains plasticity when wet, but hardens when fired. Mankind utilized clay widely throughout history to make things like pottery, art or bricks. -->
+  <EM_Clay.description>Sol riche en minéraux argileux. L'argile devient rapidement malléable lorsqu'elle est humide, mais durcit lorsqu'elle est cuite. L'humanité a largement utilisé l'argile tout au long de l'histoire pour fabriquer des objets tels que des poteries, des œuvres d'art ou des briques.</EM_Clay.description>
+  
+  <!-- EN: clay bricks -->
+  <EM_ClayBricks.label>briques en terre cuite</EM_ClayBricks.label>
+  <!-- EN: Hard, more elaborate bricks made of fired clay. They are more aesthetically nice than rough adobe bricks and more resistant. -->
+  <EM_ClayBricks.description>Briques dures et plus élaborées, fabriquées à partir d'argile cuite. Elles sont plus esthétiques que les briques d'adobe brutes et plus résistantes.</EM_ClayBricks.description>
+  
+  <!-- EN: sand -->
+  <EM_Sand.label>sable</EM_Sand.label>
+  <!-- EN: A granular material composed of finely divided mineral particles. -->
+  <EM_Sand.description>Matériau granulaire composé de particules minérales finement divisées.</EM_Sand.description>
+  
+  <!-- EN: soil -->
+  <EM_Soil.label>terre</EM_Soil.label>
+  <!-- EN: A mixture of organic matters that compose the ground. -->
+  <EM_Soil.description>Mélange de matières organiques qui composent le sol.</EM_Soil.description>
+  
+</LanguageData>

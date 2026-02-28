@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: extract silicon from sand -->
+  <EM_ExtractSiliconFromSand.label>extraire le silicium du sable</EM_ExtractSiliconFromSand.label>
+  <!-- EN: Smelt large amounts of sand to extract small traces of silicon. -->
+  <EM_ExtractSiliconFromSand.description>Faire fondre de grandes quantités de sable pour en extraire de petites traces de silicium.</EM_ExtractSiliconFromSand.description>
+  <!-- EN: Smelting ore from rocks. -->
+  <EM_ExtractSiliconFromSand.jobString>Fond du minerai à partir de roches.</EM_ExtractSiliconFromSand.jobString>
+  
+</LanguageData>

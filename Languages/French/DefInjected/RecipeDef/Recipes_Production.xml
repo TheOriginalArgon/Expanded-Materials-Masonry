@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make any cobblestone -->
+  <EM_Make_CobblestoneAny.label>fabriquer des pavés</EM_Make_CobblestoneAny.label>
+  <!-- EN: Smash rock chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneAny.description>Transformer des morceaux de roche en pavés utilisables.</EM_Make_CobblestoneAny.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneAny.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneAny.jobString>
+  
+</LanguageData>

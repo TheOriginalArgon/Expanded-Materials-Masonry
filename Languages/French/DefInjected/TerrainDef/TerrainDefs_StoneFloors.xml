@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: basalt flagstone -->
+  <EM_FlagstoneBasalt.label>lauze de basalte</EM_FlagstoneBasalt.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <EM_FlagstoneBasalt.description>La lauze est une dalle de pierre grossièrement taillée. Les lauzes ne sont pas très esthétiques, mais constituent un bon revêtement pour les routes et les allées extérieures. La déconstruction des dalles ne rapporte aucune ressource.</EM_FlagstoneBasalt.description>
+  
+  <!-- EN: schist flagstone -->
+  <EM_FlagstoneSchist.label>lauze de schiste</EM_FlagstoneSchist.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <EM_FlagstoneSchist.description>La lauze est une dalle de pierre grossièrement taillée. Les lauzes ne sont pas très esthétiques, mais constituent un bon revêtement pour les routes et les allées extérieures. La déconstruction des dalles ne rapporte aucune ressource.</EM_FlagstoneSchist.description>
+  
+  <!-- EN: shale flagstone -->
+  <EM_FlagstoneShale.label>lauze de schiste argileux</EM_FlagstoneShale.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <EM_FlagstoneShale.description>La lauze est une dalle de pierre grossièrement taillée. Les lauzes ne sont pas très esthétiques, mais constituent un bon revêtement pour les routes et les allées extérieures. La déconstruction des dalles ne rapporte aucune ressource.</EM_FlagstoneShale.description>
+  
+  <!-- EN: siltstone flagstone -->
+  <EM_FlagstoneSiltstone.label>lauze de siltite</EM_FlagstoneSiltstone.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <EM_FlagstoneSiltstone.description>La lauze est une dalle de pierre grossièrement taillée. Les lauzes ne sont pas très esthétiques, mais constituent un bon revêtement pour les routes et les allées extérieures. La déconstruction des dalles ne rapporte aucune ressource.</EM_FlagstoneSiltstone.description>
+  
+  <!-- EN: basalt tile -->
+  <EM_TileBasalt.label>tuile en basalte</EM_TileBasalt.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <EM_TileBasalt.description>Des dalles en pierre soigneusement découpées et ajustées pour créer une ambiance de château. Elles sont jolies à regarder, mais leur pose prend beaucoup de temps.</EM_TileBasalt.description>
+  
+  <!-- EN: schist tile -->
+  <EM_TileSchist.label>tuile en schiste</EM_TileSchist.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <EM_TileSchist.description>Des dalles en pierre soigneusement découpées et ajustées pour créer une ambiance de château. Elles sont jolies à regarder, mais leur pose prend beaucoup de temps.</EM_TileSchist.description>
+  
+  <!-- EN: shale tile -->
+  <EM_TileShale.label>tuile en schiste argileux</EM_TileShale.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <EM_TileShale.description>Des dalles en pierre soigneusement découpées et ajustées pour créer une ambiance de château. Elles sont jolies à regarder, mais leur pose prend beaucoup de temps.</EM_TileShale.description>
+  
+  <!-- EN: siltstone tile -->
+  <EM_TileSiltstone.label>tuile en siltite</EM_TileSiltstone.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. -->
+  <EM_TileSiltstone.description>Des dalles en pierre soigneusement découpées et ajustées pour créer une ambiance de château. Elles sont jolies à regarder, mais leur pose prend beaucoup de temps.</EM_TileSiltstone.description>
+  
+</LanguageData>

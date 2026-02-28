@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: brick drying pile -->
+  <EM_DryingPile.label>pile de séchage des briques</EM_DryingPile.label>
+  <!-- EN: A pile of adobe bricks laid for drying. Bricks will ruin quickly if exposed to rain. -->
+  <EM_DryingPile.description>Une pile de briques d'adobe mises à sécher. Les briques s'abîment rapidement si elles sont exposées à la pluie.</EM_DryingPile.description>
+  
+  <!-- EN: brick drying pile -->
+  <EM_DryingPile_Done.label>pile de séchage des briques</EM_DryingPile_Done.label>
+  <!-- EN: A pile of hardened adobe bricks. Can be deconstructed to obtain bricks. -->
+  <EM_DryingPile_Done.description>Un tas de briques d'adobe durcies. Peut être déconstruit pour obtenir des briques.</EM_DryingPile_Done.description>
+  
+  <!-- EN: brick firing pile -->
+  <EM_FiringPile.label>pile de briques à cuire</EM_FiringPile.label>
+  <!-- EN: A pile of clay bricks which are fired to harden them. The bricks will ruin if exposed to rain. -->
+  <EM_FiringPile.description>Une pile de briques d'argile qui sont cuites pour les durcir. Les briques seront détruites si elles sont exposées à la pluie.</EM_FiringPile.description>
+  
+  <!-- EN: brick firing pile -->
+  <EM_FiringPile_Done.label>pile de briques à cuire</EM_FiringPile_Done.label>
+  <!-- EN: A pile of hardened clay bricks. Can be deconstructed to obtain bricks. -->
+  <EM_FiringPile_Done.description>Une pile de briques d'argile durcies. Peut être déconstruite pour obtenir des briques.</EM_FiringPile_Done.description>
+  
+  <!-- EN: kiln -->
+  <EM_Kiln.label>four</EM_Kiln.label>
+  <!-- EN: A kiln built from stone bricks. This structure allows the making of cement. -->
+  <EM_Kiln.description>Un four construit en briques de pierre. Cette structure permet la fabrication de ciment.</EM_Kiln.description>
+  
+</LanguageData>

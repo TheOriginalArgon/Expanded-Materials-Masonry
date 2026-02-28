@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: morbid basalt tile -->
+  <EM_Tile_MorbidBasalt.label>dalle morbide en basalte</EM_Tile_MorbidBasalt.label>
+  <!-- EN: Fine stone tiles in a morbid style. -->
+  <EM_Tile_MorbidBasalt.description>Dalles en pierre fine dans un style morbide.</EM_Tile_MorbidBasalt.description>
+  
+  <!-- EN: morbid schist tile -->
+  <EM_Tile_MorbidSchist.label>dalle morbide en schiste</EM_Tile_MorbidSchist.label>
+  <!-- EN: Fine stone tiles in a morbid style. -->
+  <EM_Tile_MorbidSchist.description>Dalles en pierre fine dans un style morbide.</EM_Tile_MorbidSchist.description>
+  
+  <!-- EN: morbid shale tile -->
+  <EM_Tile_MorbidShale.label>dalle morbide en schiste argileux</EM_Tile_MorbidShale.label>
+  <!-- EN: Fine stone tiles in a morbid style. -->
+  <EM_Tile_MorbidShale.description>Dalles en pierre fine dans un style morbide.</EM_Tile_MorbidShale.description>
+  
+  <!-- EN: morbid siltstone tile -->
+  <EM_Tile_MorbidSiltstone.label>dalle morbide en siltite</EM_Tile_MorbidSiltstone.label>
+  <!-- EN: Fine stone tiles in a morbid style. -->
+  <EM_Tile_MorbidSiltstone.description>Dalles en pierre fine dans un style morbide.</EM_Tile_MorbidSiltstone.description>
+  
+  <!-- EN: basalt spikecore tile -->
+  <EM_Tile_SpikecoreBasalt.label>dalle à pointe en basalte</EM_Tile_SpikecoreBasalt.label>
+  <!-- EN: Fine stone tiles in a spikecore style. -->
+  <EM_Tile_SpikecoreBasalt.description>Dalles en pierre fine dans un style à pointe.</EM_Tile_SpikecoreBasalt.description>
+  
+  <!-- EN: schist spikecore tile -->
+  <EM_Tile_SpikecoreSchist.label>dalle à pointe en schiste</EM_Tile_SpikecoreSchist.label>
+  <!-- EN: Fine stone tiles in a spikecore style. -->
+  <EM_Tile_SpikecoreSchist.description>Dalles en pierre fine dans un style à pointe.</EM_Tile_SpikecoreSchist.description>
+  
+  <!-- EN: shale spikecore tile -->
+  <EM_Tile_SpikecoreShale.label>dalle à pointe en schiste argileux</EM_Tile_SpikecoreShale.label>
+  <!-- EN: Fine stone tiles in a spikecore style. -->
+  <EM_Tile_SpikecoreShale.description>Dalles en pierre fine dans un style à pointe.</EM_Tile_SpikecoreShale.description>
+  
+  <!-- EN: siltstone spikecore tile -->
+  <EM_Tile_SpikecoreSiltstone.label>dalle à pointe en siltite</EM_Tile_SpikecoreSiltstone.label>
+  <!-- EN: Fine stone tiles in a spikecore style. -->
+  <EM_Tile_SpikecoreSiltstone.description>Dalles en pierre fine dans un style à pointe.</EM_Tile_SpikecoreSiltstone.description>
+  
+  <!-- EN: totemic basalt tile -->
+  <EM_Tile_TotemicBasalt.label>dalle totémique en basalte</EM_Tile_TotemicBasalt.label>
+  <!-- EN: Fine stone tiles in a totemic style. -->
+  <EM_Tile_TotemicBasalt.description>Dalles en pierre fine dans un style totémique.</EM_Tile_TotemicBasalt.description>
+  
+  <!-- EN: totemic schist tile -->
+  <EM_Tile_TotemicSchist.label>dalle totémique en schiste</EM_Tile_TotemicSchist.label>
+  <!-- EN: Fine stone tiles in a totemic style. -->
+  <EM_Tile_TotemicSchist.description>Dalles en pierre fine dans un style totémique.</EM_Tile_TotemicSchist.description>
+  
+  <!-- EN: totemic shale tile -->
+  <EM_Tile_TotemicShale.label>dalle totémique en schiste argileux</EM_Tile_TotemicShale.label>
+  <!-- EN: Fine stone tiles in a totemic style. -->
+  <EM_Tile_TotemicShale.description>Dalles en pierre fine dans un style totémique.</EM_Tile_TotemicShale.description>
+  
+  <!-- EN: totemic siltstone tile -->
+  <EM_Tile_TotemicSiltstone.label>dalle totémique en siltite</EM_Tile_TotemicSiltstone.label>
+  <!-- EN: Fine stone tiles in a totemic style. -->
+  <EM_Tile_TotemicSiltstone.description>Dalles en pierre fine dans un style totémique.</EM_Tile_TotemicSiltstone.description>
+  
+</LanguageData>
