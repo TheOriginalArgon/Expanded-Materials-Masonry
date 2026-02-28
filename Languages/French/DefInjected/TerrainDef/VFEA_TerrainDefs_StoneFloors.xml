@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: basalt cobblestone floor -->
+  <EM_VFEArch_CobblestoneFloorBasalt.label>sol pavé en basalte</EM_VFEArch_CobblestoneFloorBasalt.label>
+  <!-- EN: Random-size stone tiles for a rustical, castle feeling. Take less time to construct than ordinary stone tiles and don’t require stone cutting expertise, but lack the beauty of the polished design. -->
+  <EM_VFEArch_CobblestoneFloorBasalt.description>Des dalles en pierre de taille aléatoire pour un style rustique, rappelant les châteaux. Leur pose prend moins de temps que celle des dalles en pierre ordinaires et ne nécessite pas de compétences particulières en matière de taille de pierre, mais elles n'ont pas la beauté d'un design poli.</EM_VFEArch_CobblestoneFloorBasalt.description>
+  
+  <!-- EN: schist cobblestone floor -->
+  <EM_VFEArch_CobblestoneFloorSchist.label>sol pavé en schiste</EM_VFEArch_CobblestoneFloorSchist.label>
+  <!-- EN: Random-size stone tiles for a rustical, castle feeling. Take less time to construct than ordinary stone tiles and don’t require stone cutting expertise, but lack the beauty of the polished design. -->
+  <EM_VFEArch_CobblestoneFloorSchist.description>Des dalles en pierre de taille aléatoire pour un style rustique, rappelant les châteaux. Leur pose prend moins de temps que celle des dalles en pierre ordinaires et ne nécessite pas de compétences particulières en matière de taille de pierre, mais elles n'ont pas la beauté d'un design poli.</EM_VFEArch_CobblestoneFloorSchist.description>
+  
+  <!-- EN: shale cobblestone floor -->
+  <EM_VFEArch_CobblestoneFloorShale.label>sol pavé en schiste argileux</EM_VFEArch_CobblestoneFloorShale.label>
+  <!-- EN: Random-size stone tiles for a rustical, castle feeling. Take less time to construct than ordinary stone tiles and don’t require stone cutting expertise, but lack the beauty of the polished design. -->
+  <EM_VFEArch_CobblestoneFloorShale.description>Des dalles en pierre de taille aléatoire pour un style rustique, rappelant les châteaux. Leur pose prend moins de temps que celle des dalles en pierre ordinaires et ne nécessite pas de compétences particulières en matière de taille de pierre, mais elles n'ont pas la beauté d'un design poli.</EM_VFEArch_CobblestoneFloorShale.description>
+  
+  <!-- EN: siltstone cobblestone floor -->
+  <EM_VFEArch_CobblestoneFloorSiltstone.label>sol pavé en siltite</EM_VFEArch_CobblestoneFloorSiltstone.label>
+  <!-- EN: Random-size stone tiles for a rustical, castle feeling. Take less time to construct than ordinary stone tiles and don’t require stone cutting expertise, but lack the beauty of the polished design. -->
+  <EM_VFEArch_CobblestoneFloorSiltstone.description>Des dalles en pierre de taille aléatoire pour un style rustique, rappelant les châteaux. Leur pose prend moins de temps que celle des dalles en pierre ordinaires et ne nécessite pas de compétences particulières en matière de taille de pierre, mais elles n'ont pas la beauté d'un design poli.</EM_VFEArch_CobblestoneFloorSiltstone.description>
+  
+  <!-- EN: basalt polished stone floor -->
+  <EM_VFEArch_PolishedStoneFloorBasalt.label>sol en pierre polie de basalte</EM_VFEArch_PolishedStoneFloorBasalt.label>
+  <!-- EN: Fancy, polished stone tiles for an elegant, mansion-like look. Don’t take nearly as long to lay down as the finer stone floors, but require a lot of resources. They are incredibly beautiful to look at. -->
+  <EM_VFEArch_PolishedStoneFloorBasalt.description>Des dalles en pierre raffinées et polies pour un look élégant, digne d'un manoir. Elles sont beaucoup plus rapides à poser que les sols en pierre plus fins, mais nécessitent beaucoup de ressources. Elles sont incroyablement belles à regarder.</EM_VFEArch_PolishedStoneFloorBasalt.description>
+  
+  <!-- EN: schist polished stone floor -->
+  <EM_VFEArch_PolishedStoneFloorSchist.label>sol en pierre polie de schiste</EM_VFEArch_PolishedStoneFloorSchist.label>
+  <!-- EN: Fancy, polished stone tiles for an elegant, mansion-like look. Don’t take nearly as long to lay down as the finer stone floors, but require a lot of resources. They are incredibly beautiful to look at. -->
+  <EM_VFEArch_PolishedStoneFloorSchist.description>Des dalles en pierre raffinées et polies pour un look élégant, digne d'un manoir. Elles sont beaucoup plus rapides à poser que les sols en pierre plus fins, mais nécessitent beaucoup de ressources. Elles sont incroyablement belles à regarder.</EM_VFEArch_PolishedStoneFloorSchist.description>
+  
+  <!-- EN: shale polished stone floor -->
+  <EM_VFEArch_PolishedStoneFloorShale.label>sol en pierre polie de schiste argileux</EM_VFEArch_PolishedStoneFloorShale.label>
+  <!-- EN: Fancy, polished stone tiles for an elegant, mansion-like look. Don’t take nearly as long to lay down as the finer stone floors, but require a lot of resources. They are incredibly beautiful to look at. -->
+  <EM_VFEArch_PolishedStoneFloorShale.description>Des dalles en pierre raffinées et polies pour un look élégant, digne d'un manoir. Elles sont beaucoup plus rapides à poser que les sols en pierre plus fins, mais nécessitent beaucoup de ressources. Elles sont incroyablement belles à regarder.</EM_VFEArch_PolishedStoneFloorShale.description>
+  
+  <!-- EN: siltstone polished stone floor -->
+  <EM_VFEArch_PolishedStoneFloorSiltstone.label>sol en pierre polie de siltite</EM_VFEArch_PolishedStoneFloorSiltstone.label>
+  <!-- EN: Fancy, polished stone tiles for an elegant, mansion-like look. Don’t take nearly as long to lay down as the finer stone floors, but require a lot of resources. They are incredibly beautiful to look at. -->
+  <EM_VFEArch_PolishedStoneFloorSiltstone.description>Des dalles en pierre raffinées et polies pour un look élégant, digne d'un manoir. Elles sont beaucoup plus rapides à poser que les sols en pierre plus fins, mais nécessitent beaucoup de ressources. Elles sont incroyablement belles à regarder.</EM_VFEArch_PolishedStoneFloorSiltstone.description>
+  
+  <!-- EN: basalt slabs -->
+  <EM_VFEArch_SlabsBasalt.label>dallage de basalte</EM_VFEArch_SlabsBasalt.label>
+  <!-- EN: Large slabs of stone laid at random for that temple-like look. Beautiful to look at, they take a lot of work to place down and use up large amounts of resources. -->
+  <EM_VFEArch_SlabsBasalt.description>De grandes dalles de pierre posées au hasard pour créer un aspect semblable à celui d'un temple. Magnifiques à regarder, elles demandent beaucoup de travail à poser et consomment d'importantes ressources.</EM_VFEArch_SlabsBasalt.description>
+  
+  <!-- EN: schist slabs -->
+  <EM_VFEArch_SlabsSchist.label>dallage de schiste</EM_VFEArch_SlabsSchist.label>
+  <!-- EN: Large slabs of stone laid at random for that temple-like look. Beautiful to look at, they take a lot of work to place down and use up large amounts of resources. -->
+  <EM_VFEArch_SlabsSchist.description>De grandes dalles de pierre posées au hasard pour créer un aspect semblable à celui d'un temple. Magnifiques à regarder, elles demandent beaucoup de travail à poser et consomment d'importantes ressources.</EM_VFEArch_SlabsSchist.description>
+  
+  <!-- EN: shale slabs -->
+  <EM_VFEArch_SlabsShale.label>dallage de schiste argileux</EM_VFEArch_SlabsShale.label>
+  <!-- EN: Large slabs of stone laid at random for that temple-like look. Beautiful to look at, they take a lot of work to place down and use up large amounts of resources. -->
+  <EM_VFEArch_SlabsShale.description>De grandes dalles de pierre posées au hasard pour créer un aspect semblable à celui d'un temple. Magnifiques à regarder, elles demandent beaucoup de travail à poser et consomment d'importantes ressources.</EM_VFEArch_SlabsShale.description>
+  
+  <!-- EN: siltstone slabs -->
+  <EM_VFEArch_SlabsSiltstone.label>dallage de siltite</EM_VFEArch_SlabsSiltstone.label>
+  <!-- EN: Large slabs of stone laid at random for that temple-like look. Beautiful to look at, they take a lot of work to place down and use up large amounts of resources. -->
+  <EM_VFEArch_SlabsSiltstone.description>De grandes dalles de pierre posées au hasard pour créer un aspect semblable à celui d'un temple. Magnifiques à regarder, elles demandent beaucoup de travail à poser et consomment d'importantes ressources.</EM_VFEArch_SlabsSiltstone.description>
+  
+</LanguageData>

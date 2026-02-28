@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Make clay bricks -->
+  <EM_ClayToBricks.label>Fabrique des briques en argile</EM_ClayToBricks.label>
+  <!-- EN: Turns 100 clay into 50 clay bricks. -->
+  <EM_ClayToBricks.description>Transforme 100 unités d'argile en 50 briques d'argile.</EM_ClayToBricks.description>
+  <!-- EN: Make 50 clay bricks from 100 clay -->
+  <EM_ClayToBricks.labelOverride>Fabrique 50 briques d'argile à partir de 100 unités d'argile.</EM_ClayToBricks.labelOverride>
+  
+  <!-- EN: Make adobe bricks -->
+  <EM_SoilToAdobeBricks.label>Fabrique des briques d'adobe</EM_SoilToAdobeBricks.label>
+  <!-- EN: Turns 20 soil into 10 adobe bricks. -->
+  <EM_SoilToAdobeBricks.description>Transforme 20 unités de terre en 10 briques d'adobe.</EM_SoilToAdobeBricks.description>
+  <!-- EN: Make 10 adobe bricks from 20 soil -->
+  <EM_SoilToAdobeBricks.labelOverride>Fabrique 10 briques d'adobe à partir de 20 unités de terre.</EM_SoilToAdobeBricks.labelOverride>
+  
+</LanguageData>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: adobe brick wall -->
+  <EM_Wall_AdobeBrick.label>mur en briques d'adobe</EM_Wall_AdobeBrick.label>
+  <!-- EN: A wall made of adobe bricks. Capable of holding up a roof.\n\nThis wall can be coated to increase its resistance. -->
+  <EM_Wall_AdobeBrick.description>Un mur fait de briques d'adobe. Capable de soutenir un toit.\n\nCe mur peut être enduit pour augmenter sa résistance.</EM_Wall_AdobeBrick.description>
+  
+  <!-- EN: adobe brick wall -->
+  <EM_Wall_AdobeBrick_Coated.label>mur en briques d'adobe</EM_Wall_AdobeBrick_Coated.label>
+  <!-- EN: A wall made of adobe bricks. Capable of holding up a roof. -->
+  <EM_Wall_AdobeBrick_Coated.description>Un mur fait de briques d'adobe. Capable de soutenir un toit.</EM_Wall_AdobeBrick_Coated.description>
+  
+  <!-- EN: concrete brick wall -->
+  <EM_Wall_CementBrick.label>mur en briques de béton</EM_Wall_CementBrick.label>
+  <!-- EN: A wall made of cement bricks and metal nerves. Capable of holding up a roof.\n\nConcrete brick walls are weak when uncoated, but once they are, they are much stronger. -->
+  <EM_Wall_CementBrick.description>Un mur fait de briques de ciment et d'armatures métalliques. Capable de soutenir un toit.\n\nLes murs en briques de béton sont fragiles lorsqu'ils ne sont pas recouverts, mais une fois recouverts, ils sont beaucoup plus solides.</EM_Wall_CementBrick.description>
+  
+  <!-- EN: cement brick wall -->
+  <EM_Wall_CementBrick_Coated.label>mur en briques de ciment</EM_Wall_CementBrick_Coated.label>
+  <!-- EN: A wall made of cement bricks. Capable of holding up a roof. -->
+  <EM_Wall_CementBrick_Coated.description>Un mur fait de briques de ciment. Capable de soutenir un toit.</EM_Wall_CementBrick_Coated.description>
+  
+  <!-- EN: brick wall -->
+  <EM_Wall_ClayBrick.label>mur de briques</EM_Wall_ClayBrick.label>
+  <!-- EN: A wall made of clay bricks. Capable of holding up a roof.\n\nThis wall can be coated to increase its resistance. -->
+  <EM_Wall_ClayBrick.description>Un mur fait de briques d'argile. Capable de soutenir un toit.\n\nCe mur peut être enduit pour augmenter sa résistance.</EM_Wall_ClayBrick.description>
+  
+  <!-- EN: brick wall -->
+  <EM_Wall_ClayBrick_Coated.label>mur de briques</EM_Wall_ClayBrick_Coated.label>
+  <!-- EN: A wall made of clay bricks. Capable of holding up a roof. -->
+  <EM_Wall_ClayBrick_Coated.description>Un mur fait de briques d'argile. Capable de soutenir un toit.</EM_Wall_ClayBrick_Coated.description>
+  
+</LanguageData>

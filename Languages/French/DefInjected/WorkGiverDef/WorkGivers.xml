@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dig at digging spot -->
+  <EM_Dig.label>creuser au point de creusement</EM_Dig.label>
+  <!-- EN: digging -->
+  <EM_Dig.gerund>creuse</EM_Dig.gerund>
+  <!-- EN: dig -->
+  <EM_Dig.verb>creuse</EM_Dig.verb>
+  
+</LanguageData>

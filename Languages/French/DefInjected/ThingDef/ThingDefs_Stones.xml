@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: basalt -->
+  <EM_Basalt.label>basalte</EM_Basalt.label>
+  <!-- EN: An igneous rock formed from the rapid cooling of low-viscosity lava. -->
+  <EM_Basalt.description>Une roche ignée formée par le refroidissement rapide d'une lave à faible viscosité.</EM_Basalt.description>
+  
+  <!-- EN: basalt blocks -->
+  <EM_BlocksBasalt.label>blocs de basalte</EM_BlocksBasalt.label>
+  <!-- EN: Blocks of solid basalt. -->
+  <EM_BlocksBasalt.description>Blocs de basalte massif.</EM_BlocksBasalt.description>
+  <!-- EN: basalt -->
+  <EM_BlocksBasalt.stuffProps.stuffAdjective>basalte</EM_BlocksBasalt.stuffProps.stuffAdjective>
+  
+  <!-- EN: schist blocks -->
+  <EM_BlocksSchist.label>blocs de schiste</EM_BlocksSchist.label>
+  <!-- EN: Blocks of solid schist. -->
+  <EM_BlocksSchist.description>Blocs de schiste solide.</EM_BlocksSchist.description>
+  <!-- EN: schist -->
+  <EM_BlocksSchist.stuffProps.stuffAdjective>schiste</EM_BlocksSchist.stuffProps.stuffAdjective>
+  
+  <!-- EN: shale blocks -->
+  <EM_BlocksShale.label>blocs de schiste argileux</EM_BlocksShale.label>
+  <!-- EN: Blocks of solid shale. -->
+  <EM_BlocksShale.description>Blocs de schiste argileux solide.</EM_BlocksShale.description>
+  <!-- EN: shale -->
+  <EM_BlocksShale.stuffProps.stuffAdjective>schiste argileux</EM_BlocksShale.stuffProps.stuffAdjective>
+  
+  <!-- EN: siltstone blocks -->
+  <EM_BlocksSiltstone.label>blocs de siltite</EM_BlocksSiltstone.label>
+  <!-- EN: Blocks of solid siltstone. -->
+  <EM_BlocksSiltstone.description>Blocs de siltite solide.</EM_BlocksSiltstone.description>
+  <!-- EN: siltstone -->
+  <EM_BlocksSiltstone.stuffProps.stuffAdjective>siltite</EM_BlocksSiltstone.stuffProps.stuffAdjective>
+  
+  <!-- EN: basalt chunk -->
+  <EM_ChunkBasalt.label>morceau de basalte</EM_ChunkBasalt.label>
+  <!-- EN: A chunk of rock. Can be cut into usable stone blocks. -->
+  <EM_ChunkBasalt.description>Un morceau de roche. Peut être découpé en blocs de pierre utilisables.</EM_ChunkBasalt.description>
+  
+  <!-- EN: schist chunk -->
+  <EM_ChunkSchist.label>morceau de schiste</EM_ChunkSchist.label>
+  <!-- EN: A chunk of rock. Can be cut into usable stone blocks. -->
+  <EM_ChunkSchist.description>Un morceau de roche. Peut être découpé en blocs de pierre utilisables.</EM_ChunkSchist.description>
+  
+  <!-- EN: shale chunk -->
+  <EM_ChunkShale.label>morceau de schiste argileux</EM_ChunkShale.label>
+  <!-- EN: A chunk of rock. Can be cut into usable stone blocks. -->
+  <EM_ChunkShale.description>Un morceau de roche. Peut être découpé en blocs de pierre utilisables.</EM_ChunkShale.description>
+  
+  <!-- EN: siltstone chunk -->
+  <EM_ChunkSiltstone.label>morceau de siltite</EM_ChunkSiltstone.label>
+  <!-- EN: A chunk of rock. Can be cut into usable stone blocks. -->
+  <EM_ChunkSiltstone.description>Un morceau de roche. Peut être découpé en blocs de pierre utilisables.</EM_ChunkSiltstone.description>
+  
+  <!-- EN: schist -->
+  <EM_Schist.label>schiste</EM_Schist.label>
+  <!-- EN: A metamorphic rock formed from fine-grained sedimentary rock. -->
+  <EM_Schist.description>Une roche métamorphique formée à partir d'une roche sédimentaire à grains fins.</EM_Schist.description>
+  
+  <!-- EN: shale -->
+  <EM_Shale.label>schiste argileux</EM_Shale.label>
+  <!-- EN: A fine-grained sedimentary rock formed from the compaction of clay and minerals. -->
+  <EM_Shale.description>Une roche sédimentaire à grains fins formée par le compactage d'argile et de minéraux.</EM_Shale.description>
+  
+  <!-- EN: siltstone -->
+  <EM_Siltstone.label>siltite</EM_Siltstone.label>
+  <!-- EN: A clastic sedimentary rock composed mostly of silt. -->
+  <EM_Siltstone.description>Une roche sédimentaire clastique composée principalement de limon.</EM_Siltstone.description>
+  
+  <!-- EN: smoothed basalt -->
+  <EM_SmoothedBasalt.label>basalte lissé</EM_SmoothedBasalt.label>
+  <!-- EN: An igneous rock formed from the rapid cooling of low-viscosity lava. The surface is smooth, dark and shiny. -->
+  <EM_SmoothedBasalt.description>Roche ignée formée par le refroidissement rapide d'une lave à faible viscosité. Sa surface est lisse, sombre et brillante.</EM_SmoothedBasalt.description>
+  
+  <!-- EN: smoothed schist -->
+  <EM_SmoothedSchist.label>schiste lissé</EM_SmoothedSchist.label>
+  <!-- EN: A metamorphic rock formed from fine-grained sedimentary rock. It has a mineral-rich foliated texture. -->
+  <EM_SmoothedSchist.description>Roche métamorphique formée à partir d'une roche sédimentaire à grains fins. Elle présente une texture feuilletée riche en minéraux.</EM_SmoothedSchist.description>
+  
+  <!-- EN: smoothed shale -->
+  <EM_SmoothedShale.label>schiste argileux lissé</EM_SmoothedShale.label>
+  <!-- EN: A sedimentary rock formed from compacted fragments of minerals like quartz and calcite. It glows a smooth, faint blue and has a distinct layered texture. -->
+  <EM_SmoothedShale.description>Une roche sédimentaire formée à partir de fragments compactés de minéraux tels que le quartz et la calcite. Elle brille d'un bleu doux et pâle et présente une texture stratifiée distincte.</EM_SmoothedShale.description>
+  
+  <!-- EN: smoothed siltstone -->
+  <EM_SmoothedSiltstone.label>siltite lissée</EM_SmoothedSiltstone.label>
+  <!-- EN: A sedimentary rock formed mostly from silt. It has an earthy, clay coloration and a grainy texture. -->
+  <EM_SmoothedSiltstone.description>Une roche sédimentaire formée principalement de limon. Elle présente une couleur terreuse, argileuse, et une texture granuleuse.</EM_SmoothedSiltstone.description>
+  
+</LanguageData>

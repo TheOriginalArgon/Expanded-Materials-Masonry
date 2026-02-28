@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make cement bricks -->
+  <EM_Make_CementBricks.label>fabriquer des briques en ciment</EM_Make_CementBricks.label>
+  <!-- EN: Make cement bricks. -->
+  <EM_Make_CementBricks.description>Fabriquer des briques en ciment.</EM_Make_CementBricks.description>
+  <!-- EN: Making cement bricks. -->
+  <EM_Make_CementBricks.jobString>Fabrique des briques en ciment.</EM_Make_CementBricks.jobString>
+  
+</LanguageData>
