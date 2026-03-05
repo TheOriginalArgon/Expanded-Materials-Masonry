@@ -29,7 +29,7 @@
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
             <WorkToBuild>100</WorkToBuild>
-            <Flammability>0.2</Flammability>
+            <Flammability>0</Flammability>
             <MeditationFocusStrength>0.1</MeditationFocusStrength>
             <Beauty>-1</Beauty>
         </statBases>
@@ -135,7 +135,7 @@
         <designationCategory />
         <statBases>
             <MaxHitPoints>210</MaxHitPoints>
-            <Flammability>0.2</Flammability>
+            <Flammability>0</Flammability>
             <MeditationFocusStrength>0.1</MeditationFocusStrength>
         </statBases>
         <!-- <comps>
@@ -162,7 +162,11 @@
                 <li>Vent</li>
             </relatedBuildCommands>
         </building>
-        <modExtensions Inherit="false" />
+        <modExtensions Inherit="false">
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_CoatedWall">
+                <uncoatedThingDef>EM_Wall_AdobeBrick</uncoatedThingDef>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="BuildingBase" Name="EM_Wall_ClayBrick_Base">
@@ -194,7 +198,7 @@
         <statBases>
             <MaxHitPoints>250</MaxHitPoints>
             <WorkToBuild>150</WorkToBuild>
-            <Flammability>0.2</Flammability>
+            <Flammability>0</Flammability>
             <MeditationFocusStrength>0.1</MeditationFocusStrength>
         </statBases>
         <costList>
@@ -299,7 +303,7 @@
         <designationCategory />
         <statBases>
             <MaxHitPoints>380</MaxHitPoints>
-            <Flammability>0.2</Flammability>
+            <Flammability>0</Flammability>
             <MeditationFocusStrength>0.1</MeditationFocusStrength>
             <Beauty>1</Beauty>
         </statBases>
@@ -322,7 +326,11 @@
                 <li>Vent</li>
             </relatedBuildCommands>
         </building>
-        <modExtensions Inherit="false" />
+        <modExtensions Inherit="false">
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_CoatedWall">
+                <uncoatedThingDef>EM_Wall_ClayBrick</uncoatedThingDef>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="BuildingBase" Name="EM_Wall_CementBrick_Base">
@@ -354,7 +362,7 @@
         <statBases>
             <MaxHitPoints>220</MaxHitPoints>
             <WorkToBuild>100</WorkToBuild>
-            <Flammability>0.2</Flammability>
+            <Flammability>0</Flammability>
             <MeditationFocusStrength>0.1</MeditationFocusStrength>
             <Beauty>-4</Beauty>
         </statBases>
@@ -458,15 +466,10 @@
             </damageData>
             <color>(177,183,180)</color>
         </graphicData>
-        <!-- <comps>
-            <li>
-                <compClass>CompColorable</compClass>
-            </li>
-        </comps> -->
         <designationCategory />
         <statBases>
             <MaxHitPoints>400</MaxHitPoints>
-            <Flammability>0.2</Flammability>
+            <Flammability>0</Flammability>
             <MeditationFocusStrength>0.1</MeditationFocusStrength>
             <Beauty>1</Beauty>
         </statBases>
@@ -489,7 +492,11 @@
                 <li>Vent</li>
             </relatedBuildCommands>
         </building>
-        <modExtensions Inherit="false" />
+        <modExtensions Inherit="false">
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_CoatedWall">
+                <uncoatedThingDef>EM_Wall_CementBrick</uncoatedThingDef>
+            </li>
+        </modExtensions>
     </ThingDef>
 
 </Defs>

@@ -1,7 +1,6 @@
 <Defs>
 
     <RecipeDef Name="EM_MakeCobblestoneBase" Abstract="True">
-        <workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
         <jobString>Making cobblestone from chunk.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>CutStone</effectWorking>
@@ -20,6 +19,7 @@
         <defName>EM_Make_CobblestoneAny</defName>
         <label>make any cobblestone</label>
         <description>Smash rock chunks into usable cobblestone.</description>
+        <workerCounterClass>ArgonicCore.RecipeWorkerCounter_MakeCobblestone</workerCounterClass>
         <workAmount>800</workAmount>
         <ingredients>
             <li>
@@ -39,9 +39,8 @@
         <modExtensions>
             <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_SpecialProducts">
                 <usesEfficiency>false</usesEfficiency>
-                <specialProductKeys>
-                    <li>EM_SpecialProducts_Cobblestone</li>
-                </specialProductKeys>
+                <specialProductsDef>EM_SpecialProducts_Cobblestone</specialProductsDef>
+                <ingredientDependant>true</ingredientDependant>
             </li>
         </modExtensions>
     </RecipeDef>

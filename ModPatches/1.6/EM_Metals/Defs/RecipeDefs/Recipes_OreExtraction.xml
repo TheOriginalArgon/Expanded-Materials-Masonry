@@ -8,7 +8,7 @@
             <li>ElectricSmelter</li>
         </recipeUsers>
         <jobString>Smelting ore from rocks.</jobString>
-        <workAmount>7000</workAmount>
+        <workAmount>2900</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
