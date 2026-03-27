@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: basalt bridge -->
+  <EM_VFEArch_BridgeBasalt.label>pont en basalte</EM_VFEArch_BridgeBasalt.label>
+  <!-- EN: Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.\n	\nCan be made out of any stone blocks. -->
+  <EM_VFEArch_BridgeBasalt.description>Les ponts en pierre sont des structures qui peuvent être construites sur l'eau. Les ponts permettent de traverser plus rapidement les cours d'eau. Une fois construits, ils peuvent supporter de nombreuses structures, y compris des structures lourdes et tout type de mur. Les ponts facilitent la construction dans les biomes marécageux. \n    \nIls peuvent être construits à partir de n'importe quel bloc de pierre.</EM_VFEArch_BridgeBasalt.description>
+  
+  <!-- EN: schist bridge -->
+  <EM_VFEArch_BridgeSchist.label>pont en schiste</EM_VFEArch_BridgeSchist.label>
+  <!-- EN: Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.\n	\nCan be made out of any stone blocks. -->
+  <EM_VFEArch_BridgeSchist.description>Les ponts en pierre sont des structures qui peuvent être construites sur l'eau. Les ponts permettent de traverser plus rapidement les cours d'eau. Une fois construits, ils peuvent supporter de nombreuses structures, y compris des structures lourdes et tout type de mur. Les ponts facilitent la construction dans les biomes marécageux. \n    \nIls peuvent être construits à partir de n'importe quel bloc de pierre.</EM_VFEArch_BridgeSchist.description>
+  
+  <!-- EN: shale bridge -->
+  <EM_VFEArch_BridgeShale.label>pont en schiste argileux</EM_VFEArch_BridgeShale.label>
+  <!-- EN: Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.\n	\nCan be made out of any stone blocks. -->
+  <EM_VFEArch_BridgeShale.description>Les ponts en pierre sont des structures qui peuvent être construites sur l'eau. Les ponts permettent de traverser plus rapidement les cours d'eau. Une fois construits, ils peuvent supporter de nombreuses structures, y compris des structures lourdes et tout type de mur. Les ponts facilitent la construction dans les biomes marécageux. \n    \nIls peuvent être construits à partir de n'importe quel bloc de pierre.</EM_VFEArch_BridgeShale.description>
+  
+  <!-- EN: siltstone bridge -->
+  <EM_VFEArch_BridgeSiltstone.label>pont en siltite</EM_VFEArch_BridgeSiltstone.label>
+  <!-- EN: Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.\n	\nCan be made out of any stone blocks. -->
+  <EM_VFEArch_BridgeSiltstone.description>Les ponts en pierre sont des structures qui peuvent être construites sur l'eau. Les ponts permettent de traverser plus rapidement les cours d'eau. Une fois construits, ils peuvent supporter de nombreuses structures, y compris des structures lourdes et tout type de mur. Les ponts facilitent la construction dans les biomes marécageux. \n    \nIls peuvent être construits à partir de n'importe quel bloc de pierre.</EM_VFEArch_BridgeSiltstone.description>
+  
+</LanguageData>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: basalt cobblestone -->
+  <EM_CobblestoneBasalt.label>pavé de basalte</EM_CobblestoneBasalt.label>
+  <!-- EN: Roughly hewn basalt. Basalt is a dark, hardigneous rock. -->
+  <EM_CobblestoneBasalt.description>Basalte grossièrement taillé. Le basalte est une roche sombre et dure.</EM_CobblestoneBasalt.description>
+  <!-- EN: basalt cobblestone -->
+  <EM_CobblestoneBasalt.stuffProps.stuffAdjective>pavé de basalte</EM_CobblestoneBasalt.stuffProps.stuffAdjective>
+  
+  <!-- EN: granite cobblestone -->
+  <EM_CobblestoneGranite.label>pavé de granite</EM_CobblestoneGranite.label>
+  <!-- EN: Roughly hewn granite. Granite is a very hard stone and is difficult to chip. -->
+  <EM_CobblestoneGranite.description>Granite grossièrement taillé. Le granite est une pierre très dure et difficile à tailler.</EM_CobblestoneGranite.description>
+  <!-- EN: granite cobblestone -->
+  <EM_CobblestoneGranite.stuffProps.stuffAdjective>pavé de granite</EM_CobblestoneGranite.stuffProps.stuffAdjective>
+  
+  <!-- EN: limestone cobblestone -->
+  <EM_CobblestoneLimestone.label>pavé de calcaire</EM_CobblestoneLimestone.label>
+  <!-- EN: Roughly hewn limestone. Limestone is a sedimentary rock formed from the remains of ancient seashells. -->
+  <EM_CobblestoneLimestone.description>Calcaire grossièrement taillé. Le calcaire est une roche sédimentaire formée à partir des restes d'anciens coquillages.</EM_CobblestoneLimestone.description>
+  <!-- EN: limestone cobblestone -->
+  <EM_CobblestoneLimestone.stuffProps.stuffAdjective>pavé de calcaire</EM_CobblestoneLimestone.stuffProps.stuffAdjective>
+  
+  <!-- EN: marble cobblestone -->
+  <EM_CobblestoneMarble.label>pavé de marbre</EM_CobblestoneMarble.label>
+  <!-- EN: Roughly hewn marble. Marble is a metamorphic rock that is highly valued for its beauty and is often used in sculpture and architecture. -->
+  <EM_CobblestoneMarble.description>Marbre grossièrement taillé. Le marbre est une roche métamorphique très appréciée pour sa beauté et souvent utilisée dans la sculpture et l'architecture.</EM_CobblestoneMarble.description>
+  <!-- EN: marble cobblestone -->
+  <EM_CobblestoneMarble.stuffProps.stuffAdjective>pavé de marbre</EM_CobblestoneMarble.stuffProps.stuffAdjective>
+  
+  <!-- EN: sandstone cobblestone -->
+  <EM_CobblestoneSandstone.label>pavé de grès</EM_CobblestoneSandstone.label>
+  <!-- EN: Roughly hewn sandstone. Sandstone is a relatively soft rock and chips easily. -->
+  <EM_CobblestoneSandstone.description>Grès grossièrement taillé. Le grès est une roche relativement tendre qui s'ébrèche facilement.</EM_CobblestoneSandstone.description>
+  <!-- EN: sandstone cobblestone -->
+  <EM_CobblestoneSandstone.stuffProps.stuffAdjective>pavé de grès</EM_CobblestoneSandstone.stuffProps.stuffAdjective>
+  
+  <!-- EN: schist cobblestone -->
+  <EM_CobblestoneSchist.label>pavé de schiste</EM_CobblestoneSchist.label>
+  <!-- EN: Roughly hewn schist. Schist is a medium-grade metamorphic rock. -->
+  <EM_CobblestoneSchist.description>Schiste grossièrement taillé. Le schiste est une roche métamorphique de qualité moyenne.</EM_CobblestoneSchist.description>
+  <!-- EN: schist cobblestone -->
+  <EM_CobblestoneSchist.stuffProps.stuffAdjective>pavé de schiste</EM_CobblestoneSchist.stuffProps.stuffAdjective>
+  
+  <!-- EN: shale cobblestone -->
+  <EM_CobblestoneShale.label>pavé de schiste argileux</EM_CobblestoneShale.label>
+  <!-- EN: Roughly hewn shale. Shale is a fine-grained sedimentary rock with a distinct blue hue. -->
+  <EM_CobblestoneShale.description>Schiste argileux grossièrement taillé. Le schiste argileux est une roche sédimentaire à grains fins qui se caractérise par sa teinte bleutée distinctive.</EM_CobblestoneShale.description>
+  <!-- EN: shale cobblestone -->
+  <EM_CobblestoneShale.stuffProps.stuffAdjective>pavé de schiste argileux</EM_CobblestoneShale.stuffProps.stuffAdjective>
+  
+  <!-- EN: siltstone cobblestone -->
+  <EM_CobblestoneSiltstone.label>pavé de siltite</EM_CobblestoneSiltstone.label>
+  <!-- EN: Roughly hewn siltstone. Siltstone is a clay-colored, grainy sedimentary rock. -->
+  <EM_CobblestoneSiltstone.description>Siltite grossièrement taillée. La siltite est une roche sédimentaire granuleuse de couleur argileuse.</EM_CobblestoneSiltstone.description>
+  <!-- EN: siltstone cobblestone -->
+  <EM_CobblestoneSiltstone.stuffProps.stuffAdjective>pavé de siltite</EM_CobblestoneSiltstone.stuffProps.stuffAdjective>
+  
+  <!-- EN: slate cobblestone -->
+  <EM_CobblestoneSlate.label>pavé d'ardoise</EM_CobblestoneSlate.label>
+  <!-- EN: Roughly hewn slate. Slate is a fine-grained metamorphic rock that can be split into thin layers. -->
+  <EM_CobblestoneSlate.description>Ardoise grossièrement taillée. L'ardoise est une roche métamorphique à grain fin qui peut être fendue en fines couches.</EM_CobblestoneSlate.description>
+  <!-- EN: slate cobblestone -->
+  <EM_CobblestoneSlate.stuffProps.stuffAdjective>pavé d'ardoise</EM_CobblestoneSlate.stuffProps.stuffAdjective>
+  
+</LanguageData>

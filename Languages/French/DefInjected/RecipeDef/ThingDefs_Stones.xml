@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make basalt blocks -->
+  <EM_Make_StoneBlocksBasalt.label>fabriquer des blocs de basalte</EM_Make_StoneBlocksBasalt.label>
+  <!-- EN: Cuts basalt chunks into usable blocks. -->
+  <EM_Make_StoneBlocksBasalt.description>Découper des morceaux de basalte en blocs utilisables.</EM_Make_StoneBlocksBasalt.description>
+  <!-- EN: Cutting stone blocks from chunk. -->
+  <EM_Make_StoneBlocksBasalt.jobString>Découpe des blocs de pierre à partir d'un morceau.</EM_Make_StoneBlocksBasalt.jobString>
+  
+  <!-- EN: make schist blocks -->
+  <EM_Make_StoneBlocksSchist.label>fabriquer des blocs de schiste</EM_Make_StoneBlocksSchist.label>
+  <!-- EN: Cuts schist chunks into usable blocks. -->
+  <EM_Make_StoneBlocksSchist.description>Découper des morceaux de schiste en blocs utilisables.</EM_Make_StoneBlocksSchist.description>
+  <!-- EN: Cutting stone blocks from chunk. -->
+  <EM_Make_StoneBlocksSchist.jobString>Découpe des blocs de pierre à partir d'un morceau.</EM_Make_StoneBlocksSchist.jobString>
+  
+  <!-- EN: make shale blocks -->
+  <EM_Make_StoneBlocksShale.label>fabriquer des blocs de schiste argileux</EM_Make_StoneBlocksShale.label>
+  <!-- EN: Cuts shale chunks into usable blocks. -->
+  <EM_Make_StoneBlocksShale.description>Découper des morceaux de schiste argileux en blocs utilisables.</EM_Make_StoneBlocksShale.description>
+  <!-- EN: Cutting stone blocks from chunk. -->
+  <EM_Make_StoneBlocksShale.jobString>Découpe des blocs de pierre à partir d'un morceau.</EM_Make_StoneBlocksShale.jobString>
+  
+  <!-- EN: make siltstone blocks -->
+  <EM_Make_StoneBlocksSiltstone.label>fabriquer des blocs de siltite</EM_Make_StoneBlocksSiltstone.label>
+  <!-- EN: Cuts siltstone chunks into usable blocks. -->
+  <EM_Make_StoneBlocksSiltstone.description>Découper des morceaux de siltite en blocs utilisables.</EM_Make_StoneBlocksSiltstone.description>
+  <!-- EN: Cutting stone blocks from chunk. -->
+  <EM_Make_StoneBlocksSiltstone.jobString>Découpe des blocs de pierre à partir d'un morceau.</EM_Make_StoneBlocksSiltstone.jobString>
+  
+</LanguageData>
