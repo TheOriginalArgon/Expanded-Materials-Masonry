@@ -1,0 +1,14 @@
+<Patch>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFED_Turret_Kontarion" or
+            defName="VFED_Turret_Palintone" or
+            defName="VFED_Turret_Onager"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_CementMix</newMaterial>
+        <percentage>25</percentage>
+        <extraCostFactor>2</extraCostFactor>
+    </Operation>
+
+</Patch>

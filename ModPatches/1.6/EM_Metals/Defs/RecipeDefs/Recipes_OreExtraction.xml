@@ -7,7 +7,7 @@
         <recipeUsers>
             <li>ElectricSmelter</li>
         </recipeUsers>
-        <jobString>Smelting ore from rocks.</jobString>
+        <jobString>Smelting silicon from sand.</jobString>
         <workAmount>2900</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Smelt</effectWorking>

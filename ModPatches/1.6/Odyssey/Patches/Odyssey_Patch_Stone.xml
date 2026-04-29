@@ -1,14 +1,14 @@
 <Patch>
 
     <Operation Class="PatchOperationAddModExtension">
-        <xpath>/Defs/ThingDef [@ParentName="ChunkRockBase" and not(defName="ChunkVacstone")]</xpath>
+        <xpath>/Defs/ThingDef [defName="ChunkVacstone"]</xpath>
         <value>
             <li Class="ArgonicCore.ModExtensions.ThingDefExtension_DiggableResource">
                 <minimumPortion>1</minimumPortion>
                 <difficultyFactor>2.3</difficultyFactor>
-                <priorityInList>10</priorityInList>
+                <priorityInList>11</priorityInList>
                 <resourceTags>
-                    <li>Stone</li>
+                    <li>SpaceStone</li>
                 </resourceTags>
             </li>
         </value>

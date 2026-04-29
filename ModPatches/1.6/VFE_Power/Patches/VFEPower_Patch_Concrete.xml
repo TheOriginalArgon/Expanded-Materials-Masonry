@@ -1,0 +1,15 @@
+<Patch>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFE_AdvancedWatermillGenerator" or
+            defName="VPE_AdvancedGeothermalGenerator" or
+            defName="VPE_NuclearGenerator" or
+            defName="VFE_TidalGenerator"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_CementMix</newMaterial>
+        <percentage>25</percentage>
+        <extraCostFactor>2</extraCostFactor>
+    </Operation>
+
+</Patch>

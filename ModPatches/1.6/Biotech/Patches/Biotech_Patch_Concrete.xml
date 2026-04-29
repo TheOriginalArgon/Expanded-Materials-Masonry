@@ -1,0 +1,15 @@
+<Patch>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="MechGestator" or
+            defName="LargeMechGestator" or
+            defName="BasicRecharger" or
+            defName="StandardRecharger"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_CementMix</newMaterial>
+        <percentage>25</percentage>
+        <extraCostFactor>2</extraCostFactor>
+    </Operation>
+
+</Patch>

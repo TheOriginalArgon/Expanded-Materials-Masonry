@@ -1,0 +1,13 @@
+<Patch>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="PS_DeepchemRefinery" or
+            defName="VCHE_DeepchemPumpjack"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_CementMix</newMaterial>
+        <percentage>25</percentage>
+        <extraCostFactor>2</extraCostFactor>
+    </Operation>
+
+</Patch>

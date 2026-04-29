@@ -1,0 +1,29 @@
+<Patch>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFEFactory_Autofarmer" or
+            defName="VFEFactory_AutomatedDrillPlatform" or
+            defName="VFEFactory_AutomatedSmelter" or
+            defName="VFEFactory_AutomatedBiofuelRefinery" or
+            defName="VFEFactory_AutomatedMasonrySaw" or
+            defName="VFEFactory_AutomatedMincer" or
+            defName="VFEFactory_ConveyorOven" or
+            defName="VFEFactory_Autoloom" or
+            defName="VFEFactory_AutomatedCrematorium" or
+            defName="VFEFactory_AutomatedFishfarm" or
+            defName="VFEFactory_AutomatedCannery" or
+            defName="VFEFactory_AutomatedAssembler" or
+            defName="VFEFactory_NeutroamineSynthesizer" or
+            defName="VFEFactory_AutomatedAmmunitionPress" or
+            defName="VFEFactory_AutomatedAlloyForge" or
+            defName="VFEFactory_AutomatedDistillery" or
+            defName="VFEFactory_MedicineGranulator" or
+            defName="VFEFactory_AutomatedMachiningBay"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_CementMix</newMaterial>
+        <percentage>25</percentage>
+        <extraCostFactor>2.5</extraCostFactor>
+    </Operation>
+
+</Patch>

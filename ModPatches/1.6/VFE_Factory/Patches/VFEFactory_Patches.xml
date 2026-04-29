@@ -1,0 +1,13 @@
+<Patch>
+
+    <Operation Class="PatchOperationInsert">
+        <xpath>/Defs/ThingDef [defName="VFEFactory_AutomatedDrillPlatform"]/comps/li [@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes/li[text()="VFEFactory_DigForMetals"]</xpath>
+        <value>
+            <li>EM_VFEFactory_DigForSiltstoneChunk</li>
+            <li>EM_VFEFactory_DigForSchistChunk</li>
+            <li>EM_VFEFactory_DigForShaleChunk</li>
+            <li>EM_VFEFactory_DigForBasaltChunk</li>
+        </value>
+    </Operation>
+
+</Patch>

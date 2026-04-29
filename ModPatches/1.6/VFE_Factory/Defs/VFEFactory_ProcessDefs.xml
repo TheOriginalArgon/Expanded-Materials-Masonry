@@ -1,0 +1,107 @@
+<Defs>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_DigForSiltstoneChunk</defName>
+        <label>Dig to harvest a siltstone chunk</label>
+        <description>Dig to harvest a siltstone chunk.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <hideProcessIfNotNaturalRock>true</hideProcessIfNotNaturalRock>
+        <rockToDetect>EM_Siltstone</rockToDetect>
+        <ticks>14000</ticks>
+        <results>
+            <li>
+                <thing>EM_ChunkSiltstone</thing>
+                <count>1</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedDrillSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>Drill</effecterDef>
+        <worksInSpace>false</worksInSpace>
+        <maxOutputCount>3</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_DigForSchistChunk</defName>
+        <label>Dig to harvest a schist chunk</label>
+        <description>Dig to harvest a schist chunk.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <hideProcessIfNotNaturalRock>true</hideProcessIfNotNaturalRock>
+        <rockToDetect>EM_Schist</rockToDetect>
+        <ticks>14000</ticks>
+        <results>
+            <li>
+                <thing>EM_ChunkSchist</thing>
+                <count>1</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedDrillSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>Drill</effecterDef>
+        <worksInSpace>false</worksInSpace>
+        <maxOutputCount>3</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_DigForShaleChunk</defName>
+        <label>Dig to harvest a shale chunk</label>
+        <description>Dig to harvest a shale chunk.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <hideProcessIfNotNaturalRock>true</hideProcessIfNotNaturalRock>
+        <rockToDetect>EM_Shale</rockToDetect>
+        <ticks>14000</ticks>
+        <results>
+            <li>
+                <thing>EM_ChunkShale</thing>
+                <count>1</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedDrillSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>Drill</effecterDef>
+        <worksInSpace>false</worksInSpace>
+        <maxOutputCount>3</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_DigForBasaltChunk</defName>
+        <label>Dig to harvest a basalt chunk</label>
+        <description>Dig to harvest a basalt chunk.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <hideProcessIfNotNaturalRock>true</hideProcessIfNotNaturalRock>
+        <rockToDetect>EM_Basalt</rockToDetect>
+        <ticks>14000</ticks>
+        <results>
+            <li>
+                <thing>EM_ChunkBasalt</thing>
+                <count>1</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedDrillSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>Drill</effecterDef>
+        <worksInSpace>false</worksInSpace>
+        <maxOutputCount>3</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+</Defs>

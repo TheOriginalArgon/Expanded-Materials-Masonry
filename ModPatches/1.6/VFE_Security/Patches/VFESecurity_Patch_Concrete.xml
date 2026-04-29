@@ -1,0 +1,25 @@
+<Patch>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFES_Turret_AutocannonDouble" or
+            defName="VFES_Turret_Minigun" or
+            defName="VFES_Turret_AntiAir" or
+            defName="VFES_LargeRepulsor"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_CementMix</newMaterial>
+        <percentage>25</percentage>
+        <extraCostFactor>2</extraCostFactor>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFES_Turret_Concealed" or
+            defName="VFES_ConcealedBarrier"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_CementMix</newMaterial>
+        <percentage>75</percentage>
+        <extraCostFactor>1.5</extraCostFactor>
+    </Operation>
+
+</Patch>

@@ -1,22 +1,24 @@
 <Patch>
 
-    <!-- ================================ CONCRETE PATCHES ================================ -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/TerrainDef [
+            defName="VFEArch_ConcreteFoundation"
+            ]/costList/Steel</xpath>
+        <value>
+            <Steel>1</Steel>
+            <EM_CementMix>4</EM_CementMix>
+        </value>
+    </Operation>
 
-    <!-- Replace steel with concrete -->
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>VFE - Architect foundations require cement and less steel:</label>
-        <operations>
-            <li Class="PatchOperationReplace">
-                <xpath>/Defs/TerrainDef [
-                    defName="VFEArch_ConcreteFoundation"
-                    ]/costList/Steel</xpath>
-                <value>
-                    <Steel>1</Steel>
-                    <EM_CementMix>4</EM_CementMix>
-                </value>
-            </li>
-        </operations>
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/TerrainDef [
+            defName="VFEArch_PlayerBrokenAsphalt" or
+            defName="VFEArch_Asphalt"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_CementMix</newMaterial>
+        <percentage>100</percentage>
+        <round>false</round>
+        <minimum>0</minimum>
     </Operation>
 
 </Patch>

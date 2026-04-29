@@ -27,4 +27,7 @@
         <li>vanillaexpanded.vfearchitect</li>
         <li>oskarpotocki.vfe.classical</li>
     </loadAfter>
+    <loadBefore>
+        <li>argon.expandedmaterials.metals</li>
+    </loadBefore>
 </ModMetaData>

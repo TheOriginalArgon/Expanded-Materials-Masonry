@@ -1,207 +1,32 @@
 <Patch>
 
-    <!-- ================================ VANILLA BUILDINGS PATCH ================================ -->
-
-    <!-- Replace steel with concrete in immovable buildings. -->
-    <!-- <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>Attempt to replace steel with concrete in immovable buildings:</label>
-        <operations>
-            <li Class="PatchOperationConditional">
-                <xpath>/Defs/ThingDef [(thingClass="Building" or @ParentName="BuildingBase") and not(minifiedThing) and costList/Steel > 80]/costList/Steel</xpath>
-                <match Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                    <xpath>/Defs/ThingDef [(thingClass="Building" or @ParentName="BuildingBase") and not(minifiedThing) and costList/Steel > 80]/costList/Steel</xpath>
-                    <newMaterial>EM_CementMix</newMaterial>
-                    <splitMode>small</splitMode>
-                </match>
-            </li>
-        </operations>
-    </Operation> -->
-
     <!-- ================================ CONCRETE PATCHES ================================ -->
 
-    <!-- Replace steel with concrete -->
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>Enable manual concrete patches:</label>
-        <operations>
+    <!-- Vanilla Buildings -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="GeothermalGenerator" or
+            defName="Turret_Autocannon" or
+            defName="Turret_Sniper" or
+            defName="Turret_RocketswarmLauncher"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_CementMix</newMaterial>
+        <percentage>25</percentage>
+        <extraCostFactor>2</extraCostFactor>
+    </Operation>
 
-            <!-- Vanilla -->
-            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                <xpath>/Defs/ThingDef [
-                    defName="GeothermalGenerator" or
-                    defName="Turret_Autocannon" or
-                    defName="Turret_Sniper" or
-                    defName="Turret_RocketswarmLauncher"
-                    ]/costList/Steel</xpath>
-                <newMaterial>EM_CementMix</newMaterial>
-                <splitMode>small</splitMode>
-            </li>
-
-            <!-- Concrete in paved tiles and VFE Architect asphalt -->
-            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                <xpath>/Defs/TerrainDef [
-                    defName="Concrete" or
-                    defName="PavedTile" or
-                    defName="VFEArch_PlayerBrokenAsphalt" or
-                    defName="VFEArch_Asphalt"
-                    ]/costList/Steel</xpath>
-                <newMaterial>EM_CementMix</newMaterial>
-                <splitMode>replace</splitMode>
-                <minimum>0</minimum>
-            </li>
-
-            <!-- Biotech -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Biotech</li>
-                </mods>
-                <match Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                    <xpath>/Defs/ThingDef [
-                        defName="MechGestator" or
-                        defName="LargeMechGestator" or
-                        defName="BasicRecharger" or
-                        defName="StandardRecharger"
-                        ]/costList/Steel</xpath>
-                    <newMaterial>EM_CementMix</newMaterial>
-                    <splitMode>small</splitMode>
-                </match>
-            </li>
-
-            <!-- Vanilla Factions Expanded - Pirates -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Vanilla Factions Expanded - Pirates</li>
-                </mods>
-                <match Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                    <xpath>/Defs/ThingDef [
-                        defName="VFEP_WarcasketFoundry"
-                        ]/costList/Steel</xpath>
-                    <newMaterial>EM_CementMix</newMaterial>
-                    <splitMode>small</splitMode>
-                </match>
-            </li>
-
-            <!-- Vanilla Furniture Expanded -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Vanilla Furniture Expanded</li>
-                </mods>
-                <match Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                    <xpath>/Defs/ThingDef [
-                        defName="Light_Streetlamp"
-                        ]/costList/Steel</xpath>
-                    <newMaterial>EM_CementMix</newMaterial>
-                    <splitMode>small</splitMode>
-                </match>
-            </li>
-
-            <!-- Vanilla Furniture Expanded - Power -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Vanilla Furniture Expanded - Power</li>
-                </mods>
-                <match Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                    <xpath>/Defs/ThingDef [
-                        defName="VFE_AdvancedWatermillGenerator" or
-                        defName="VPE_AdvancedGeothermalGenerator" or
-                        defName="VPE_NuclearGenerator" or
-                        defName="VFE_TidalGenerator"
-                        ]/costList/Steel</xpath>
-                    <newMaterial>EM_CementMix</newMaterial>
-                    <splitMode>small</splitMode>
-                </match>
-            </li>
-
-            <!-- Vanilla Furniture Expanded - Security -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Vanilla Furniture Expanded - Security</li>
-                </mods>
-                <match Class="PatchOperationSequence">
-                    <operations>
-                        <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                            <xpath>/Defs/ThingDef [
-                                defName="VFES_Turret_AutocannonDouble" or
-                                defName="VFES_Turret_Minigun" or
-                                defName="VFES_Turret_AntiAir" or
-                                defName="VFES_LargeRepulsor"
-                                ]/costList/Steel</xpath>
-                            <newMaterial>EM_CementMix</newMaterial>
-                            <splitMode>small</splitMode>
-                        </li>
-                        <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                            <xpath>/Defs/ThingDef [
-                                defName="VFES_Turret_Concealed" or
-                                defName="VFES_ConcealedBarrier"
-                                ]/costList/Steel</xpath>
-                            <newMaterial>EM_CementMix</newMaterial>
-                            <splitMode>big</splitMode>
-                        </li>
-                    </operations>
-                </match>
-            </li>
-
-            <!-- Vanilla Factions Expanded - Deserters -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Vanilla Factions Expanded - Deserters</li>
-                </mods>
-                <match Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                    <xpath>/Defs/ThingDef [
-                        defName="VFED_Turret_Kontarion" or
-                        defName="VFED_Turret_Palintone" or
-                        defName="VFED_Turret_Onager"
-                        ]/costList/Steel</xpath>
-                    <newMaterial>EM_CementMix</newMaterial>
-                    <splitMode>small</splitMode>
-                </match>
-            </li>
-
-            <!-- Vanilla Genetics Expanded -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Vanilla Genetics Expanded</li>
-                </mods>
-                <match Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                    <xpath>/Defs/ThingDef [
-                        defName="GR_GenePod"
-                        ]/costList/Steel</xpath>
-                    <newMaterial>EM_CementMix</newMaterial>
-                    <splitMode>small</splitMode>
-                </match>
-            </li>
-
-            <!-- Vanilla Chemfuel Expanded -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Vanilla Chemfuel Expanded</li>
-                </mods>
-                <match Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                    <xpath>/Defs/ThingDef [
-                        defName="PS_DeepchemRefinery" or
-                        defName="VCHE_DeepchemPumpjack"
-                        ]/costList/Steel</xpath>
-                    <newMaterial>EM_CementMix</newMaterial>
-                    <splitMode>small</splitMode>
-                </match>
-            </li>
-
-            <!-- Vanilla Chemfuel Expanded -->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Vanilla Helixien Gas Expanded</li>
-                </mods>
-                <match Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-                    <xpath>/Defs/ThingDef [
-                        defName="VHGE_HelixienPump"
-                        ]/costList/Steel</xpath>
-                    <newMaterial>EM_CementMix</newMaterial>
-                    <splitMode>small</splitMode>
-                </match>
-            </li>
-
-        </operations>
+    <!-- Concrete in paved tiles and concrete (well, duh) -->
+    <!-- There's one from ReBuild: Doors and Corners because it's easier to put it here than to do the mess I have to make to check for it elsewhere. -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/TerrainDef [
+            defName="Concrete" or
+            defName="PavedTile" or
+            defName="RB_PavedTile_Transhumanist"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_CementMix</newMaterial>
+        <percentage>100</percentage>
+        <round>false</round>
+        <minimum>0</minimum>
     </Operation>
 
     <!-- SANDBAGS REQUIRE SAND -->
@@ -307,88 +132,80 @@
                 </value>
             </li>
 
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Vanilla Furniture Expanded - Architect</li>
-                </mods>
-                <match Class="PatchOperationSequence">
-                    <operations>
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/TerrainDef [defName="VFEArch_CobblestoneFloorSandstone"]/costList</xpath>
-                            <value>
-                                <costList>
-                                    <EM_CobblestoneSandstone>4</EM_CobblestoneSandstone>
-                                </costList>
-                            </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/TerrainDef [defName="VFEArch_CobblestoneFloorGranite"]/costList</xpath>
-                            <value>
-                                <costList>
-                                    <EM_CobblestoneGranite>4</EM_CobblestoneGranite>
-                                </costList>
-                            </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/TerrainDef [defName="VFEArch_CobblestoneFloorLimestone"]/costList</xpath>
-                            <value>
-                                <costList>
-                                    <EM_CobblestoneLimestone>4</EM_CobblestoneLimestone>
-                                </costList>
-                            </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/TerrainDef [defName="VFEArch_CobblestoneFloorSlate"]/costList</xpath>
-                            <value>
-                                <costList>
-                                    <EM_CobblestoneSlate>4</EM_CobblestoneSlate>
-                                </costList>
-                            </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/TerrainDef [defName="VFEArch_CobblestoneFloorMarble"]/costList</xpath>
-                            <value>
-                                <costList>
-                                    <EM_CobblestoneMarble>4</EM_CobblestoneMarble>
-                                </costList>
-                            </value>
-                        </li>
+            <!-- Modded -->
+            <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vfearchitect">
+                <xpath>/Defs/TerrainDef [defName="VFEArch_CobblestoneFloorSandstone"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneSandstone>4</EM_CobblestoneSandstone>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vfearchitect">
+                <xpath>/Defs/TerrainDef [defName="VFEArch_CobblestoneFloorGranite"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneGranite>4</EM_CobblestoneGranite>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vfearchitect">
+                <xpath>/Defs/TerrainDef [defName="VFEArch_CobblestoneFloorLimestone"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneLimestone>4</EM_CobblestoneLimestone>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vfearchitect">
+                <xpath>/Defs/TerrainDef [defName="VFEArch_CobblestoneFloorSlate"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneSlate>4</EM_CobblestoneSlate>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vfearchitect">
+                <xpath>/Defs/TerrainDef [defName="VFEArch_CobblestoneFloorMarble"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneMarble>4</EM_CobblestoneMarble>
+                    </costList>
+                </value>
+            </li>
 
-                        <!-- Added -->
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/TerrainDef [defName="EM_VFEArch_CobblestoneFloorSchist"]/costList</xpath>
-                            <value>
-                                <costList>
-                                    <EM_CobblestoneSchist>4</EM_CobblestoneSchist>
-                                </costList>
-                            </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/TerrainDef [defName="EM_VFEArch_CobblestoneFloorBasalt"]/costList</xpath>
-                            <value>
-                                <costList>
-                                    <EM_CobblestoneBasalt>4</EM_CobblestoneBasalt>
-                                </costList>
-                            </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/TerrainDef [defName="EM_VFEArch_CobblestoneFloorShale"]/costList</xpath>
-                            <value>
-                                <costList>
-                                    <EM_CobblestoneShale>4</EM_CobblestoneShale>
-                                </costList>
-                            </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                            <xpath>/Defs/TerrainDef [defName="EM_VFEArch_CobblestoneFloorSiltstone"]/costList</xpath>
-                            <value>
-                                <costList>
-                                    <EM_CobblestoneSiltstone>4</EM_CobblestoneSiltstone>
-                                </costList>
-                            </value>
-                        </li>
-                    </operations>
-                </match>
+            <!-- Added -->
+            <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vfearchitect">
+                <xpath>/Defs/TerrainDef [defName="EM_VFEArch_CobblestoneFloorSchist"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneSchist>4</EM_CobblestoneSchist>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vfearchitect">
+                <xpath>/Defs/TerrainDef [defName="EM_VFEArch_CobblestoneFloorBasalt"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneBasalt>4</EM_CobblestoneBasalt>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vfearchitect">
+                <xpath>/Defs/TerrainDef [defName="EM_VFEArch_CobblestoneFloorShale"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneShale>4</EM_CobblestoneShale>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vfearchitect">
+                <xpath>/Defs/TerrainDef [defName="EM_VFEArch_CobblestoneFloorSiltstone"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneSiltstone>4</EM_CobblestoneSiltstone>
+                    </costList>
+                </value>
             </li>
         </operations>
     </Operation>
