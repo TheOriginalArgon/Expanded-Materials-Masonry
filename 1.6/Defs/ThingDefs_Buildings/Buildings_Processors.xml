@@ -284,6 +284,7 @@
                     <li>EM_CementRecipe_Basalt</li>
                     <li>EM_CementRecipe_Schist</li>
                     <li>EM_CementRecipe_Granite</li>
+                    <li>EM_CementRecipe_Ash</li>
                 </processes>
                 <progressBarOffset>(0,0,-0.5)</progressBarOffset>
             </li>
