@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: fine basalt tile -->
+  <EM_FineTileBasalt.label>carreau de basalte raffiné</EM_FineTileBasalt.label>
+  <!-- EN: Exquisite stone tiles, made with no compromises, for expressing economic status. Slow to construct. -->
+  <EM_FineTileBasalt.description>Des carreaux en pierre raffinés, fabriqués sans compromis, pour exprimer le statut économique. Construction lente.</EM_FineTileBasalt.description>
+  
+  <!-- EN: fine schist tile -->
+  <EM_FineTileSchist.label>carreau de schiste raffiné</EM_FineTileSchist.label>
+  <!-- EN: Exquisite stone tiles, made with no compromises, for expressing economic status. Slow to construct. -->
+  <EM_FineTileSchist.description>Des carreaux en pierre raffinés, fabriqués sans compromis, pour exprimer le statut économique. Construction lente.</EM_FineTileSchist.description>
+  
+  <!-- EN: fine shale tile -->
+  <EM_FineTileShale.label>carreau de schiste argileux raffiné</EM_FineTileShale.label>
+  <!-- EN: Exquisite stone tiles, made with no compromises, for expressing economic status. Slow to construct. -->
+  <EM_FineTileShale.description>Des carreaux en pierre raffinés, fabriqués sans compromis, pour exprimer le statut économique. Construction lente.</EM_FineTileShale.description>
+  
+  <!-- EN: fine siltstone tile -->
+  <EM_FineTileSiltstone.label>carreau de siltite raffiné</EM_FineTileSiltstone.label>
+  <!-- EN: Exquisite stone tiles, made with no compromises, for expressing economic status. Slow to construct. -->
+  <EM_FineTileSiltstone.description>Des carreaux en pierre raffinés, fabriqués sans compromis, pour exprimer le statut économique. Construction lente.</EM_FineTileSiltstone.description>
+  
+</LanguageData>

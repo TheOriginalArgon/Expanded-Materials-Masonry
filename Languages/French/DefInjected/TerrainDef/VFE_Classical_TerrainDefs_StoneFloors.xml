@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: basalt mosaics -->
+  <EM_VFEC_MosaicsBasalt.label>mosaïques en basalte</EM_VFEC_MosaicsBasalt.label>
+  <!-- EN: Painstakingly carved and laid floors, very beautiful to look at. -->
+  <EM_VFEC_MosaicsBasalt.description>Des sols minutieusement sculptés et posés, très beaux à regarder.</EM_VFEC_MosaicsBasalt.description>
+  
+  <!-- EN: schist mosaics -->
+  <EM_VFEC_MosaicsSchist.label>mosaïques en schiste</EM_VFEC_MosaicsSchist.label>
+  <!-- EN: Painstakingly carved and laid floors, very beautiful to look at. -->
+  <EM_VFEC_MosaicsSchist.description>Des sols minutieusement sculptés et posés, très beaux à regarder.</EM_VFEC_MosaicsSchist.description>
+  
+  <!-- EN: shale mosaics -->
+  <EM_VFEC_MosaicsShale.label>mosaïques en schiste argileux</EM_VFEC_MosaicsShale.label>
+  <!-- EN: Painstakingly carved and laid floors, very beautiful to look at. -->
+  <EM_VFEC_MosaicsShale.description>Des sols minutieusement sculptés et posés, très beaux à regarder.</EM_VFEC_MosaicsShale.description>
+  
+  <!-- EN: siltstone mosaics -->
+  <EM_VFEC_MosaicsSiltstone.label>mosaïques en siltite</EM_VFEC_MosaicsSiltstone.label>
+  <!-- EN: Painstakingly carved and laid floors, very beautiful to look at. -->
+  <EM_VFEC_MosaicsSiltstone.description>Des sols minutieusement sculptés et posés, très beaux à regarder.</EM_VFEC_MosaicsSiltstone.description>
+  
+</LanguageData>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make basalt cobblestone -->
+  <EM_Make_CobblestoneBasalt.label>fabriquer des pavés en basalte</EM_Make_CobblestoneBasalt.label>
+  <!-- EN: Cuts basalt chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneBasalt.description>Couper des morceaux de basalte en pavés utilisables.</EM_Make_CobblestoneBasalt.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneBasalt.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneBasalt.jobString>
+  
+  <!-- EN: make basalt cobblestone from blocks -->
+  <EM_Make_CobblestoneBasalt_Blocks.label>fabriquer des pavés en basalte à partir de blocs</EM_Make_CobblestoneBasalt_Blocks.label>
+  <!-- EN: Smashes basalt blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneBasalt_Blocks.description>Briser les blocs de basalte pour en faire des pavés utilisables.</EM_Make_CobblestoneBasalt_Blocks.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneBasalt_Blocks.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneBasalt_Blocks.jobString>
+  
+  <!-- EN: make granite cobblestone -->
+  <EM_Make_CobblestoneGranite.label>fabriquer des pavés en granite</EM_Make_CobblestoneGranite.label>
+  <!-- EN: Smashes granite chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneGranite.description>Couper des morceaux de granite en pavés utilisables.</EM_Make_CobblestoneGranite.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneGranite.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneGranite.jobString>
+  
+  <!-- EN: make granite cobblestone from blocks -->
+  <EM_Make_CobblestoneGranite_Blocks.label>fabriquer des pavés en granite à partir de blocs</EM_Make_CobblestoneGranite_Blocks.label>
+  <!-- EN: Smashes granite blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneGranite_Blocks.description>Briser les blocs de granite pour en faire des pavés utilisables.</EM_Make_CobblestoneGranite_Blocks.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneGranite_Blocks.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneGranite_Blocks.jobString>
+  
+  <!-- EN: make limestone cobblestone -->
+  <EM_Make_CobblestoneLimestone.label>fabriquer des pavés en calcaire</EM_Make_CobblestoneLimestone.label>
+  <!-- EN: Cuts limestone chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneLimestone.description>Couper des morceaux de calcaire en pavés utilisables.</EM_Make_CobblestoneLimestone.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneLimestone.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneLimestone.jobString>
+  
+  <!-- EN: make limestone cobblestone from blocks -->
+  <EM_Make_CobblestoneLimestone_Blocks.label>fabriquer des pavés en calcaire à partir de blocs</EM_Make_CobblestoneLimestone_Blocks.label>
+  <!-- EN: Smashes limestone blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneLimestone_Blocks.description>Briser les blocs de calcaire pour en faire des pavés utilisables.</EM_Make_CobblestoneLimestone_Blocks.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneLimestone_Blocks.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneLimestone_Blocks.jobString>
+  
+  <!-- EN: make marble cobblestone -->
+  <EM_Make_CobblestoneMarble.label>fabriquer des pavés en marbre</EM_Make_CobblestoneMarble.label>
+  <!-- EN: Cuts marble chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneMarble.description>Couper des morceaux de marbre en pavés utilisables.</EM_Make_CobblestoneMarble.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneMarble.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneMarble.jobString>
+  
+  <!-- EN: make marble cobblestone from blocks -->
+  <EM_Make_CobblestoneMarble_Blocks.label>fabriquer des pavés en marbre à partir de blocs</EM_Make_CobblestoneMarble_Blocks.label>
+  <!-- EN: Smashes marble blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneMarble_Blocks.description>Briser les blocs de marbre pour en faire des pavés utilisables.</EM_Make_CobblestoneMarble_Blocks.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneMarble_Blocks.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneMarble_Blocks.jobString>
+  
+  <!-- EN: make sandstone cobblestone -->
+  <EM_Make_CobblestoneSandstone.label>fabriquer des pavés en grès</EM_Make_CobblestoneSandstone.label>
+  <!-- EN: Smashes sandstone chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneSandstone.description>Couper des morceaux de grès en pavés utilisables.</EM_Make_CobblestoneSandstone.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneSandstone.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneSandstone.jobString>
+  
+  <!-- EN: make sandstone cobblestone from blocks -->
+  <EM_Make_CobblestoneSandstone_Blocks.label>fabriquer des pavés en grès à partir de blocs</EM_Make_CobblestoneSandstone_Blocks.label>
+  <!-- EN: Smashes sandstone blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneSandstone_Blocks.description>Briser les blocs de grès pour en faire des pavés utilisables.</EM_Make_CobblestoneSandstone_Blocks.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneSandstone_Blocks.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneSandstone_Blocks.jobString>
+  
+  <!-- EN: make schist cobblestone -->
+  <EM_Make_CobblestoneSchist.label>fabriquer des pavés en schiste</EM_Make_CobblestoneSchist.label>
+  <!-- EN: Cuts schist chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneSchist.description>Couper des morceaux de schiste en pavés utilisables.</EM_Make_CobblestoneSchist.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneSchist.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneSchist.jobString>
+  
+  <!-- EN: make schist cobblestone from blocks -->
+  <EM_Make_CobblestoneSchist_Blocks.label>fabriquer des pavés en schiste à partir de blocs</EM_Make_CobblestoneSchist_Blocks.label>
+  <!-- EN: Smashes schist blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneSchist_Blocks.description>Briser les blocs de schiste pour en faire des pavés utilisables.</EM_Make_CobblestoneSchist_Blocks.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneSchist_Blocks.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneSchist_Blocks.jobString>
+  
+  <!-- EN: make shale cobblestone -->
+  <EM_Make_CobblestoneShale.label>fabriquer des pavés en schiste argileux</EM_Make_CobblestoneShale.label>
+  <!-- EN: Cuts shale chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneShale.description>Couper des morceaux de schiste argileux en pavés utilisables.</EM_Make_CobblestoneShale.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneShale.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneShale.jobString>
+  
+  <!-- EN: make shale cobblestone from blocks -->
+  <EM_Make_CobblestoneShale_Blocks.label>fabriquer des pavés en schiste argileux à partir de blocs</EM_Make_CobblestoneShale_Blocks.label>
+  <!-- EN: Smashes shale blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneShale_Blocks.description>Briser les blocs de schiste argileux pour en faire des pavés utilisables.</EM_Make_CobblestoneShale_Blocks.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneShale_Blocks.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneShale_Blocks.jobString>
+  
+  <!-- EN: make siltstone cobblestone -->
+  <EM_Make_CobblestoneSiltstone.label>fabriquer des pavés en siltite</EM_Make_CobblestoneSiltstone.label>
+  <!-- EN: Cuts siltstone chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneSiltstone.description>Couper des morceaux de siltite en pavés utilisables.</EM_Make_CobblestoneSiltstone.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneSiltstone.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneSiltstone.jobString>
+  
+  <!-- EN: make siltstone cobblestone from blocks -->
+  <EM_Make_CobblestoneSiltstone_Blocks.label>fabriquer des pavés en siltite à partir de blocs</EM_Make_CobblestoneSiltstone_Blocks.label>
+  <!-- EN: Smashes siltstone blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneSiltstone_Blocks.description>Briser les blocs de siltite pour en faire des pavés utilisables.</EM_Make_CobblestoneSiltstone_Blocks.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneSiltstone_Blocks.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneSiltstone_Blocks.jobString>
+  
+  <!-- EN: make slate cobblestone -->
+  <EM_Make_CobblestoneSlate.label>fabriquer des pavés en ardoise</EM_Make_CobblestoneSlate.label>
+  <!-- EN: Cuts slate chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneSlate.description>Couper des morceaux d'ardoise en pavés utilisables.</EM_Make_CobblestoneSlate.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneSlate.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneSlate.jobString>
+  
+  <!-- EN: make slate cobblestone from blocks -->
+  <EM_Make_CobblestoneSlate_Blocks.label>fabriquer des pavés en ardoise à partir de blocs</EM_Make_CobblestoneSlate_Blocks.label>
+  <!-- EN: Smashes slate blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneSlate_Blocks.description>Briser les blocs d'ardoise pour en faire des pavés utilisables.</EM_Make_CobblestoneSlate_Blocks.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneSlate_Blocks.jobString>Fabrique des pavés à partir de morceaux.</EM_Make_CobblestoneSlate_Blocks.jobString>
+  
+</LanguageData>

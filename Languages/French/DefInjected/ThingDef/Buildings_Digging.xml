@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: automatic digger -->
+  <EM_AutomaticDigger.label>excavatrice automatique</EM_AutomaticDigger.label>
+  <!-- EN: An automatic machine that extract ground resources using a deep-penetrating drill. Its size limits the types of resources it can extract. -->
+  <EM_AutomaticDigger.description>Une machine automatique qui extrait des ressources souterraines à l'aide d'un foret à pénétration profonde. Sa taille limite les types de ressources qu'elle peut extraire.</EM_AutomaticDigger.description>
+  
+  <!-- EN: large automatic digger -->
+  <EM_AutomaticDiggerLarge.label>grande excavatrice automatique</EM_AutomaticDiggerLarge.label>
+  <!-- EN: An automatic machine that extract ground resources using a deep-penetrating drill. -->
+  <EM_AutomaticDiggerLarge.description>Une machine automatique qui extrait les ressources souterraines à l'aide d'un foret à pénétration profonde.</EM_AutomaticDiggerLarge.description>
+  
+  <!-- EN: digging spot -->
+  <EM_DiggingSpot.label>endroit d'extraction</EM_DiggingSpot.label>
+  <!-- EN: A place for digging the ground and extracting resources. -->
+  <EM_DiggingSpot.description>Un endroit où creuser le sol et extraire des ressources.</EM_DiggingSpot.description>
+  
+  <!-- EN: shaft digging rig -->
+  <EM_ShaftDiggingRig.label>foreuse à arbre</EM_ShaftDiggingRig.label>
+  <!-- EN: A large digging rig that allows for manually mining resources from deep underground. Takes time to build. -->
+  <EM_ShaftDiggingRig.description>Une grande foreuse qui permet d'extraire manuellement des ressources enfouies profondément sous terre. Sa construction prend du temps.</EM_ShaftDiggingRig.description>
+  
+</LanguageData>

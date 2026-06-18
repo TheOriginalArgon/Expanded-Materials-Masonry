@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Make cement (ash) -->
+  <EM_CementRecipe_Ash.label>Fabriquer du ciment (cendre)</EM_CementRecipe_Ash.label>
+  <!-- EN: Turns 50 ash and 20 sand into 10 cement. -->
+  <EM_CementRecipe_Ash.description>Transforme 50 unités de cendres et 20 unités de sable en 10 unités de ciment.</EM_CementRecipe_Ash.description>
+  <!-- EN: Make 10 cement from 50 ash and 20 sand -->
+  <EM_CementRecipe_Ash.labelOverride>Fabrique 10 unités de ciment à partir de 50 unités de cendres et 20 unités de sable.</EM_CementRecipe_Ash.labelOverride>
+  
+  <!-- EN: Make cement (basalt) -->
+  <EM_CementRecipe_Basalt.label>Fabriquer du ciment (basalte)</EM_CementRecipe_Basalt.label>
+  <!-- EN: Turns 1 basalt chunk and 20 sand into 10 cement. -->
+  <EM_CementRecipe_Basalt.description>Transforme 1 morceau de basalte et 20 unités de sable en 10 unités de ciment.</EM_CementRecipe_Basalt.description>
+  <!-- EN: Make 10 cement from 1 basalt chunk and 20 sand -->
+  <EM_CementRecipe_Basalt.labelOverride>Fabrique 10 unités de ciment à partir d'un morceau de basalte et de 20 unités de sable.</EM_CementRecipe_Basalt.labelOverride>
+  
+  <!-- EN: Make cement (granite) -->
+  <EM_CementRecipe_Granite.label>Fabriquer du ciment (granite)</EM_CementRecipe_Granite.label>
+  <!-- EN: Turns 1 granite chunk and 20 sand into 10 cement. -->
+  <EM_CementRecipe_Granite.description>Transforme 1 morceau de granite et 20 unités de sable en 10 unités de ciment.</EM_CementRecipe_Granite.description>
+  <!-- EN: Make 10 cement from 1 granite chunk and 20 sand -->
+  <EM_CementRecipe_Granite.labelOverride>Fabrique 10 unités de ciment à partir d'un morceau de granite et de 20 unités de sable.</EM_CementRecipe_Granite.labelOverride>
+  
+  <!-- EN: Make cement (limestone) -->
+  <EM_CementRecipe_Limestone.label>Fabriquer du ciment (calcaire)</EM_CementRecipe_Limestone.label>
+  <!-- EN: Turns 1 limestone chunk and 20 sand into 30 cement. -->
+  <EM_CementRecipe_Limestone.description>Transforme 1 morceau de calcaire et 20 unités de sable en 30 unités de ciment.</EM_CementRecipe_Limestone.description>
+  <!-- EN: Make 30 cement from 1 limestone chunk and 20 sand -->
+  <EM_CementRecipe_Limestone.labelOverride>Fabrique 30 unités de ciment à partir d'un morceau de calcaire et de 20 unités de sable.</EM_CementRecipe_Limestone.labelOverride>
+  
+  <!-- EN: Make cement (marble) -->
+  <EM_CementRecipe_Marble.label>Fabriquer du ciment (marbre)</EM_CementRecipe_Marble.label>
+  <!-- EN: Turns 1 marble chunk and 20 sand into 30 cement. -->
+  <EM_CementRecipe_Marble.description>Transforme 1 morceau de marbre et 20 unités de sable en 30 unités de ciment.</EM_CementRecipe_Marble.description>
+  <!-- EN: Make 30 cement from 1 marble chunk and 20 sand -->
+  <EM_CementRecipe_Marble.labelOverride>Fabrique 30 unités de ciment à partir d'un morceau de marbre et de 20 unités de sable.</EM_CementRecipe_Marble.labelOverride>
+  
+  <!-- EN: Make cement (sandstone) -->
+  <EM_CementRecipe_Sandstone.label>Fabriquer du ciment (grès)</EM_CementRecipe_Sandstone.label>
+  <!-- EN: Turns 1 sandstone chunk and 20 sand into 20 cement. -->
+  <EM_CementRecipe_Sandstone.description>Transforme 1 morceau de grès et 20 unités de sable en 20 unités de ciment.</EM_CementRecipe_Sandstone.description>
+  <!-- EN: Make 20 cement from 1 sandstone chunk and 20 sand -->
+  <EM_CementRecipe_Sandstone.labelOverride>Fabrique 20 unités de ciment à partir d'un morceau de grès et de 20 unités de sable.</EM_CementRecipe_Sandstone.labelOverride>
+  
+  <!-- EN: Make cement (schist) -->
+  <EM_CementRecipe_Schist.label>Fabriquer du ciment (schiste)</EM_CementRecipe_Schist.label>
+  <!-- EN: Turns 1 schist chunk and 20 sand into 10 cement. -->
+  <EM_CementRecipe_Schist.description>Transforme 1 morceau de schiste et 20 unités de sable en 10 unités de ciment.</EM_CementRecipe_Schist.description>
+  <!-- EN: Make 10 cement from 1 schist chunk and 20 sand -->
+  <EM_CementRecipe_Schist.labelOverride>Fabrique 10 unités de ciment à partir d'un morceau de schiste et de 20 unités de sable.</EM_CementRecipe_Schist.labelOverride>
+  
+  <!-- EN: Make cement (shale) -->
+  <EM_CementRecipe_Shale.label>Fabriquer du ciment (schiste argileux)</EM_CementRecipe_Shale.label>
+  <!-- EN: Turns 1 shale chunk and 20 sand into 30 cement. -->
+  <EM_CementRecipe_Shale.description>Transforme 1 morceau de schiste argileux et 20 unités de sable en 30 unités de ciment.</EM_CementRecipe_Shale.description>
+  <!-- EN: Make 30 cement from 1 shale chunk and 20 sand -->
+  <EM_CementRecipe_Shale.labelOverride>Fabrique 30 unités de ciment à partir d'un morceau de schiste argileux et de 20 unités de sable.</EM_CementRecipe_Shale.labelOverride>
+  
+  <!-- EN: Make cement (siltstone) -->
+  <EM_CementRecipe_Siltstone.label>Fabriquer du ciment (siltite)</EM_CementRecipe_Siltstone.label>
+  <!-- EN: Turns 1 siltstone chunk and 20 sand into 20 cement. -->
+  <EM_CementRecipe_Siltstone.description>Transforme 1 morceau de siltite et 20 unités de sable en 20 unités de ciment.</EM_CementRecipe_Siltstone.description>
+  <!-- EN: Make 20 cement from 1 siltstone chunk and 20 sand -->
+  <EM_CementRecipe_Siltstone.labelOverride>Fabrique 20 unités de ciment à partir d'un morceau de siltite et de 20 unités de sable.</EM_CementRecipe_Siltstone.labelOverride>
+  
+  <!-- EN: Make cement (slate) -->
+  <EM_CementRecipe_Slate.label>Fabriquer du ciment (ardoise)</EM_CementRecipe_Slate.label>
+  <!-- EN: Turns 1 slate chunk and 20 sand into 20 cement. -->
+  <EM_CementRecipe_Slate.description>Transforme 1 morceau d'ardoise et 20 unités de sable en 20 unités de ciment.</EM_CementRecipe_Slate.description>
+  <!-- EN: Make 20 cement from 1 slate chunk and 20 sand -->
+  <EM_CementRecipe_Slate.labelOverride>Fabrique 20 unités de ciment à partir d'un morceau d'ardoise et de 20 unités de sable.</EM_CementRecipe_Slate.labelOverride>
+  
+</LanguageData>

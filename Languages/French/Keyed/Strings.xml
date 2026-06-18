@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- EN: Insert soil -->
+  <EM_InsertDirtDesc>Insérer la terre</EM_InsertDirtDesc>
+    <!-- EN: Insert soil -->
+  <EM_StartInsertionDirt>Insère la terre</EM_StartInsertionDirt>
+    <!-- EN: Insert soil to make adobe bricks. -->
+  <EM_StartInsertionDirtDesc>Ajouter de la terre pour fabriquer des briques d'adobe.</EM_StartInsertionDirtDesc>
+    <!-- EN: Cancel bringing soil -->
+  <EM_CancelBringingSoil>Annuler l'apport de terre</EM_CancelBringingSoil>
+    <!-- EN: Cancels bringing soil to make adobe bricks -->
+  <EM_CancelBringingSoilDesc>Annule l'apport de terre pour fabriquer des briques d'adobe.</EM_CancelBringingSoilDesc>
+
+    <!-- EN: Insert clay -->
+  <EM_InsertClayDesc>Insérer de l'argile</EM_InsertClayDesc>
+    <!-- EN: Insert clay -->
+  <EM_StartInsertionClay>Insère de l'argile</EM_StartInsertionClay>
+    <!-- EN: Insert clay to make bricks. -->
+  <EM_StartInsertionClayDesc>Insérez de l'argile pour fabriquer des briques.</EM_StartInsertionClayDesc>
+    <!-- EN: Cancel bringing clay -->
+  <EM_CancelBringingClay>Annuler l'apport d'argile</EM_CancelBringingClay>
+    <!-- EN: Cancels bringing clay to make bricks -->
+  <EM_CancelBringingClayDesc>Annule l'apport d'argile pour fabriquer des briques.</EM_CancelBringingClayDesc>
+
+</LanguageData>
