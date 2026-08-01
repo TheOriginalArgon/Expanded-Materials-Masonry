@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: brick drying pile -->
+  <EM_DryingPile.label>砖块晾晒堆</EM_DryingPile.label>
+  <!-- EN: A pile of adobe bricks laid for drying. Bricks will ruin quickly if exposed to rain. -->
+  <EM_DryingPile.description>一堆用于晾晒的土坯砖。砖块暴露在雨水中会很快损坏。</EM_DryingPile.description>
+  
+  <!-- EN: brick drying pile -->
+  <EM_DryingPile_Done.label>砖块晾晒堆</EM_DryingPile_Done.label>
+  <!-- EN: A pile of hardened adobe bricks. Can be deconstructed to obtain bricks. -->
+  <EM_DryingPile_Done.description>一堆已经硬化的土坯砖。可以拆除以获得砖块。</EM_DryingPile_Done.description>
+  
+  <!-- EN: brick firing pile -->
+  <EM_FiringPile.label>砖块烧制堆</EM_FiringPile.label>
+  <!-- EN: A pile of clay bricks which are fired to harden them. The bricks will ruin if exposed to rain. -->
+  <EM_FiringPile.description>一堆用于烧制硬化的粘土砖。砖块暴露在雨水中会损坏。</EM_FiringPile.description>
+  
+  <!-- EN: brick firing pile -->
+  <EM_FiringPile_Done.label>砖块烧制堆</EM_FiringPile_Done.label>
+  <!-- EN: A pile of hardened clay bricks. Can be deconstructed to obtain bricks. -->
+  <EM_FiringPile_Done.description>一堆已经硬化的粘土砖。可以拆除以获得砖块。</EM_FiringPile_Done.description>
+  
+  <!-- EN: kiln -->
+  <EM_Kiln.label>窑炉</EM_Kiln.label>
+  <!-- EN: A kiln built from stone bricks. This structure allows the making of cement. -->
+  <EM_Kiln.description>用石砖建造的窑炉。该结构允许制作水泥。</EM_Kiln.description>
+  
+</LanguageData>

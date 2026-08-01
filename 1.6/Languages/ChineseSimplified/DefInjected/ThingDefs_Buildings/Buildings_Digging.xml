@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: digging spot -->
+  <EM_DiggingSpot.label>挖掘点</EM_DiggingSpot.label>
+  <!-- EN: A place for digging the ground and extracting resources. -->
+  <EM_DiggingSpot.description>挖掘地面和提取资源的地方。</EM_DiggingSpot.description>
+  
+  <!-- EN: shaft digging rig -->
+  <EM_ShaftDiggingRig.label>竖井挖掘钻机</EM_ShaftDiggingRig.label>
+  <!-- EN: A large digging rig that allows for manually mining resources from deep underground. Takes time to build. -->
+  <EM_ShaftDiggingRig.description>一个大型挖掘钻机，允许从地下深处手动开采资源。建造需要时间。</EM_ShaftDiggingRig.description>
+  
+  <!-- EN: automatic digger -->
+  <EM_AutomaticDigger.label>自动挖掘机</EM_AutomaticDigger.label>
+  <!-- EN: An automatic machine that extract ground resources using a deep-penetrating drill. Its size limits the types of resources it can extract. -->
+  <EM_AutomaticDigger.description>一种使用深穿透钻头提取地面资源的自动机器。其尺寸限制了可提取的资源类型。</EM_AutomaticDigger.description>
+  
+  <!-- EN: large automatic digger -->
+  <EM_AutomaticDiggerLarge.label>大型自动挖掘机</EM_AutomaticDiggerLarge.label>
+  <!-- EN: An automatic machine that extract ground resources using a deep-penetrating drill. -->
+  <EM_AutomaticDiggerLarge.description>一种使用深穿透钻头提取地面资源的自动机器。</EM_AutomaticDiggerLarge.description>
+  
+</LanguageData>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: shale -->
+  <EM_Shale.label>页岩</EM_Shale.label>
+  <!-- EN: A fine-grained sedimentary rock formed from the compaction of clay and minerals. -->
+  <EM_Shale.description>由粘土和矿物压实形成的细粒沉积岩。</EM_Shale.description>
+  
+  <!-- EN: smoothed shale -->
+  <EM_SmoothedShale.label>磨光页岩</EM_SmoothedShale.label>
+  <!-- EN: A sedimentary rock formed from compacted fragments of minerals like quartz and calcite. It glows a smooth, faint blue and has a distinct layered texture. -->
+  <EM_SmoothedShale.description>由石英和方解石等矿物碎屑压实形成的沉积岩。它散发着平滑的淡蓝色光泽，具有明显的层状纹理。</EM_SmoothedShale.description>
+  
+  <!-- EN: shale chunk -->
+  <EM_ChunkShale.label>页岩碎块</EM_ChunkShale.label>
+  
+  <!-- EN: shale blocks -->
+  <EM_BlocksShale.label>页岩块</EM_BlocksShale.label>
+  <!-- EN: Blocks of solid shale. -->
+  <EM_BlocksShale.description>坚实的页岩块。</EM_BlocksShale.description>
+  
+  <!-- EN: make shale blocks -->
+  <EM_Make_StoneBlocksShale.label>制作页岩块</EM_Make_StoneBlocksShale.label>
+  <!-- EN: Cuts shale chunks into usable blocks. -->
+  <EM_Make_StoneBlocksShale.description>将页岩碎块切割成可用的块材。</EM_Make_StoneBlocksShale.description>
+  
+  <!-- EN: siltstone -->
+  <EM_Siltstone.label>粉砂岩</EM_Siltstone.label>
+  <!-- EN: A clastic sedimentary rock composed mostly of silt. -->
+  <EM_Siltstone.description>主要由粉砂组成的碎屑沉积岩。</EM_Siltstone.description>
+  
+  <!-- EN: smoothed siltstone -->
+  <EM_SmoothedSiltstone.label>磨光粉砂岩</EM_SmoothedSiltstone.label>
+  <!-- EN: A sedimentary rock formed mostly from silt. It has an earthy, clay coloration and a grainy texture. -->
+  <EM_SmoothedSiltstone.description>主要由粉砂形成的沉积岩。具有泥土般的粘土色和颗粒状纹理。</EM_SmoothedSiltstone.description>
+  
+  <!-- EN: siltstone chunk -->
+  <EM_ChunkSiltstone.label>粉砂岩碎块</EM_ChunkSiltstone.label>
+  
+  <!-- EN: siltstone blocks -->
+  <EM_BlocksSiltstone.label>粉砂岩块</EM_BlocksSiltstone.label>
+  <!-- EN: Blocks of solid siltstone. -->
+  <EM_BlocksSiltstone.description>坚实的粉砂岩块。</EM_BlocksSiltstone.description>
+  
+  <!-- EN: make siltstone blocks -->
+  <EM_Make_StoneBlocksSiltstone.label>制作粉砂岩块</EM_Make_StoneBlocksSiltstone.label>
+  <!-- EN: Cuts siltstone chunks into usable blocks. -->
+  <EM_Make_StoneBlocksSiltstone.description>将粉砂岩碎块切割成可用的块材。</EM_Make_StoneBlocksSiltstone.description>
+  
+  <!-- EN: schist -->
+  <EM_Schist.label>片岩</EM_Schist.label>
+  <!-- EN: A metamorphic rock formed from fine-grained sedimentary rock. -->
+  <EM_Schist.description>由细粒沉积岩形成的变质岩。</EM_Schist.description>
+  
+  <!-- EN: smoothed schist -->
+  <EM_SmoothedSchist.label>磨光片岩</EM_SmoothedSchist.label>
+  <!-- EN: A metamorphic rock formed from fine-grained sedimentary rock. It has a mineral-rich foliated texture. -->
+  <EM_SmoothedSchist.description>由细粒沉积岩形成的变质岩。具有富含矿物的片状纹理。</EM_SmoothedSchist.description>
+  
+  <!-- EN: schist chunk -->
+  <EM_ChunkSchist.label>片岩碎块</EM_ChunkSchist.label>
+  
+  <!-- EN: schist blocks -->
+  <EM_BlocksSchist.label>片岩块</EM_BlocksSchist.label>
+  <!-- EN: Blocks of solid schist. -->
+  <EM_BlocksSchist.description>坚实的片岩块。</EM_BlocksSchist.description>
+  
+  <!-- EN: make schist blocks -->
+  <EM_Make_StoneBlocksSchist.label>制作片岩块</EM_Make_StoneBlocksSchist.label>
+  <!-- EN: Cuts schist chunks into usable blocks. -->
+  <EM_Make_StoneBlocksSchist.description>将片岩碎块切割成可用的块材。</EM_Make_StoneBlocksSchist.description>
+  
+  <!-- EN: basalt -->
+  <EM_Basalt.label>玄武岩</EM_Basalt.label>
+  <!-- EN: An igneous rock formed from the rapid cooling of low-viscosity lava. -->
+  <EM_Basalt.description>由低粘度熔岩快速冷却形成的火成岩。</EM_Basalt.description>
+  
+  <!-- EN: smoothed basalt -->
+  <EM_SmoothedBasalt.label>磨光玄武岩</EM_SmoothedBasalt.label>
+  <!-- EN: An igneous rock formed from the rapid cooling of low-viscosity lava. The surface is smooth, dark and shiny. -->
+  <EM_SmoothedBasalt.description>由低粘度熔岩快速冷却形成的火成岩。表面光滑、黑暗且有光泽。</EM_SmoothedBasalt.description>
+  
+  <!-- EN: basalt chunk -->
+  <EM_ChunkBasalt.label>玄武岩碎块</EM_ChunkBasalt.label>
+  
+  <!-- EN: basalt blocks -->
+  <EM_BlocksBasalt.label>玄武岩块</EM_BlocksBasalt.label>
+  <!-- EN: Blocks of solid basalt. -->
+  <EM_BlocksBasalt.description>坚实的玄武岩块。</EM_BlocksBasalt.description>
+  
+  <!-- EN: make basalt blocks -->
+  <EM_Make_StoneBlocksBasalt.label>制作玄武岩块</EM_Make_StoneBlocksBasalt.label>
+  <!-- EN: Cuts basalt chunks into usable blocks. -->
+  <EM_Make_StoneBlocksBasalt.description>将玄武岩碎块切割成可用的块材。</EM_Make_StoneBlocksBasalt.description>
+  
+</LanguageData>

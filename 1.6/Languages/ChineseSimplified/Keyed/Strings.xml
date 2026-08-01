@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <EM_DiggingZoneIsPolluted>挖掘区域已被污染（将产出灰烬）</EM_DiggingZoneIsPolluted>
+    <EM_CommandAllowDigging>允许挖掘</EM_CommandAllowDigging>
+    <EM_CommandAllowDiggingDesc>启用或禁用此区域的挖掘</EM_CommandAllowDiggingDesc>
+    <EM_ChooseMaterialToDig>挖掘 {0}。</EM_ChooseMaterialToDig>
+    <EM_ChooseResource>选择资源</EM_ChooseResource>
+    <EM_ChooseResourceDesc>选择要挖掘的材料。</EM_ChooseResourceDesc>
+    <EM_CannotDeconstructDiggingSpot>在填平之前无法拆除。</EM_CannotDeconstructDiggingSpot>
+
+    <EM_DryingSpotNotWorking>晾晒点目前无法工作。</EM_DryingSpotNotWorking>
+    <EM_FiringSpotNotWorking>烧制点目前无法工作。</EM_FiringSpotNotWorking>
+    <EM_RainIsRuiningBricks>砖块正被雨水损坏。</EM_RainIsRuiningBricks>
+    <EM_RainRuinedBricks>砖块因雨水被摧毁。</EM_RainRuinedBricks>
+
+</LanguageData>

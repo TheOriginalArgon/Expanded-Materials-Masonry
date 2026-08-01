@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make cement bricks -->
+  <EM_Make_CementBricks.label>制作水泥砖</EM_Make_CementBricks.label>
+  <!-- EN: Make cement bricks. -->
+  <EM_Make_CementBricks.description>制作水泥砖。</EM_Make_CementBricks.description>
+  <!-- EN: Making cement bricks. -->
+  <EM_Make_CementBricks.jobString>正在制作水泥砖。</EM_Make_CementBricks.jobString>
+  
+</LanguageData>

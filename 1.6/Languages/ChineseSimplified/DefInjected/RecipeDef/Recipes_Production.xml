@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make any cobblestone -->
+  <EM_Make_CobblestoneAny.label>制作任意碎石</EM_Make_CobblestoneAny.label>
+  <!-- EN: Smash rock chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneAny.description>将岩石碎块砸成可用的碎石。</EM_Make_CobblestoneAny.description>
+  <!-- EN: Making cobblestone from chunk. -->
+  <EM_Make_CobblestoneAny.jobString>正在从碎块中制作碎石。</EM_Make_CobblestoneAny.jobString>
+  
+</LanguageData>

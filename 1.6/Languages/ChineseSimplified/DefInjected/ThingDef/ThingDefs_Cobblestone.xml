@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: sandstone cobblestone -->
+  <EM_CobblestoneSandstone.label>砂岩碎石</EM_CobblestoneSandstone.label>
+  <!-- EN: Roughly hewn sandstone. Sandstone is a relatively soft rock and chips easily. -->
+  <EM_CobblestoneSandstone.description>粗凿的砂岩。砂岩是一种相对柔软的岩石，容易碎裂。</EM_CobblestoneSandstone.description>
+  
+  <!-- EN: make sandstone cobblestone -->
+  <EM_Make_CobblestoneSandstone.label>制作砂岩碎石</EM_Make_CobblestoneSandstone.label>
+  <!-- EN: Smashes sandstone chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneSandstone.description>将砂岩碎块砸成可用的碎石。</EM_Make_CobblestoneSandstone.description>
+  
+  <!-- EN: make sandstone cobblestone from blocks -->
+  <EM_Make_CobblestoneSandstone_Blocks.label>从砂岩块制作碎石</EM_Make_CobblestoneSandstone_Blocks.label>
+  <!-- EN: Smashes sandstone blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneSandstone_Blocks.description>将砂岩块砸成可用的碎石。</EM_Make_CobblestoneSandstone_Blocks.description>
+  
+  <!-- EN: granite cobblestone -->
+  <EM_CobblestoneGranite.label>花岗岩碎石</EM_CobblestoneGranite.label>
+  <!-- EN: Roughly hewn granite. Granite is a very hard stone and is difficult to chip. -->
+  <EM_CobblestoneGranite.description>粗凿的花岗岩。花岗岩是一种非常坚硬的石头，难以碎裂。</EM_CobblestoneGranite.description>
+  
+  <!-- EN: make granite cobblestone -->
+  <EM_Make_CobblestoneGranite.label>制作花岗岩碎石</EM_Make_CobblestoneGranite.label>
+  <!-- EN: Smashes granite chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneGranite.description>将花岗岩碎块砸成可用的碎石。</EM_Make_CobblestoneGranite.description>
+  
+  <!-- EN: make granite cobblestone from blocks -->
+  <EM_Make_CobblestoneGranite_Blocks.label>从花岗岩块制作碎石</EM_Make_CobblestoneGranite_Blocks.label>
+  <!-- EN: Smashes granite blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneGranite_Blocks.description>将花岗岩块砸成可用的碎石。</EM_Make_CobblestoneGranite_Blocks.description>
+  
+  <!-- EN: limestone cobblestone -->
+  <EM_CobblestoneLimestone.label>石灰岩碎石</EM_CobblestoneLimestone.label>
+  <!-- EN: Roughly hewn limestone. Limestone is a sedimentary rock formed from the remains of ancient seashells. -->
+  <EM_CobblestoneLimestone.description>粗凿的石灰岩。石灰岩是由古代贝壳残骸形成的沉积岩。</EM_CobblestoneLimestone.description>
+  
+  <!-- EN: make limestone cobblestone -->
+  <EM_Make_CobblestoneLimestone.label>制作石灰岩碎石</EM_Make_CobblestoneLimestone.label>
+  <!-- EN: Cuts limestone chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneLimestone.description>将石灰岩碎块切割成可用的碎石。</EM_Make_CobblestoneLimestone.description>
+  
+  <!-- EN: make limestone cobblestone from blocks -->
+  <EM_Make_CobblestoneLimestone_Blocks.label>从石灰岩块制作碎石</EM_Make_CobblestoneLimestone_Blocks.label>
+  <!-- EN: Smashes limestone blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneLimestone_Blocks.description>将石灰岩块砸成可用的碎石。</EM_Make_CobblestoneLimestone_Blocks.description>
+  
+  <!-- EN: slate cobblestone -->
+  <EM_CobblestoneSlate.label>板岩碎石</EM_CobblestoneSlate.label>
+  <!-- EN: Roughly hewn slate. Slate is a fine-grained metamorphic rock that can be split into thin layers. -->
+  <EM_CobblestoneSlate.description>粗凿的板岩。板岩是一种细粒变质岩，可以分裂成薄层。</EM_CobblestoneSlate.description>
+  
+  <!-- EN: make slate cobblestone -->
+  <EM_Make_CobblestoneSlate.label>制作板岩碎石</EM_Make_CobblestoneSlate.label>
+  <!-- EN: Cuts slate chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneSlate.description>将板岩碎块切割成可用的碎石。</EM_Make_CobblestoneSlate.description>
+  
+  <!-- EN: make slate cobblestone from blocks -->
+  <EM_Make_CobblestoneSlate_Blocks.label>从板岩块制作碎石</EM_Make_CobblestoneSlate_Blocks.label>
+  <!-- EN: Smashes slate blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneSlate_Blocks.description>将板岩块砸成可用的碎石。</EM_Make_CobblestoneSlate_Blocks.description>
+  
+  <!-- EN: marble cobblestone -->
+  <EM_CobblestoneMarble.label>大理石碎石</EM_CobblestoneMarble.label>
+  <!-- EN: Roughly hewn marble. Marble is a metamorphic rock that is highly valued for its beauty and is often used in sculpture and architecture. -->
+  <EM_CobblestoneMarble.description>粗凿的大理石。大理石是一种因其美观而备受推崇的变质岩，常用于雕塑和建筑。</EM_CobblestoneMarble.description>
+  
+  <!-- EN: make marble cobblestone -->
+  <EM_Make_CobblestoneMarble.label>制作大理石碎石</EM_Make_CobblestoneMarble.label>
+  <!-- EN: Cuts marble chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneMarble.description>将大理石碎块切割成可用的碎石。</EM_Make_CobblestoneMarble.description>
+  
+  <!-- EN: make marble cobblestone from blocks -->
+  <EM_Make_CobblestoneMarble_Blocks.label>从大理石块制作碎石</EM_Make_CobblestoneMarble_Blocks.label>
+  <!-- EN: Smashes marble blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneMarble_Blocks.description>将大理石块砸成可用的碎石。</EM_Make_CobblestoneMarble_Blocks.description>
+  
+  <!-- EN: shale cobblestone -->
+  <EM_CobblestoneShale.label>页岩碎石</EM_CobblestoneShale.label>
+  <!-- EN: Roughly hewn shale. Shale is a fine-grained sedimentary rock with a distinct blue hue. -->
+  <EM_CobblestoneShale.description>粗凿的页岩。页岩是一种细粒沉积岩，带有明显的蓝色调。</EM_CobblestoneShale.description>
+  
+  <!-- EN: make shale cobblestone -->
+  <EM_Make_CobblestoneShale.label>制作页岩碎石</EM_Make_CobblestoneShale.label>
+  <!-- EN: Cuts shale chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneShale.description>将页岩碎块切割成可用的碎石。</EM_Make_CobblestoneShale.description>
+  
+  <!-- EN: make shale cobblestone from blocks -->
+  <EM_Make_CobblestoneShale_Blocks.label>从页岩块制作碎石</EM_Make_CobblestoneShale_Blocks.label>
+  <!-- EN: Smashes shale blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneShale_Blocks.description>将页岩块砸成可用的碎石。</EM_Make_CobblestoneShale_Blocks.description>
+  
+  <!-- EN: siltstone cobblestone -->
+  <EM_CobblestoneSiltstone.label>粉砂岩碎石</EM_CobblestoneSiltstone.label>
+  <!-- EN: Roughly hewn siltstone. Siltstone is a clay-colored, grainy sedimentary rock. -->
+  <EM_CobblestoneSiltstone.description>粗凿的粉砂岩。粉砂岩是一种粘土色、颗粒状的沉积岩。</EM_CobblestoneSiltstone.description>
+  
+  <!-- EN: make siltstone cobblestone -->
+  <EM_Make_CobblestoneSiltstone.label>制作粉砂岩碎石</EM_Make_CobblestoneSiltstone.label>
+  <!-- EN: Cuts siltstone chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneSiltstone.description>将粉砂岩碎块切割成可用的碎石。</EM_Make_CobblestoneSiltstone.description>
+  
+  <!-- EN: make siltstone cobblestone from blocks -->
+  <EM_Make_CobblestoneSiltstone_Blocks.label>从粉砂岩块制作碎石</EM_Make_CobblestoneSiltstone_Blocks.label>
+  <!-- EN: Smashes siltstone blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneSiltstone_Blocks.description>将粉砂岩块砸成可用的碎石。</EM_Make_CobblestoneSiltstone_Blocks.description>
+  
+  <!-- EN: schist cobblestone -->
+  <EM_CobblestoneSchist.label>片岩碎石</EM_CobblestoneSchist.label>
+  <!-- EN: Roughly hewn schist. Schist is a medium-grade metamorphic rock. -->
+  <EM_CobblestoneSchist.description>粗凿的片岩。片岩是一种中等级别的变质岩。</EM_CobblestoneSchist.description>
+  
+  <!-- EN: make schist cobblestone -->
+  <EM_Make_CobblestoneSchist.label>制作片岩碎石</EM_Make_CobblestoneSchist.label>
+  <!-- EN: Cuts schist chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneSchist.description>将片岩碎块切割成可用的碎石。</EM_Make_CobblestoneSchist.description>
+  
+  <!-- EN: make schist cobblestone from blocks -->
+  <EM_Make_CobblestoneSchist_Blocks.label>从片岩块制作碎石</EM_Make_CobblestoneSchist_Blocks.label>
+  <!-- EN: Smashes schist blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneSchist_Blocks.description>将片岩块砸成可用的碎石。</EM_Make_CobblestoneSchist_Blocks.description>
+  
+  <!-- EN: basalt cobblestone -->
+  <EM_CobblestoneBasalt.label>玄武岩碎石</EM_CobblestoneBasalt.label>
+  <!-- EN: Roughly hewn basalt. Basalt is a dark, hard igneous rock. -->
+  <EM_CobblestoneBasalt.description>粗凿的玄武岩。玄武岩是一种深色、坚硬的火成岩。</EM_CobblestoneBasalt.description>
+  
+  <!-- EN: make basalt cobblestone -->
+  <EM_Make_CobblestoneBasalt.label>制作玄武岩碎石</EM_Make_CobblestoneBasalt.label>
+  <!-- EN: Cuts basalt chunks into usable cobblestone. -->
+  <EM_Make_CobblestoneBasalt.description>将玄武岩碎块切割成可用的碎石。</EM_Make_CobblestoneBasalt.description>
+  
+  <!-- EN: make basalt cobblestone from blocks -->
+  <EM_Make_CobblestoneBasalt_Blocks.label>从玄武岩块制作碎石</EM_Make_CobblestoneBasalt_Blocks.label>
+  <!-- EN: Smashes basalt blocks into usable cobblestone. -->
+  <EM_Make_CobblestoneBasalt_Blocks.description>将玄武岩块砸成可用的碎石。</EM_Make_CobblestoneBasalt_Blocks.description>
+  
+</LanguageData>
