@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dig at digging spot -->
+  <EM_Dig.label>在挖掘点挖掘</EM_Dig.label>
+  <!-- EN: dig -->
+  <EM_Dig.verb>挖掘</EM_Dig.verb>
+  <!-- EN: digging -->
+  <EM_Dig.gerund>正在挖掘</EM_Dig.gerund>
+  
+</LanguageData>

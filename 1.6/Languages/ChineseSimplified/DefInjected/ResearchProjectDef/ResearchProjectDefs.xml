@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: basic masonry -->
+  <EM_BasicMasonry.label>基础砌筑</EM_BasicMasonry.label>
+  <!-- EN: Dig resources from the ground and make basic bricks. -->
+  <EM_BasicMasonry.description>从地下挖掘资源并制作基础砖块。</EM_BasicMasonry.description>
+  
+  <!-- EN: shaft digging -->
+  <EM_ShaftDigging.label>竖井挖掘</EM_ShaftDigging.label>
+  <!-- EN: Dig shafts to access underground resources. -->
+  <EM_ShaftDigging.description>挖掘竖井以获取地下资源。</EM_ShaftDigging.description>
+  
+  <!-- EN: concrete -->
+  <EM_Concrete.label>混凝土</EM_Concrete.label>
+  <!-- EN: Cook different types of stones to create concrete, a very useful material for structures and flooring. -->
+  <EM_Concrete.description>烧制不同类型的石头来制造混凝土，一种用于结构和地板非常有用的材料。</EM_Concrete.description>
+  
+</LanguageData>

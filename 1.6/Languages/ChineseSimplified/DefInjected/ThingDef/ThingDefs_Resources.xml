@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: soil -->
+  <EM_Soil.label>土壤</EM_Soil.label>
+  <!-- EN: A mixture of organic matters that compose the ground. -->
+  <EM_Soil.description>构成地面的有机物混合物。</EM_Soil.description>
+  
+  <!-- EN: ash -->
+  <EM_Ash.label>灰烬</EM_Ash.label>
+  <!-- EN: Remains of burnt organic matter. Barely usable for anything. -->
+  <EM_Ash.description>燃烧有机物的残留物。几乎没什么用处。</EM_Ash.description>
+  
+  <!-- EN: clay -->
+  <EM_Clay.label>粘土</EM_Clay.label>
+  <!-- EN: Soil that contains rich amounts of clay minerals. Clay quickly gains plasticity when wet, but hardens when fired. Mankind utilized clay widely throughout history to make things like pottery, art or bricks. -->
+  <EM_Clay.description>富含粘土矿物的土壤。粘土在湿润时很快获得可塑性，但在烧制后会变硬。人类在历史上广泛利用粘土制造陶器、艺术品或砖块等物品。</EM_Clay.description>
+  
+  <!-- EN: sand -->
+  <EM_Sand.label>沙子</EM_Sand.label>
+  <!-- EN: A granular material composed of finely divided mineral particles. -->
+  <EM_Sand.description>由细碎矿物颗粒组成的粒状材料。</EM_Sand.description>
+  
+  <!-- EN: concrete mix -->
+  <EM_CementMix.label>混凝土混合料</EM_CementMix.label>
+  <!-- EN: A compound mixture of sand and cement powder obtained from cooking rocks at high temperatures. -->
+  <EM_CementMix.description>通过在高温下烧制岩石获得的沙子和水泥粉的复合混合物。</EM_CementMix.description>
+  
+  <!-- EN: adobe bricks -->
+  <EM_AdobeBricks.label>土坯砖</EM_AdobeBricks.label>
+  <!-- EN: Rough, irregular bricks made of dried mud and ocassionally, pieces of dried vegetal fiber for added strength. -->
+  <EM_AdobeBricks.description>由干泥制成的粗糙不规则砖块，偶尔加入干植物纤维以增加强度。</EM_AdobeBricks.description>
+  
+  <!-- EN: clay bricks -->
+  <EM_ClayBricks.label>粘土砖</EM_ClayBricks.label>
+  <!-- EN: Hard, more elaborate bricks made of fired clay. They are more aesthetically nice than rough adobe bricks and more resistant. -->
+  <EM_ClayBricks.description>由烧制粘土制成的坚硬、更精致的砖块。它们比粗糙的土坯砖更美观且更耐用。</EM_ClayBricks.description>
+  
+  <!-- EN: concrete bricks -->
+  <EM_CementBricks.label>混凝土砖</EM_CementBricks.label>
+  <!-- EN: Large bricks made of concrete. Their shape and size make building walls with them extremely fast compared to other materials. However, concrete bricks are weak if not coated, and quite ugly too. -->
+  <EM_CementBricks.description>由混凝土制成的大型砖块。它们的形状和尺寸使得用它们建造墙壁比其他材料快得多。但未涂层的混凝土砖很脆弱，而且相当难看。</EM_CementBricks.description>
+  
+</LanguageData>

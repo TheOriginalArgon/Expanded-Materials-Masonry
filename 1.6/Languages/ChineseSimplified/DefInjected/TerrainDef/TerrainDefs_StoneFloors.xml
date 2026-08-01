@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: shale tile -->
+  <EM_TileShale.label>页岩地砖</EM_TileShale.label>
+  
+  <!-- EN: schist tile -->
+  <EM_TileSchist.label>片岩地砖</EM_TileSchist.label>
+  
+  <!-- EN: siltstone tile -->
+  <EM_TileSiltstone.label>粉砂岩地砖</EM_TileSiltstone.label>
+  
+  <!-- EN: basalt tile -->
+  <EM_TileBasalt.label>玄武岩地砖</EM_TileBasalt.label>
+  
+  <!-- EN: shale flagstone -->
+  <EM_FlagstoneShale.label>页岩石板</EM_FlagstoneShale.label>
+  
+  <!-- EN: schist flagstone -->
+  <EM_FlagstoneSchist.label>片岩石板</EM_FlagstoneSchist.label>
+  
+  <!-- EN: siltstone flagstone -->
+  <EM_FlagstoneSiltstone.label>粉砂岩石板</EM_FlagstoneSiltstone.label>
+  
+  <!-- EN: basalt flagstone -->
+  <EM_FlagstoneBasalt.label>玄武岩石板</EM_FlagstoneBasalt.label>
+  
+</LanguageData>

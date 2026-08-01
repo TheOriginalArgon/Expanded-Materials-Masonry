@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <EM_InsertDirtDesc>放入土壤</EM_InsertDirtDesc>
+    <EM_StartInsertionDirt>放入土壤</EM_StartInsertionDirt>
+    <EM_StartInsertionDirtDesc>放入土壤以制作土坯砖。</EM_StartInsertionDirtDesc>
+    <EM_CancelBringingSoil>取消搬运土壤</EM_CancelBringingSoil>
+    <EM_CancelBringingSoilDesc>取消搬运土壤以制作土坯砖</EM_CancelBringingSoilDesc>
+
+    <EM_InsertClayDesc>放入粘土</EM_InsertClayDesc>
+    <EM_StartInsertionClay>放入粘土</EM_StartInsertionClay>
+    <EM_StartInsertionClayDesc>放入粘土以制作砖块。</EM_StartInsertionClayDesc>
+    <EM_CancelBringingClay>取消搬运粘土</EM_CancelBringingClay>
+    <EM_CancelBringingClayDesc>取消搬运粘土以制作砖块</EM_CancelBringingClayDesc>
+
+</LanguageData>
