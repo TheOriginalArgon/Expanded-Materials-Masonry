@@ -1,5 +1,6 @@
 <Defs>
 
+    <!-- Dig for stone chunks -->
     <PipeSystem.ProcessDef>
         <defName>EM_VFEFactory_DigForSiltstoneChunk</defName>
         <label>Dig to harvest a siltstone chunk</label>
@@ -102,6 +103,195 @@
         <effecterDef>Drill</effecterDef>
         <worksInSpace>false</worksInSpace>
         <maxOutputCount>3</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <!-- Smelt silicon from sand -->
+    <PipeSystem.ProcessDef MayRequire="Argon.ExpandedMaterials.Metals">
+        <defName>EM_VFEFactory_SmeltSiliconFromSand</defName>
+        <label>Smelt silicon from sand</label>
+        <labelOverride>Smelt silicon from sand</labelOverride>
+        <description>Smelt silicon from sand.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>35000</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>100</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_Silicon</thing>
+                <count>5</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <!-- Bricks -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_MakeAdobeBricks</defName>
+        <label>Make adobe bricks</label>
+        <labelOverride>Make adobe bricks</labelOverride>
+        <description>Make adobe bricks.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>10000</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_Soil</thing>
+                <countNeeded>100</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_AdobeBricks</thing>
+                <count>80</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_MakeClayBricks</defName>
+        <label>Make clay bricks</label>
+        <labelOverride>Make clay bricks</labelOverride>
+        <description>Make clay bricks.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>12500</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_Clay</thing>
+                <countNeeded>100</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_ClayBricks</thing>
+                <count>80</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_MakeCementBricks</defName>
+        <label>Make cement bricks</label>
+        <labelOverride>Make cement bricks</labelOverride>
+        <description>Make cement bricks.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,2)</li>
+
+        </autoInputSlots>
+        <ticks>6000</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_CementMix</thing>
+                <countNeeded>50</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_CementBricks</thing>
+                <count>50</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>EM_Concrete</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedStoneCuttingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <!-- Cement mix -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_MakeConcreteMix</defName>
+        <label>Make concrete mix</label>
+        <labelOverride>Make concrete mix</labelOverride>
+        <description>Make concrete mix.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>30000</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_ChunkLimestone</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Sand</thing>
+                <countNeeded>50</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_ConcreteMix</thing>
+                <count>100</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
     </PipeSystem.ProcessDef>
 
 </Defs>

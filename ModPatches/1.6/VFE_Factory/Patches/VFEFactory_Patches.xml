@@ -10,4 +10,21 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationInsert">
+        <xpath>/Defs/ThingDef [defName="VFEFactory_AutomatedSmelter"]/comps/li [@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes/li[text()="VFEFactory_SmeltMechanoid"]</xpath>
+        <value>
+            <li MayRequire="Argon.ExpandedMaterials.Metals">EM_VFEFactory_SmeltSiliconFromSand</li>
+            <li>EM_VFEFactory_MakeConcreteMix</li>
+            <li>EM_VFEFactory_MakeAdobeBricks</li>
+            <li>EM_VFEFactory_MakeClayBricks</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationInsert">
+        <xpath>/Defs/ThingDef [defName="VFEFactory_AutomatedMasonrySaw"]/comps/li [@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes/li[text()="VFEFactory_MakeStoneBlocks"]</xpath>
+        <value>
+            <li>EM_VFEFactory_MakeCementBricks</li>
+        </value>
+    </Operation>
+
 </Patch>
